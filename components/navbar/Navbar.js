@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Container from "../container/container";
+import Button from "../button/button";
 
 export default function Navbar() {
   return (
     <>
       <Container>
-        <header className="flex items-center justify-between px-10 py-3">
+        <header className="flex items-center justify-between px-10 py-3 bg-white">
           {/* LOGO */}
           <div>
             <svg
@@ -42,12 +43,7 @@ export default function Navbar() {
           </nav>
           {/* BUTTON */}
           <article>
-            <Link
-              className="bg-[#DC511A] h-12 px-6 flex items-center justify-center text-white rounded-full"
-              href={""}
-            >
-              Get in touch
-            </Link>
+            <Button text={"Get in touch"} route={"/"} />
           </article>
         </header>
       </Container>
