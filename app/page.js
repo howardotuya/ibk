@@ -22,14 +22,17 @@ import mjogovest1 from "@/public/images/PNG/mjogovest1.png";
 import mjogovest2 from "@/public/images/PNG/mjogovest2.png";
 import tastyandyummy from "@/public/images/PNG/tastyandyummy.png";
 import Testimonials from "@/components/testimonials/testimonials";
+import Footer from "@/components/footer/footer";
 
 export default function Home() {
   return (
     <>
+      {/* NAVBAR */}
       <div className="sticky top-0 z-[999]">
         <Navbar />
       </div>
 
+      {/* MAIN CONTENT */}
       <Container>
         <main>
           {/* HERO SECTION */}
@@ -56,10 +59,10 @@ export default function Home() {
                     <Image
                       className="w-[50px] h-[50px]"
                       src={prifinaLeft}
-                      alt=""
+                      alt="Prifina Company Logo"
                     />
                     {/* RIGHT */}
-                    <Image className="" src={prifinaRight} alt="" />
+                    <Image className="" src={prifinaRight} alt="Prifina Company Logo" />
                   </article>
 
                   {/* OPPIA */}
@@ -68,15 +71,15 @@ export default function Home() {
                     <Image
                       className="w-6 h-[23.517px]"
                       src={oppiaLeft}
-                      alt=""
+                      alt="Oppia Company Logo"
                     />
                     {/* RIGHT */}
-                    <Image className="" src={oppiaRight} alt="" />
+                    <Image className="" src={oppiaRight} alt="Oppia Company Logo" />
                   </article>
 
                   {/* JOGOVEST */}
                   <article>
-                    <Image src={jogovest} alt="" />
+                    <Image src={jogovest} alt="Jogovest Company Logo" />
                   </article>
                 </article>
               </article>
@@ -103,11 +106,11 @@ export default function Home() {
               </Link>
 
               {/* BUTTON IMAGE - CENTERED */}
-              <Image className="w-[277px] h-auto" src={buttonBlack} alt="" />
+              <Image className="w-[277px] h-auto" src={buttonBlack} alt="Download resume" />
             </article>
 
             {/* MOBILE - 2 */}
-            <article className="flex lg:hidden flex-col gap-4">
+            <article className="flex lg:hidden flex-col gap-2 my-4">
               <h6 className="cod-gray-500 text-[14px] font-semibold tracking-[-0.28px]">
                 Some companies I have worked with
               </h6>
@@ -119,13 +122,13 @@ export default function Home() {
                   <Image
                     className="w-[38.07px] h-[38.07px] lg:w-[50px] lg:h-[50px]"
                     src={prifinaLeft}
-                    alt=""
+                    alt="Prifina company logo"
                   />
                   {/* RIGHT */}
                   <Image
                     className="w-[43px] h-auto"
                     src={prifinaRight}
-                    alt=""
+                    alt="Prifina company logo"
                   />
                 </article>
 
@@ -135,19 +138,19 @@ export default function Home() {
                   <Image
                     className="w-[18.273px] h-auto"
                     src={oppiaLeft}
-                    alt=""
+                    alt="Oppia company logo"
                   />
                   {/* RIGHT */}
                   <Image
                     className="w-[103.549px] h-auto"
                     src={oppiaRight}
-                    alt=""
+                    alt="Oppia company logo"
                   />
-                </article>
+                </article> 
 
                 {/* JOGOVEST */}
                 <article>
-                  <Image className="w-[99.361px]" src={jogovest} alt="" />
+                  <Image className="w-[99.361px]" src={jogovest} alt="Jogovest company logo" />
                 </article>
               </article>
             </article>
@@ -175,7 +178,7 @@ export default function Home() {
                 <Image
                   className="w-[333.108px] h-auto"
                   src={buttonBlack}
-                  alt=""
+                  alt="Download resume"
                 />
               </article>
             </article>
@@ -220,12 +223,30 @@ export default function Home() {
                 <article className="flex justify-center lg:justify-normal w-full gap-4 lg:gap-x-6">
                   {/* 234.358px */}
                   <article className="">
-                    <Image className="max-w-[234.358px] w-full h-auto hidden lg:block" src={oppia2} alt="" />
-                    <Image className="max-w-[137.679px] w-full h-auto block lg:hidden shrink-0" quality={100} src={moppia1} alt="" />
+                    <Image
+                      className="max-w-[234.358px] w-full h-auto hidden lg:block"
+                      src={oppia2}
+                      alt="Oppia Mobile App"
+                    />
+                    <Image
+                      className="max-w-[137.679px] w-full h-auto block lg:hidden shrink-0"
+                      quality={100}
+                      src={moppia1}
+                      alt="Oppia Mobile App"
+                    />
                   </article>
                   <article className="pt-[90px] lg:pt-0 self-end">
-                    <Image className="max-w-[234.358px] w-full h-auto hidden lg:block" src={oppia1} alt="" />
-                    <Image className="max-w-[137.679px] w-full h-auto block lg:hidden shrink-0" quality={100} src={moppia2} alt="" />
+                    <Image
+                      className="max-w-[234.358px] w-full h-auto hidden lg:block"
+                      src={oppia1}
+                      alt="Oppia Mobile App"
+                    />
+                    <Image
+                      className="max-w-[137.679px] w-full h-auto block lg:hidden shrink-0"
+                      quality={100}
+                      src={moppia2}
+                      alt="Oppia Mobile App"
+                    />
                   </article>
                 </article>
               </article>
@@ -236,12 +257,28 @@ export default function Home() {
                 <article className="order-2 lg:order-1 flex justify-center lg:justify-center w-full gap-x-6">
                   {/* 234.358px */}
                   <article className="">
-                    <Image className="max-w-[234.358px] w-full h-auto hidden lg:block" src={jogovest1} alt="" />
-                    <Image className="max-w-[137.679px] w-full h-auto block lg:hidden shrink-0" src={mjogovest1} alt="" />
+                    <Image
+                      className="max-w-[234.358px] w-full h-auto hidden lg:block"
+                      src={jogovest1}
+                      alt="Jogovest Mobile App"
+                    />
+                    <Image
+                      className="max-w-[137.679px] w-full h-auto block lg:hidden shrink-0"
+                      src={mjogovest1}
+                      alt="Jogovest Mobile App"
+                    />
                   </article>
                   <article className="pt-[90px] lg:pt-0 self-end">
-                    <Image className="max-w-[234.358px] w-full h-auto hidden lg:block" src={jogovest2} alt="" />
-                    <Image className="max-w-[137.679px] w-full h-auto block lg:hidden shrink-0" src={mjogovest2} alt="" />
+                    <Image
+                      className="max-w-[234.358px] w-full h-auto hidden lg:block"
+                      src={jogovest2}
+                      alt="Jogovest Mobile App"
+                    />
+                    <Image
+                      className="max-w-[137.679px] w-full h-auto block lg:hidden shrink-0"
+                      src={mjogovest2}
+                      alt="Jogovest Mobile App"
+                    />
                   </article>
                 </article>
 
@@ -294,7 +331,11 @@ export default function Home() {
                 <article className="flex w-full gap-x-6 items-center">
                   {/* 234.358px */}
                   <article className="">
-                    <Image className="w-[543px] h-auto" src={tastyandyummy} alt="" />
+                    <Image
+                      className="w-[543px] h-auto"
+                      src={tastyandyummy}
+                      alt="Tasty and Yummy website"
+                    />
                   </article>
                 </article>
               </article>
@@ -303,17 +344,8 @@ export default function Home() {
         </main>
       </Container>
 
-      <footer className="bg-[#014921] py-20 px-[120px]">
-        <Container>
-          {/* TOP */}
-          <article>
-            <h2 className="text-[56px] font-medium leading-[100%] tracking-[-2.24px] text-white">I have got great reviews</h2>
-          </article>
-          {/* DIVIDER */}
-          {/* BOTTOM */}
-          <article></article>
-        </Container>
-      </footer>
+      {/* FOOTER */}
+      <Footer />
     </>
   );
 }
