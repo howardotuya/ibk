@@ -5,8 +5,15 @@ import Button from "../button/button";
 export default function Navbar() {
   return (
     <>
+      {/* MOBILE */}
+      <div>
+        {/* logo */}
+        {/* Hamburger Menu */}
+      </div>
+
+      {/* DESKTOP */}
       <Container>
-        <header className="flex items-center justify-between px-10 py-3 bg-white">
+        <header className="flex items-center justify-between px-5 lg:px-10 py-3 bg-white">
           {/* LOGO */}
           <div>
             <svg
@@ -30,7 +37,7 @@ export default function Navbar() {
           </div>
 
           {/* LINKS */}
-          <nav className="flex items-center gap-10 cod-gray-950">
+          <nav className="hidden lg:flex items-center gap-10 cod-gray-950">
             <Link className="p-2" href={""}>
               About
             </Link>
@@ -41,9 +48,26 @@ export default function Navbar() {
               Resume
             </Link>
           </nav>
+
           {/* BUTTON */}
-          <article>
+          <article className="hidden lg:block">
             <Button text={"Get in touch"} route={"/"} />
+          </article>
+
+          {/* HAMBURGER MENU - MOBILE ONLY */}
+          <article className="block lg:hidden p-2 rounded-[8px] bg-[#FEF6EE]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"
+                fill="#DC511A"
+              />
+            </svg>
           </article>
         </header>
       </Container>
