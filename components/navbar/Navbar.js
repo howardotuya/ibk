@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <>
       {/* POPUP NAVBAR */}
-      <article className={`${isActive ? 'block' : 'hidden'} z-[99999] h-screen absolute top-0 bottom-0 left-0 right-0 bg-white`}>
+      <article className={`${isActive ? 'block' : 'hidden'} desktopHidden z-[99999] h-screen absolute top-0 bottom-0 left-0 right-0 bg-white`}>
         <article className="p-5 flex flex-col gap-[52px]">
           {/* CANCEL */}
           <article className="inline-flex self-end">

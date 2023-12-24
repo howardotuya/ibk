@@ -4,6 +4,8 @@ import Image from "next/image";
 import Divider from "../components/divider/divider";
 import Link from "next/link";
 import Button from "@/components/button/button";
+import Testimonials from "@/components/testimonials/testimonials";
+import Footer from "@/components/footer/footer";
 
 // IMAGE IMPORTATION
 import prifinaLeft from "@/public/images/PNG/prifina-left.png";
@@ -21,8 +23,6 @@ import jogovest2 from "@/public/images/PNG/jogovest2.png";
 import mjogovest1 from "@/public/images/PNG/mjogovest1.png";
 import mjogovest2 from "@/public/images/PNG/mjogovest2.png";
 import tastyandyummy from "@/public/images/PNG/tastyandyummy.png";
-import Testimonials from "@/components/testimonials/testimonials";
-import Footer from "@/components/footer/footer";
 
 export default function Home() {
   return (
@@ -202,12 +202,12 @@ export default function Home() {
                 <article className="flex flex-col gap-6 lg:gap-10 lg:pt-14 lg:pb-[156px]">
                   <article className="flex flex-col gap-2 lg:gap-6">
                     <h3 className="cod-grap-800 text-[24px] lg:text-[40px] font-semibold">
-                      OPPIA
+                      Oppia
                     </h3>
                     <p className="text-[14px] lg:text-[20px] leading-[140%]">
                       Oppia Beta- I conducted market research and user testing
                       to improve the user experience of the app, I also worked
-                      on the language translation feature with led to 30%
+                      on the language translation feature which led to 30%
                       increase in the number of users.
                     </p>
                   </article>
