@@ -220,12 +220,12 @@ export default function Home() {
                 <article className="flex justify-center lg:justify-normal w-full gap-4 lg:gap-x-6">
                   {/* 234.358px */}
                   <article className="">
-                    <Image className="w-[234.358px] h-auto hidden lg:block" src={oppia2} alt="" />
-                    <Image className="w-[137.679px] h-auto block lg:hidden" quality={100} src={moppia1} alt="" />
+                    <Image className="max-w-[234.358px] w-full h-auto hidden lg:block" src={oppia2} alt="" />
+                    <Image className="max-w-[137.679px] w-full h-auto block lg:hidden shrink-0" quality={100} src={moppia1} alt="" />
                   </article>
                   <article className="pt-[90px] lg:pt-0 self-end">
-                    <Image className="w-[234.358px] h-auto hidden lg:block" src={oppia1} alt="" />
-                    <Image className="w-[137.679px] h-auto block lg:hidden" quality={100} src={moppia2} alt="" />
+                    <Image className="max-w-[234.358px] w-full h-auto hidden lg:block" src={oppia1} alt="" />
+                    <Image className="max-w-[137.679px] w-full h-auto block lg:hidden shrink-0" quality={100} src={moppia2} alt="" />
                   </article>
                 </article>
               </article>
@@ -233,15 +233,15 @@ export default function Home() {
               {/* Jogovest */}
               <article className="rounded-[12px] bg-[#F5F6F6] p-8 gap-12 lg:p-0 lg:pl-14 lg:pr-[94px] grid lg:grid-cols-[auto_1fr] lg:gap-x-[120px]">
                 {/* LEFT */}
-                <article className="order-2 lg:order-1 flex w-full gap-x-6">
+                <article className="order-2 lg:order-1 flex justify-center lg:justify-center w-full gap-x-6">
                   {/* 234.358px */}
                   <article className="">
-                    <Image className="w-[234.358px] h-auto hidden lg:block" src={jogovest1} alt="" />
-                    <Image className="w-[137.679px] h-auto block lg:hidden" quality={100} src={mjogovest1} alt="" />
+                    <Image className="max-w-[234.358px] w-full h-auto hidden lg:block" src={jogovest1} alt="" />
+                    <Image className="max-w-[137.679px] w-full h-auto block lg:hidden shrink-0" src={mjogovest1} alt="" />
                   </article>
                   <article className="pt-[90px] lg:pt-0 self-end">
-                    <Image className="w-[234.358px] h-auto hidden lg:block" src={jogovest2} alt="" />
-                    <Image className="w-[137.679px] h-auto block lg:hidden" quality={100} src={mjogovest2} alt="" />
+                    <Image className="max-w-[234.358px] w-full h-auto hidden lg:block" src={jogovest2} alt="" />
+                    <Image className="max-w-[137.679px] w-full h-auto block lg:hidden shrink-0" src={mjogovest2} alt="" />
                   </article>
                 </article>
 
@@ -267,9 +267,9 @@ export default function Home() {
               </article>
 
               {/* Tasty & Yummy */}
-              <article className="rounded-[12px] bg-[#FEF6EE] pl-14 pr-7 grid lg:grid-cols-[1fr_auto] gap-x-8">
+              <article className="rounded-[12px] bg-[#FEF6EE] gap-12 p-8 lg:p-0 lg:pl-14 lg:pr-7 grid lg:grid-cols-[1fr_auto] lg:gap-x-8">
                 {/* LEFT */}
-                <article className="flex flex-col gap-10 pt-[56px] pb-[128px]">
+                <article className="flex flex-col gap-6 lg:gap-10 lg:pt-[56px] lg:pb-[128px]">
                   <article className="flex flex-col gap-2 lg:gap-6">
                     <h3 className="cod-grap-800 text-[24px] lg:text-[40px] font-semibold">
                       Tasty & Yummy
@@ -294,7 +294,7 @@ export default function Home() {
                 <article className="flex w-full gap-x-6 items-center">
                   {/* 234.358px */}
                   <article className="">
-                    <Image className="" src={tastyandyummy} alt="" />
+                    <Image className="w-[543px] h-auto" src={tastyandyummy} alt="" />
                   </article>
                 </article>
               </article>
