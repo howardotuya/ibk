@@ -242,7 +242,10 @@ export default function Home() {
           <article>
             <h2 className="text-[56px] font-medium leading-[100%] tracking-[-2.24px] text-white">I have got great reviews</h2>
           </article>
+
           {/* DIVIDER */}
+
+
           {/* BOTTOM */}
           <article></article>
         </Container>
