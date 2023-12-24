@@ -1,33 +1,80 @@
+"use client"
 import Link from "next/link";
 import Container from "../container/container";
 import Button from "../button/button";
+import chevron from "@/public/images/SVG/chevron.svg";
+import Image from "next/image";
+import Divider from "../divider/divider";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [isActive, setIsActive] = useState(false);
+
   return (
     <>
       {/* POPUP NAVBAR */}
-      <article className="z-[99999] ">
-        {/* CANCEL */}
-        <article>
-          <article className="bg-[#FEF6EE] p-2 rounded-[8px]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M6.758 17.2431L12.001 12.0001L17.244 17.2431M17.244 6.75708L12 12.0001L6.758 6.75708"
-                stroke="#DC511A"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+      <article className={`${isActive ? 'block' : 'hidden'} z-[99999] h-screen absolute top-0 bottom-0 left-0 right-0 bg-white`}>
+        <article className="p-5 flex flex-col gap-[52px]">
+          {/* CANCEL */}
+          <article className="inline-flex self-end">
+            <article onClick={() => setIsActive(!isActive)} className="bg-[#FEF6EE] p-2 rounded-[8px]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M6.758 17.2431L12.001 12.0001L17.244 17.2431M17.244 6.75708L12 12.0001L6.758 6.75708"
+                  stroke="#DC511A"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </article>
           </article>
+
+          {/* CONTENT -  3 in 1 */}
+          <article className="flex flex-col gap-5">
+            {/* ABOUT */}
+            <Link className="flex flex-col gap-2" href={"/"}>
+              {/* TEXT PLUS CHEVRON ICON */}
+              <article className="flex items-end justify-between">
+                <p className="text-[14px]">About</p>
+                <Image src={chevron} alt="" />
+              </article>
+              {/* DIVIDER */}
+              <Divider bgColor={"bg-[#E5E8E8]"} />
+            </Link>
+
+            {/* Works */}
+            <Link className="flex flex-col gap-2" href={"/"}>
+              {/* TEXT PLUS CHEVRON ICON */}
+              <article className="flex items-end justify-between">
+                <p className="text-[14px]">Works</p>
+                <Image src={chevron} alt="" />
+              </article>
+              {/* DIVIDER */}
+              <Divider bgColor={"bg-[#E5E8E8]"} />
+            </Link>
+
+            {/* Resume */}
+            <Link className="flex flex-col gap-2" href={"/"}>
+              {/* TEXT PLUS CHEVRON ICON */}
+              <article className="flex items-end justify-between">
+                <p className="text-[14px]">Resume</p>
+                <Image src={chevron} alt="" />
+              </article>
+              {/* DIVIDER */}
+              <Divider bgColor={"bg-[#E5E8E8]"} />
+            </Link>
+          </article>
+
+          {/* Button */}
+          <Button route={"/"} text={"Get in touch"} additionalStyle={"font-semibold"} /> 
         </article>
-        {/* CONTENT */}
       </article>
 
       {/* NAVBAR */}
@@ -74,7 +121,7 @@ export default function Navbar() {
           </article>
 
           {/* HAMBURGER MENU - MOBILE ONLY */}
-          <article className="block lg:hidden p-2 rounded-[8px] bg-[#FEF6EE]">
+          <article onClick={() => setIsActive(!isActive)} className="block lg:hidden p-2 rounded-[8px] bg-[#FEF6EE]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

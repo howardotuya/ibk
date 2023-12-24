@@ -22,7 +22,7 @@ export default function Testimonials() {
               skills. Her creativity and user-centric approach consistently
               result in visually stunning and intuitive interfaces. A true team
               player with a keen eye for detail, Abejide is a valuable asset to
-              any design project. It's been a pleasure working with her, and I'm
+              any design project. It&apos;s been a pleasure working with her, and I&apos;m
               confident she will continue to impress in her future endeavors.{" "}
             </p>
 
