@@ -93,7 +93,7 @@ export default function Navbar() {
         <Container>
           <header className="flex items-center justify-between px-5 lg:px-10 py-3 bg-white">
             {/* LOGO */}
-            <div>
+            <Link href="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="72"
@@ -112,7 +112,7 @@ export default function Navbar() {
                 />
                 <path d="M16.65 15.75V37.8H13.5V15.75H16.65Z" fill="#121212" />
               </svg>
-            </div>
+            </Link>
 
             {/* LINKS */}
             <nav className="hidden lg:flex items-center gap-10 cod-gray-950">
