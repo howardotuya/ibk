@@ -33,6 +33,7 @@ export default function Home() {
               <Image
                 className="block lg:hidden max-w-[242.985px] w-full h-auto shrink-0"
                 src={mabout1}
+                placeholder="blur"
                 alt=""
               />
 
@@ -40,6 +41,7 @@ export default function Home() {
               <Image
                 className="hidden lg:block w-full min-w-[546px] max-w-[546px] h-auto shrink-0"
                 src={about1}
+                placeholder="blur"
                 alt=""
               />
             </article>
@@ -375,6 +377,7 @@ export default function Home() {
                   <Image
                     className=" object-cover object-center"
                     src={gallery1}
+                    placeholder="blur"
                     alt=""
                     fill
                   />
@@ -392,6 +395,7 @@ export default function Home() {
                     className=" object-cover object-center"
                     src={gallery2}
                     alt=""
+                    placeholder="blur"
                     fill
                   />
                 </article>
@@ -410,6 +414,7 @@ export default function Home() {
                   <Image
                     className=" object-cover object-center"
                     src={gallery3}
+                    placeholder="blur"
                     alt=""
                     fill
                   />
@@ -426,6 +431,7 @@ export default function Home() {
                   <Image
                     className=" object-cover object-center"
                     src={gallery4}
+                    placeholder="blur"
                     alt=""
                     fill
                   />
