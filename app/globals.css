@@ -50,3 +50,7 @@ body {
 .desktopHidden {
   display: none !important;
 }
+
+.gr-au {
+  grid-auto-rows: auto;
+}

@@ -8,6 +8,10 @@ import Button from "@/components/button/button";
 // IMAGE IMPORTATION
 import about1 from "@/public/images/PNG/about1.png";
 import mabout1 from "@/public/images/PNG/mabout1.png";
+import gallery1 from "@/public/images/PNG/gallery1.png";
+import gallery2 from "@/public/images/PNG/gallery2.png";
+import gallery3 from "@/public/images/PNG/gallery3.png";
+import gallery4 from "@/public/images/PNG/gallery4.png";
 import Footer from "@/components/footer/footer";
 
 export default function Home() {
@@ -328,6 +332,85 @@ export default function Home() {
                     <p>Road to 30</p>
                     <p>Not Just Design</p>
                   </article>
+                </article>
+              </article>
+            </article>
+          </section>
+
+          {/* GALLERY */}
+          <section className="bg-[#0C0D0D] py-20 px-[120px] flex flex-col gap-10">
+            {/* TEXT */}
+            <h2 className="text-[48px] font-medium tracking-[-1.92px] text-white text-center">
+              Some of my Favorite moments
+            </h2>
+
+            {/* IMAGERY GRID */}
+            <article className="flex gap-5 justify-start items-start w-full">
+              <article className="flex flex-col gap-5 w-full flex-1">
+                {/* 1 grid */}
+                <article className="relative h-[504px] flex flex-col justify-end items-end">
+                  {/* WHITE BG + TEXT */}
+                  <article className="bg-white relative z-[1] w-full py-6 flex justify-center items-center text-[24px]">
+                    <p>At Landmark Beach, Lagos</p>
+                  </article>
+
+                  {/* IMAGE BG */}
+                  <Image
+                    className=" object-cover object-center"
+                    src={gallery1}
+                    alt=""
+                    fill
+                  />
+                </article>
+
+                {/* 2 grid */}
+                <article className="relative h-[743px] flex flex-col justify-end items-end">
+                  {/* WHITE BG + TEXT */}
+                  <article className="bg-white relative z-[1] w-full py-6 flex justify-center items-center text-[24px]">
+                    <p>At Landmark Beach, Lagos</p>
+                  </article>
+
+                  {/* IMAGE BG */}
+                  <Image
+                    className=" object-cover object-center"
+                    src={gallery2}
+                    alt=""
+                    fill
+                  />
+                </article>
+              </article>
+
+              <article className="flex flex-col gap-5 w-full flex-1">
+                {/* 3 grid */}
+                <article className="relative h-[743px] flex flex-col justify-end items-end">
+                  {/* WHITE BG + TEXT */}
+                  <article className="bg-white relative z-[1] w-full py-6 flex justify-center items-center text-[24px]">
+                    <p>At Landmark Beach, Lagos</p>
+                  </article>
+
+                  {/* IMAGE BG */}
+                  <Image
+                    className=" object-cover object-center"
+                    src={gallery3}
+                    alt=""
+                    fill
+                  />
+                </article>
+
+                {/* 3 grid */}
+                <article className="relative h-[504px] flex flex-col justify-end items-end">
+                  {/* WHITE BG + TEXT */}
+                  <article className="bg-white relative z-[1] w-full py-6 flex justify-center items-center text-[24px]">
+                    <p>At Landmark Beach, Lagos</p>
+                  </article>
+
+                  {/* IMAGE BG */}
+                  <Image
+                    className=" object-cover object-center"
+                    src={gallery4}
+                    alt=""
+                    fill
+                  />
                 </article>
               </article>
             </article>
