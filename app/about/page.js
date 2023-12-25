@@ -57,12 +57,16 @@ export default function Home() {
                 working at Prifina. Prior to that, I worked at Oppia Foundation,
                 a platform for educating less privilege children where I
                 contributed to the implementation of the voice and language
-                feature which resulted into 10,000 more users across Africa. My
-                favorite part of being a designer is the ability to understand
-                user&apos;s needs, solve their problems and also ensure the
-                company is making good business decisions. Asides from being a
-                designer, I have also mentored over 100 people who are
-                passionate about design.{" "}
+                feature which resulted into 10,000 more users across Africa.{" "}
+                <span>
+                  <br />
+                  <br />
+                </span>
+                My favorite part of being a designer is the ability to
+                understand user&apos;s needs, solve their problems and also
+                ensure the company is making good business decisions. Asides
+                from being a designer, I have also mentored over 100 people who
+                are passionate about design.{" "}
               </p>
             </article>
           </section>
