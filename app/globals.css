@@ -47,10 +47,8 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.desktopHidden {
-  display: none !important;
-}
-
-.gr-au {
-  grid-auto-rows: auto;
+@media only screen and (min-width: 1023px) {
+  .desktopHidden {
+    display: none !important;
+  }
 }
