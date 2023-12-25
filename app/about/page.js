@@ -397,7 +397,7 @@ export default function Home() {
                   {/* IMAGE BG */}
                   <Image
                     className=" object-cover object-center"
-                    src={gallery2}
+                    src={gallery3}
                     alt=""
                     placeholder="blur"
                     fill
@@ -417,7 +417,7 @@ export default function Home() {
                   {/* IMAGE BG */}
                   <Image
                     className=" object-cover object-center"
-                    src={gallery3}
+                    src={gallery2}
                     placeholder="blur"
                     alt=""
                     fill
