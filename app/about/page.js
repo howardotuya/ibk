@@ -26,21 +26,31 @@ export default function Home() {
       <Container>
         <main>
           {/* HERO SECTION */}
-          <section className="grid grid-cols-[auto_1fr] gap-4 pr-[120px]">
+          <section className="grid items-center lg:grid-cols-[auto_1fr] gap-4 lg:pr-[120px]">
             {/* IMAGE - LEFT */}
-            <article>
+            <article className="flex justify-center items-center">
+              {/* MOBILE */}
               <Image
-                className="w-full max-w-[546px] h-auto"
+                className="block lg:hidden max-w-[242.985px] w-full h-auto shrink-0"
+                src={mabout1}
+                alt=""
+              />
+
+              {/* DESKTOP */}
+              <Image
+                className="hidden lg:block w-full min-w-[546px] max-w-[546px] h-auto shrink-0"
                 src={about1}
                 alt=""
               />
             </article>
+
             {/* TEXT - RIGHT */}
-            <article className="pt-[148px] flex flex-col gap-6">
-              <h1 className="text-[72px] font-medium leading-[100%] tracking-[-2.88px]">
+            <article className="pt-4 px-5 lg:px-0 lg:pt-[148px] pb-14 lg:pb-0 flex flex-col gap-6">
+              <h1 className="text-[32px] lg:text-[72px] font-medium leading-[100%] tracking-[-1.28px] lg:tracking-[-2.88px]">
                 About IBK
               </h1>
-              <p className="cod-gray-700 text-justify text-[18px] leading-[140%]">
+
+              <p className="cod-gray-700 text-justify text-[14px] lg:text-[18px] leading-[120%] lg:leading-[140%]">
                 My name is Ibukun Abejide, I am a Product Designer currently
                 working at Prifina. Prior to that, I worked at Oppia Foundation,
                 a platform for educating less privilege children where I
@@ -56,15 +66,15 @@ export default function Home() {
           </section>
 
           {/* GRID - 4 in 1 */}
-          <section className="py-20 grid grid-cols-2 px-[120px] gap-5">
+          <section className="pt-5 pb-14 px-5 lg:py-20 grid lg:grid-cols-2 lg:px-[120px] gap-5">
             {/* 1 */}
-            <article className="p-10 bg-[#EFFEF3] rounded-[12px] flex flex-col gap-6">
+            <article className="p-10 bg-[#EFFEF3] rounded-[12px] flex flex-col gap-4 lg:gap-6">
               {/* header */}
-              <h4 className="max-w-[329px] text-[32px] font-semibold">
+              <h4 className="max-w-[329px] text-[24px] lg:text-[32px] leading-normal font-semibold">
                 My journey into the creative space
               </h4>
               {/* SUB TEXT */}
-              <article className="cod-gray-700 text-[16px] leading-[140%]">
+              <article className="cod-gray-700 text-[14px] lg:text-[16px] leading-[140%]">
                 <p>
                   Before I became a Product Designer, I was a Customer
                   Representative officer at the bank where I assisted a lot of
@@ -79,13 +89,13 @@ export default function Home() {
             </article>
 
             {/* 2 */}
-            <article className="p-10 bg-[#EFFEF3] rounded-[12px] flex flex-col gap-6">
+            <article className="p-10 bg-[#EFFEF3] rounded-[12px] flex flex-col gap-4 lg:gap-6">
               {/* header */}
-              <h4 className="text-[32px] font-semibold">
+              <h4 className="text-[24px] lg:text-[32px] leading-normal font-semibold">
                 My Achievements so far..
               </h4>
               {/* SUB TEXT */}
-              <article className="cod-gray-700 text-[16px] leading-[140%]">
+              <article className="cod-gray-700 text-[14px] lg:text-[16px] leading-[140%]">
                 <p>
                   1. Helped more than 100 people transition into Product Design.
                 </p>
@@ -104,13 +114,13 @@ export default function Home() {
             </article>
 
             {/* 3 */}
-            <article className="p-10 bg-[#EFFEF3] rounded-[12px] flex flex-col gap-6">
+            <article className="p-10 bg-[#EFFEF3] rounded-[12px] flex flex-col gap-4 lg:gap-6">
               {/* header */}
-              <h4 className="text-[32px] font-semibold">
+              <h4 className="text-[24px] lg:text-[32px] leading-normal font-semibold">
                 Reasons why you should work with me
               </h4>
               {/* SUB TEXT */}
-              <article className="cod-gray-700 text-[16px] leading-[140%]">
+              <article className="cod-gray-700 text-[14px] lg:text-[16px] leading-[140%]">
                 <p>
                   1. Over the years, I have demonstrated team spirit and I have
                   successfully collaborated with members on the team.
@@ -126,10 +136,12 @@ export default function Home() {
             {/* 4 */}
             <article className="p-10 bg-[#EFFEF3] rounded-[12px] flex flex-col gap-4">
               {/* HEADING */}
-              <h4 className="text-[32px] font-semibold">Favorites</h4>
+              <h4 className="text-[24px] lg:text-[32px] leading-normal font-semibold">
+                Favorites
+              </h4>
 
               {/* CONTENTS */}
-              <article className="cod-gray-700 text-[16px] leading-[140%] flex flex-col gap-8">
+              <article className="cod-gray-700 text-[14px] lg:text-[16px] leading-[140%] flex flex-col gap-8">
                 {/* 4.1 - BOOKS */}
                 <article className="flex flex-col gap-4">
                   {/* BOOKS - SUBHEADING */}
@@ -244,11 +256,11 @@ export default function Home() {
                       </svg>
                     </article>
                     {/* BOOKS TEXT */}
-                    <h6>Books</h6>
+                    <h6 className="font-semibold text-[#0C0D0D]">Books</h6>
                   </article>
 
                   {/* BOOKS - LIST OF TEXTS */}
-                  <article className="flex flex-col gap-4">
+                  <article className="flex flex-col gap-4 text-[14px] lg:text-[16px]">
                     <p>Steal like an artist</p>
                     <p>How to sell yourself</p>
                     <p>The indispensable Designer </p>
@@ -323,11 +335,11 @@ export default function Home() {
                       </svg>
                     </article>
                     {/* PODCAST TEXT */}
-                    <h6>Podcast</h6>
+                    <h6 className="font-semibold text-[#0C0D0D]">Podcast</h6>
                   </article>
 
                   {/* BOOKS - LIST OF TEXTS */}
-                  <article className="flex flex-col gap-4">
+                  <article className="flex flex-col gap-4 text-[14px] lg:text-[16px]">
                     <p>I said what I said</p>
                     <p>Road to 30</p>
                     <p>Not Just Design</p>
@@ -336,21 +348,26 @@ export default function Home() {
               </article>
             </article>
           </section>
+        </main>
+      </Container>
 
-          {/* GALLERY */}
-          <section className="bg-[#0C0D0D] py-20 px-[120px] flex flex-col gap-10">
+      {/* GALLERY */}
+      <div className="bg-[#0C0D0D]">
+        <Container>
+          <section className="bg-[#0C0D0D] pt-10 pb-14 lg:py-20 px-5 lg:px-[120px] flex flex-col items-center lg:items-start gap-5 lg:gap-10">
             {/* TEXT */}
-            <h2 className="text-[48px] font-medium tracking-[-1.92px] text-white text-center">
+            <h2 className="text-[24px] lg:text-[48px] font-medium lg:tracking-[-1.92px] text-white text-center">
               Some of my Favorite moments
             </h2>
 
             {/* IMAGERY GRID */}
-            <article className="flex gap-5 justify-start items-start w-full">
-              <article className="flex flex-col gap-5 w-full flex-1">
+            <article className="max-w-[500px] lg:max-w-none flex gap-2 lg:gap-5 justify-start items-start w-full">
+              {/* 1 - 2 */}
+              <article className="max-w-[168px] lg:max-w-none flex flex-col gap-2 lg:gap-5 w-full flex-1">
                 {/* 1 grid */}
-                <article className="relative h-[504px] flex flex-col justify-end items-end">
+                <article className="relative rounded-[4px] overflow-hidden h-[174px] lg:h-[504px] flex flex-col justify-end items-end">
                   {/* WHITE BG + TEXT */}
-                  <article className="bg-white relative z-[1] w-full py-6 flex justify-center items-center text-[24px]">
+                  <article className="bg-white relative z-[1] w-full py-2 lg:py-6 flex justify-center items-center text-[8px] lg:text-[24px]">
                     <p>At Landmark Beach, Lagos</p>
                   </article>
 
@@ -364,10 +381,10 @@ export default function Home() {
                 </article>
 
                 {/* 2 grid */}
-                <article className="relative h-[743px] flex flex-col justify-end items-end">
+                <article className="relative rounded-[4px] overflow-hidden h-[208px] lg:h-[743px] flex flex-col justify-end items-end">
                   {/* WHITE BG + TEXT */}
-                  <article className="bg-white relative z-[1] w-full py-6 flex justify-center items-center text-[24px]">
-                    <p>At Landmark Beach, Lagos</p>
+                  <article className="bg-white relative z-[1] w-full py-2 lg:py-6 flex justify-center items-center text-[8px] lg:text-[24px]">
+                    <p>At Zuma Rock, Abuja</p>
                   </article>
 
                   {/* IMAGE BG */}
@@ -380,12 +397,13 @@ export default function Home() {
                 </article>
               </article>
 
-              <article className="flex flex-col gap-5 w-full flex-1">
+              {/* 3 - 4 */}
+              <article className="flex flex-col gap-2 lg:gap-5 w-full flex-1">
                 {/* 3 grid */}
-                <article className="relative h-[743px] flex flex-col justify-end items-end">
+                <article className="relative rounded-[4px] overflow-hidden h-[243px] lg:h-[743px] flex flex-col justify-end items-end">
                   {/* WHITE BG + TEXT */}
-                  <article className="bg-white relative z-[1] w-full py-6 flex justify-center items-center text-[24px]">
-                    <p>At Landmark Beach, Lagos</p>
+                  <article className="bg-white relative z-[1] w-full py-2 lg:py-6 flex justify-center items-center text-[8px] lg:text-[24px]">
+                    <p>At a wedding party in Abuja</p>
                   </article>
 
                   {/* IMAGE BG */}
@@ -397,11 +415,11 @@ export default function Home() {
                   />
                 </article>
 
-                {/* 3 grid */}
-                <article className="relative h-[504px] flex flex-col justify-end items-end">
+                {/* 4 grid */}
+                <article className="relative rounded-[4px] overflow-hidden h-[167px] lg:h-[504px] flex flex-col justify-end items-end">
                   {/* WHITE BG + TEXT */}
-                  <article className="bg-white relative z-[1] w-full py-6 flex justify-center items-center text-[24px]">
-                    <p>At Landmark Beach, Lagos</p>
+                  <article className="bg-white relative z-[1] w-full py-2 lg:py-6 flex justify-center items-center text-[8px] lg:text-[24px]">
+                    <p>Family Dinner</p>
                   </article>
 
                   {/* IMAGE BG */}
@@ -415,8 +433,8 @@ export default function Home() {
               </article>
             </article>
           </section>
-        </main>
-      </Container>
+        </Container>
+      </div>
 
       {/* FOOTER */}
       <Footer />
