@@ -6,7 +6,7 @@ import Testimonials from "../testimonials/testimonials";
 export default function Footer() {
   return (
     <>
-      <footer className="bg-[#014921] py-10 lg:py-20 px-5 lg:px-[120px] text-white relative z-[9999]">
+      <footer className="bg-[#014921] py-10 lg:py-20 text-white relative z-[9999]">
         <Container>
           {/* TOP */}
           <article className="flex flex-col gap-6 lg:gap-10">
