@@ -89,9 +89,9 @@ export default function Navbar() {
       </article>
 
       {/* NAVBAR */}
-      <div className="bg-white">
+      <div className="bg-white px-5 xl:px-10">
         <Container>
-          <header className="flex items-center justify-between px-5 lg:px-10 py-3 bg-white">
+          <header className="flex items-center justify-between py-3 bg-white">
             {/* LOGO */}
             <Link href="/">
               <svg
