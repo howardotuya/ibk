@@ -8,7 +8,7 @@ export default function SubFooter({ first, link }) {
     <>
       <Link href={link} className="bg-[#7BFAAD] block">
         <Container>
-          <article className="py-6 px-5 lg:py-10 lg:px-[120px] flex justify-between items-center">
+          <article className="py-6 lg:py-10 flex justify-between items-center">
             {/* NEXT CASE STUDY */}
             <h3 className="text-[20px] lg:text-[40px] font-medium tracking-[-0.2px] lg:tracking-[-0.4px]">
               NEXT CASE STUDY

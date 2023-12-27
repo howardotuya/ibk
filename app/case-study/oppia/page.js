@@ -35,7 +35,7 @@ export default function Oppia() {
       {/* MAIN CONTENT */}
       <main>
         {/* HERO SECTION */}
-        <section className="bg-[#EFFEF3]">
+        <section className="bg-[#EFFEF3] px-5 xl:px-0">
           <Container>
             <article className="pt-10 flex justify-center items-end gap-4 lg:gap-8">
               {/* FIRST IMAGE */}
@@ -55,10 +55,10 @@ export default function Oppia() {
         </section>
 
         {/* REST OF THE BODY */}
-        <section className="px-5 lg:pl-[120px] ">
+        <section className="px-5 xl:px-0">
           <Container>
             {/* HEADING + Project OVERVIEW */}
-            <section className="lg:pr-[120px] pt-10 lg:pt-20 pb-5 lg:pb-11 flex flex-col gap-4 lg:gap-10">
+            <section className="pt-10 lg:pt-20 pb-5 lg:pb-11 flex flex-col gap-4 lg:gap-10">
               <h1 className="text-[32px] lg:text-[72px] font-medium leading-[120%] lg:leading-[100%] tracking-[-1.28px] lg:tracking-[-2.88px]">
                 Oppia Beta Android App
               </h1>
@@ -79,7 +79,7 @@ export default function Oppia() {
             </section>
 
             {/* PROBLEM STATEMENT + GOAL + IMAGE */}
-            <article className="lg:pr-[120px] pt-8 pb-5 lg:py-0 grid lg:grid-cols-[1fr_auto] items-center gap-4 lg:gap-6 ">
+            <article className="pt-8 pb-5 lg:py-0 grid lg:grid-cols-[1fr_auto] items-center gap-4 lg:gap-6 ">
               {/* PROBLEM STATEMENT AND GOAL */}
               <article className="flex flex-col gap-4 lg:gap-10">
                 {/* PROBLEM STATEMENT */}
@@ -115,7 +115,7 @@ export default function Oppia() {
             </article>
 
             {/* RESEARCH AND ANALYSIS */}
-            <article className="lg:pr-[120px] pt-8 pb-5 flex flex-col gap-5 lg:gap-6 lg:py-10">
+            <article className="pt-8 pb-5 flex flex-col gap-5 lg:gap-6 lg:py-10">
               {/* RAA 1.1 */}
               <article className="flex flex-col gap-4 lg:gap-6">
                 <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
@@ -183,18 +183,18 @@ export default function Oppia() {
               </article>
 
               {/* 1.2 */}
-              <article className="relative max-w-[420px] xl:max-w-none">
-                <p className="text-[14px] xl:text-[24px] leading-[140%] font-semibold italic">
+              <article className="relative max-w-[420px] mlg:max-w-none">
+                <p className="text-[14px] mlg:text-[24px] leading-[140%] font-semibold italic">
                   How Might We{" "}
                   <span className="bg-[#EE813A] not-italic relative">
                     make the Oppia android mobile app inclusive
                     <Image
-                      className="hidden xl:block absolute top-[-51px] left-[221px]"
+                      className="hidden mlg:block absolute top-[-51px] left-[221px]"
                       src={hmw4}
                       alt=""
                     />
                     <Image
-                      className="block xl:hidden absolute top-[-33px] left-[61px]"
+                      className="block mlg:hidden absolute top-[-33px] left-[61px]"
                       src={what}
                       alt=""
                     />
@@ -203,12 +203,12 @@ export default function Oppia() {
                   <span className="bg-[#3AEE81] not-italic relative">
                     underprivileged children
                     <Image
-                      className="hidden xl:block absolute top-[-51px] right-[134px]"
+                      className="hidden mlg:block absolute top-[-51px] right-[134px]"
                       src={hmw3}
                       alt=""
                     />
                     <Image
-                      className="block xl:hidden absolute top-[14px] right-[4px]"
+                      className="block mlg:hidden absolute top-[14px] right-[4px]"
                       src={who}
                       alt=""
                     />
@@ -216,12 +216,12 @@ export default function Oppia() {
                   <span className="relative">
                     globally in
                     <Image
-                      className="hidden xl:block absolute top-[-57px] right-0"
+                      className="hidden mlg:block absolute top-[-57px] right-0"
                       src={hmw2}
                       alt=""
                     />
                     <Image
-                      className="block xl:hidden absolute top-[16px] right-0"
+                      className="block mlg:hidden absolute top-[16px] right-0"
                       src={where}
                       alt=""
                     />
@@ -231,19 +231,19 @@ export default function Oppia() {
 
                 {/* IMAGE - iconoir:path-arrow */}
                 <Image
-                  className="w-6 h-6 xl:w-auto xl:h-auto absolute top-[-34px] xl:top-[-64px] left-[67px] xl:left-[172px]"
+                  className="w-6 h-6 mlg:w-auto mlg:h-auto absolute top-[-34px] mlg:top-[-64px] left-[67px] mlg:left-[172px]"
                   src={hmw5}
                   alt=""
                 />
 
                 {/* WHO */}
                 <Image
-                  className="block xl:hidden absolute bottom-[-36px] left-[70px]"
+                  className="block mlg:hidden absolute bottom-[-36px] left-[70px]"
                   src={why}
                   alt=""
                 />
                 <Image
-                  className="hidden xl:block absolute bottom-[-88px] left-[170px]"
+                  className="hidden mlg:block absolute bottom-[-88px] left-[170px]"
                   src={hmw1}
                   alt=""
                 />
@@ -297,7 +297,7 @@ export default function Oppia() {
             </article>
 
             {/* USER TESTING */}
-            <article className="pt-8 pb-5 lg:py-10 lg:pr-[120px]">
+            <article className="pt-8 pb-5 lg:py-10 ">
               {/* HEADING + TEXT */}
               <article className="flex flex-col gap-4 lg:gap-6">
                 <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
@@ -332,7 +332,7 @@ export default function Oppia() {
             </article>
 
             {/* Product Metrics */}
-            <article className="max-w-[1077px] pt-8 pb-5 lg:py-10 lg:pr-[120px]">
+            <article className="max-w-[1077px] pt-8 pb-5 lg:py-10 ">
               {/* HEADING + TEXT */}
               <article className="flex flex-col gap-4 lg:gap-6">
                 <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
@@ -347,7 +347,7 @@ export default function Oppia() {
             </article>
 
             {/* What Comes Next? */}
-            <article className="max-w-[1077px] pt-8 pb-5 lg:py-10 lg:pr-[120px]">
+            <article className="max-w-[1077px] pt-8 pb-5 lg:py-10">
               {/* HEADING + TEXT */}
               <article className="flex flex-col gap-4 lg:gap-6">
                 <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
