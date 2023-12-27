@@ -57,7 +57,7 @@ export default function Navbar() {
             </Link>
 
             {/* Works */}
-            <Link className="flex flex-col gap-2" href={"/case-study/oppia"}>
+            <Link className="flex flex-col gap-2" href={""}>
               {/* TEXT PLUS CHEVRON ICON */}
               <article className="flex items-end justify-between">
                 <p className="text-[14px]">Works</p>
@@ -119,7 +119,7 @@ export default function Navbar() {
               <Link className="p-2" href={"/about"}>
                 About
               </Link>
-              <Link className="p-2" href={"/case-study/oppia"}>
+              <Link className="p-2" href={""}>
                 Works
               </Link>
               <Link className="p-2" href={""}>

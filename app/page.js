@@ -214,7 +214,7 @@ export default function Home() {
                   <article className="flex">
                     <Button
                       text={"Read case study"}
-                      route={"Read case study"}
+                      route={"/case-study/oppia"}
                     />
                   </article>
                 </article>
