@@ -38,15 +38,15 @@ export default function Jogovest() {
             <article className="pt-10 flex justify-center items-end gap-4 lg:gap-8">
               {/* FIRST IMAGE */}
               <article className="w-[90px] lg:w-[173px] h-auto">
-                <Image src={jogovest2} alt="" />
+                <Image src={jogovest2} alt="" placeholder="blur" />
               </article>
               {/* SECOND IMAGE */}
               <article className="w-[90px] lg:w-[173px] h-auto">
-                <Image src={jogovest1} alt="" />
+                <Image src={jogovest1} alt="" placeholder="blur" />
               </article>
               {/* THIRD IMAGE */}
               <article className="w-[90px] lg:w-[173px] h-auto">
-                <Image src={jogovest3} alt="" />
+                <Image src={jogovest3} alt="" placeholder="blur" />
               </article>
             </article>
           </Container>
@@ -106,7 +106,7 @@ export default function Jogovest() {
 
               {/* IMAGE */}
               <article className="max-w-[569px] w-full h-auto shrink-0 flex-0 rounded-[4px] overflow-hidden">
-                <Image src={jogovest4} alt="" />
+                <Image src={jogovest4} alt="" placeholder="blur" />
               </article>
             </article>
 
@@ -212,11 +212,15 @@ export default function Jogovest() {
                 <article className="flex items-center gap-x-2">
                   {/* Image */}
                   <article className="shrink-0 w-[137px] lg:w-[229px] h-auto ">
-                    <Image src={jogo1} alt="" />
+                    <Image src={jogo1} alt="" placeholder="blur" />
                   </article>
                   {/* Seperator */}
                   <article className="shrink-0">
-                    <Image className="hidden lg:block" src={arrow} alt="" />
+                    <Image
+                      className="hidden lg:block"
+                      src={arrow}
+                      alt=""
+                    />
                     <Image
                       className="block lg:hidden"
                       src={smallArrow}
@@ -260,7 +264,7 @@ export default function Jogovest() {
 
                   {/* Image */}
                   <article className="shrink-0 w-[137px] lg:w-[229px] h-auto ">
-                    <Image src={jogo2} alt="" />
+                    <Image src={jogo2} alt="" placeholder="blur" />
                   </article>
                 </article>
 
@@ -316,7 +320,7 @@ export default function Jogovest() {
 
                   {/* Image */}
                   <article className="shrink-0 w-[137px] lg:w-[229px] h-auto ">
-                    <Image src={jogo4} alt="" />
+                    <Image src={jogo4} alt="" placeholder="blur" />
                   </article>
                 </article>
               </article>
