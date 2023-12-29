@@ -8,19 +8,20 @@ import tay2 from "@/public/images/PNG/tay/tay2.png";
 import tay3 from "@/public/images/PNG/tay/pns.png";
 import tay4 from "@/public/images/PNG/tay/pns.svg";
 
-import jogo1 from "@/public/images/PNG/jogovest/jogo1.png";
-import jogo2 from "@/public/images/PNG/jogovest/jogo2.png";
-import jogo3 from "@/public/images/PNG/jogovest/jogo3.png";
-import jogo4 from "@/public/images/PNG/jogovest/jogo4.png";
-
-import arrow from "@/public/images/SVG/arrow.svg";
-import smallArrow from "@/public/images/SVG/smallArrow.svg";
+import ds1 from "@/public/images/PNG/tay/ds1.png";
+import ds2 from "@/public/images/PNG/tay/ds2.png";
+import ds3 from "@/public/images/PNG/tay/ds3.png";
+import ds4 from "@/public/images/PNG/tay/ds4.png";
+import ds5 from "@/public/images/PNG/tay/ds5.png";
+import ds6 from "@/public/images/PNG/tay/ds6.png";
+import ds7 from "@/public/images/PNG/tay/ds7.png";
 
 import Footer from "@/components/footer/footer";
 import SubFooter from "@/components/footer/subFooter";
 
 import quote1 from "@/public/images/SVG/quote1.svg";
 import quote2 from "@/public/images/SVG/quote2.svg";
+import Link from "next/link";
 
 export default function TAY() {
   return (
@@ -128,7 +129,7 @@ export default function TAY() {
             </article>
 
             {/* Research Methodology and Findings */}
-            <article className="flex flex-col gap-8">
+            <article className="pt-8 pb-5 lg:py-10 flex flex-col gap-7 lg:gap-8">
               {/* RM 1.1 */}
               <article className="flex flex-col gap-4 lg:gap-6">
                 <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
@@ -141,14 +142,74 @@ export default function TAY() {
 
               {/* RM 1.2 */}
               <article>
-                <ul className="text-[18px] leading-[140%] flex flex-col gap-8 list-decimal pl-6">
-                  <li>I conducted in-depth interviews with potential users to know their pain points, needs, and preferences.</li>
-                  <li>I conducted a competitor analysis, I wanted to see how the website could stand out from its competitors <Link className="text-[#DC511A]" href="">(YouTube, Instagram, Cookpad.com, Allrecipes.com)</Link> and gain more traction in the market. I noticed that some websites have issues with navigation, some have not-so-good UI and some have too many ads popping up and there is no place to shop for ingredients on these websites.</li>
-                  <li>I conducted A/B testing after designing two variations of the landing page and decided to remove categories from the top navigation to prevent creating more screens because of time constraints. I also had to change the image on the hero section to something more fun and creative.</li>
-                  <li>I had to remove this navigation because it won't look nice on the responsiveness and one of the potential users told me that it is better to use Google and YouTube video which is free, and post the video on the site's YouTube channel. This way the developer can embed the video link into the website for free. Google API enables the video to play on the website and it also contains the share, save, like, and download buttons.</li>
+                <ul className="text-[14px] lg:text-[18px] leading-[140%] flex flex-col gap-6 lg:gap-8 list-decimal pl-4 lg:pl-6">
+                  <li>
+                    I conducted in-depth interviews with potential users to know
+                    their pain points, needs, and preferences.
+                  </li>
+                  <li>
+                    I conducted a competitor analysis, I wanted to see how the
+                    website could stand out from its competitors{" "}
+                    <Link className="text-[#DC511A]" href="">
+                      (YouTube, Instagram, Cookpad.com, Allrecipes.com)
+                    </Link>{" "}
+                    and gain more traction in the market. I noticed that some
+                    websites have issues with navigation, some have not-so-good
+                    UI and some have too many ads popping up and there is no
+                    place to shop for ingredients on these websites.
+                  </li>
+                  <li>
+                    I conducted A/B testing after designing two variations of
+                    the landing page and decided to remove categories from the
+                    top navigation to prevent creating more screens because of
+                    time constraints. I also had to change the image on the hero
+                    section to something more fun and creative.
+                  </li>
+                  <li>
+                    I had to remove this navigation because it won't look nice
+                    on the responsiveness and one of the potential users told me
+                    that it is better to use Google and YouTube video which is
+                    free, and post the video on the site's YouTube channel. This
+                    way the developer can embed the video link into the website
+                    for free. Google API enables the video to play on the
+                    website and it also contains the share, save, like, and
+                    download buttons.
+                  </li>
                 </ul>
               </article>
+            </article>
 
+            {/* Innovative Feature “Shopping Integration” */}
+            <article className="pt-8 pb-5 lg:py-10 flex flex-col gap-7 lg:gap-8">
+              {/* IF 1.1 */}
+              <article className="flex flex-col gap-4 lg:gap-6">
+                <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
+                  <span className="font-normal">Innovative Feature</span>{" "}
+                  “Shopping Integration”
+                </h2>
+                <p className="max-w-[326px] lg:max-w-[1136px] text-[14px] lg:text-[18px] leading-[140%] lg:leading-normal lg:tracking-[-0.18px]">
+                  After the research and understanding the needs of the users, I
+                  came up with an innovative feature{" "}
+                  <span className="text-[#DC511A] font-semibold">“shopping integration”</span>{" "}
+                  to help customers get ingredients from the site.
+                </p>
+              </article>
+
+              {/* IF 1.2 x-7 */}
+              <article>
+
+                {/* 1.2.1 */}
+                <article>
+                  {/* IMAGE */}
+                  <Image src={d1} alt="" />
+                  {/* TEXTS */}
+                  <article>
+                    <h4>Hero Section</h4>
+                    <p>The idea is to design something simple and relatable. I had to use a fancy font.</p>
+                  </article>
+                </article>
+
+              </article>
             </article>
           </Container>
         </section>
