@@ -368,7 +368,7 @@ export default function Jogovest() {
         </section>
 
         {/* NEXT PROJECT */}
-        <SubFooter first={"Tasty and Yummy"} link={"/"} />
+        <SubFooter first={"Tasty and Yummy"} link={"/case-study/tasty-and-yummy"} />
       </main>
 
       {/* FOOTER */}

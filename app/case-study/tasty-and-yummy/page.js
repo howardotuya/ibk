@@ -5,10 +5,8 @@ import Image from "next/image";
 // IMAGE IMPORTATION
 import tay1 from "@/public/images/PNG/tay/tay1.png";
 import tay2 from "@/public/images/PNG/tay/tay2.png";
-import jogovest1 from "@/public/images/PNG/jogovest/jogovest1.png";
-import jogovest2 from "@/public/images/PNG/jogovest/jogovest2.png";
-import jogovest3 from "@/public/images/PNG/jogovest/jogovest3.png";
-import jogovest4 from "@/public/images/PNG/jogovest/jogovest4.png";
+import tay3 from "@/public/images/PNG/tay/pns.png";
+import tay4 from "@/public/images/PNG/tay/pns.svg";
 
 import jogo1 from "@/public/images/PNG/jogovest/jogo1.png";
 import jogo2 from "@/public/images/PNG/jogovest/jogo2.png";
@@ -35,7 +33,7 @@ export default function TAY() {
       {/* MAIN CONTENT */}
       <main>
         {/* HERO SECTION */}
-        <section className="bg-[#F5F6F6] px-5 xl:px-0">
+        <section className="bg-[#FEF6EE] px-5 xl:px-0">
           <Container>
             <article className="pt-10 flex justify-center items-end gap-4 lg:gap-8">
               {/* FIRST IMAGE */}
@@ -106,7 +104,7 @@ export default function TAY() {
 
             {/* User Research based on Pain Points and Needs */}
             <article className="pt-8 pb-5 flex flex-col gap-5 lg:gap-6 lg:py-10">
-              {/* RAA 1.1 */}
+              {/* UR 1.1 */}
               <article className="flex flex-col gap-4 lg:gap-6">
                 <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
                   User Research based on Pain Points and Needs
@@ -117,238 +115,40 @@ export default function TAY() {
                   how Tasty & Yummy can help them get the best experience.
                 </p>
               </article>
-            </article>
-
-            {/* Work Approach */}
-            <article className="pt-8 pb-5 flex flex-col gap-5 lg:gap-6 lg:py-10">
-              {/* WA 1.1 */}
-              <article className="flex flex-col">
-                <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
-                  Work Approach
-                </h2>
-              </article>
-
-              {/* WA 1.2 */}
-              <div className="grid gap-5 lg:grid-cols-2">
-                <div className="p-10 bg-[#F5F6F6] rounded-[12px] flex flex-col gap-4">
-                  <h4 className="text-[24px] lg:text-[32px] font-semibold text-[#0C0D0D]">
-                    Iterations
-                  </h4>
-                  <p className="text-[#4C5251] leading-[140%] text-[14px] lg:text-[16px]">
-                    I iterated a lot before I came up with the final design.
-                  </p>
-                </div>
-                <div className="p-10 bg-[#F5F6F6] rounded-[12px] flex flex-col gap-4">
-                  <h4 className="text-[24px] lg:text-[32px] font-semibold text-[#0C0D0D]">
-                    Flexible Approach
-                  </h4>
-                  <p className="text-[#4C5251] leading-[140%] text-[14px] lg:text-[16px]">
-                    I maintained a flexible approach to be able to meet client’s
-                    changing needs, to meet not only technical, but business
-                    goals.
-                  </p>
-                </div>
-                <div className="p-10 bg-[#F5F6F6] rounded-[12px] flex flex-col gap-4">
-                  <h4 className="text-[24px] lg:text-[32px] font-semibold text-[#0C0D0D]">
-                    In house testing
-                  </h4>
-                  <p className="text-[#4C5251] leading-[140%] text-[14px] lg:text-[16px]">
-                    The Product owner and stakeholders were involved in testing
-                    the product before it went into development.
-                  </p>
-                </div>
-                <div className="p-10 bg-[#F5F6F6] rounded-[12px] flex flex-col gap-4">
-                  <h4 className="text-[24px] lg:text-[32px] font-semibold text-[#0C0D0D]">
-                    Regular Communications
-                  </h4>
-                  <p className="text-[#4C5251] leading-[140%] text-[14px] lg:text-[16px]">
-                    I introduced &quot;daily&quot; meeting once a week with the
-                    CEO and CTO of Jogovest joining.
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            {/* Challenges and Solutions */}
-            <article className="pt-8 pb-5 flex flex-col gap-5 lg:gap-6 lg:py-10">
-              {/* CAS 1.1 */}
-              <article className="flex flex-col gap-4 lg:gap-6">
-                <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
-                  Challenges and Solutions
-                </h2>
-                <p className="max-w-[895px] text-[14px] lg:text-[18px] leading-[140%] lg:leading-normal lg:tracking-[-0.18px]">
-                  I was the sole designer for the project, so I had to do the
-                  research, competitive analysis, I also designed the admin
-                  dashboard, landing page and the mobile app
-                </p>
+              {/* UR 1.2 */}
+              <article>
+                <Image
+                  className="w-full h-auto"
+                  src={tay3}
+                  alt=""
+                  quality={100}
+                  placeholder="blur"
+                />
               </article>
             </article>
 
-            {/* Product Features */}
-            <article className="pt-8 pb-5 lg:py-10 flex flex-col gap-6 lg:gap-12">
-              {/* TEXT */}
+            {/* Research Methodology and Findings */}
+            <article className="flex flex-col gap-8">
+              {/* RM 1.1 */}
               <article className="flex flex-col gap-4 lg:gap-6">
                 <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
-                  Product Features
+                  Research Methodology and Findings
                 </h2>
-                <p className="text-[14px] lg:text-[18px] leading-[140%] lg:leading-normal lg:tracking-[-0.18px]">
-                  These are the key features of the investment platform.
+                <p className="max-w-[326px] lg:max-w-none text-[14px] lg:text-[18px] leading-[140%] lg:leading-normal lg:tracking-[-0.18px]">
+                  Before coming up with the actual design:
                 </p>
               </article>
 
-              {/* IMAGERY - 4 */}
-              <article className="flex flex-col lg:gap-[52px]">
-                {/* 1.1 */}
-                <article className="flex items-center gap-x-2">
-                  {/* Image */}
-                  <article className="shrink-0 w-[137px] lg:w-[229px] h-auto ">
-                    <Image src={jogo1} alt="" placeholder="blur" />
-                  </article>
-                  {/* Seperator */}
-                  <article className="shrink-0">
-                    <Image className="hidden lg:block" src={arrow} alt="" />
-                    <Image
-                      className="block lg:hidden"
-                      src={smallArrow}
-                      alt=""
-                    />
-                  </article>
-                  {/* Texts */}
-                  <article className="flex flex-col gap-3 lg:gap-6 lg:max-w-[352px]">
-                    <h6 className="text-[14px] lg:text-[24px] cod-gray-800 font-semibold">
-                      Home Page
-                    </h6>
-                    <p className="text-[12px] lg:text-[18px] leading-[140%]">
-                      The home page contains every actions the user wants to
-                      take on the app.
-                    </p>
-                  </article>
-                </article>
-
-                {/* 1.2 */}
-                <article className="flex items-center gap-x-2">
-                  {/* Texts */}
-                  <article className="flex flex-col gap-3 lg:gap-6 lg:max-w-[296px]">
-                    <h6 className="text-[14px] lg:text-[24px] cod-gray-800 font-semibold">
-                      Registration Page
-                    </h6>
-                    <p className="text-[12px] lg:text-[18px] leading-[140%]">
-                      The registration page contains the form to complete user
-                      profile.
-                    </p>
-                  </article>
-
-                  {/* Seperator */}
-                  <article className="shrink-0">
-                    <Image className="hidden lg:block" src={arrow} alt="" />
-                    <Image
-                      className="block lg:hidden"
-                      src={smallArrow}
-                      alt=""
-                    />
-                  </article>
-
-                  {/* Image */}
-                  <article className="shrink-0 w-[137px] lg:w-[229px] h-auto ">
-                    <Image src={jogo2} alt="" placeholder="blur" />
-                  </article>
-                </article>
-
-                {/* 1.3 */}
-                <article className="flex items-center gap-x-2">
-                  {/* Image */}
-                  <article className="shrink-0 w-[137px] lg:w-[229px] h-auto ">
-                    <Image src={jogo3} alt="" />
-                  </article>
-                  {/* Seperator */}
-                  <article className="shrink-0">
-                    <Image className="hidden lg:block" src={arrow} alt="" />
-                    <Image
-                      className="block lg:hidden"
-                      src={smallArrow}
-                      alt=""
-                    />
-                  </article>
-                  {/* Texts */}
-                  <article className="flex flex-col gap-3 lg:gap-6 lg:max-w-[312px]">
-                    <h6 className="text-[14px] lg:text-[24px] cod-gray-800 font-semibold">
-                      JogoFlex Plan
-                    </h6>
-                    <p className="text-[12px] lg:text-[18px] leading-[140%]">
-                      The JogoFlex plan is a flexible investment plan for anyone
-                      who is willing to invest short time.
-                    </p>
-                  </article>
-                </article>
-
-                {/* 1.4 */}
-                <article className="flex items-center gap-x-2">
-                  {/* Texts */}
-                  <article className="flex flex-col gap-3 lg:gap-6 lg:max-w-[424px]">
-                    <h6 className="text-[14px] lg:text-[24px] cod-gray-800 font-semibold">
-                      JogoLife Plan
-                    </h6>
-                    <p className="text-[12px] lg:text-[18px] leading-[140%]">
-                      The JogoLife plan is a long investment plan for anyone who
-                      is willing to invest long time.
-                    </p>
-                  </article>
-
-                  {/* Seperator */}
-                  <article className="shrink-0">
-                    <Image className="hidden lg:block" src={arrow} alt="" />
-                    <Image
-                      className="block lg:hidden"
-                      src={smallArrow}
-                      alt=""
-                    />
-                  </article>
-
-                  {/* Image */}
-                  <article className="shrink-0 w-[137px] lg:w-[229px] h-auto ">
-                    <Image src={jogo4} alt="" placeholder="blur" />
-                  </article>
-                </article>
+              {/* RM 1.2 */}
+              <article>
+                <ul className="text-[18px] leading-[140%] flex flex-col gap-8 list-decimal pl-6">
+                  <li>I conducted in-depth interviews with potential users to know their pain points, needs, and preferences.</li>
+                  <li>I conducted a competitor analysis, I wanted to see how the website could stand out from its competitors <Link className="text-[#DC511A]" href="">(YouTube, Instagram, Cookpad.com, Allrecipes.com)</Link> and gain more traction in the market. I noticed that some websites have issues with navigation, some have not-so-good UI and some have too many ads popping up and there is no place to shop for ingredients on these websites.</li>
+                  <li>I conducted A/B testing after designing two variations of the landing page and decided to remove categories from the top navigation to prevent creating more screens because of time constraints. I also had to change the image on the hero section to something more fun and creative.</li>
+                  <li>I had to remove this navigation because it won't look nice on the responsiveness and one of the potential users told me that it is better to use Google and YouTube video which is free, and post the video on the site's YouTube channel. This way the developer can embed the video link into the website for free. Google API enables the video to play on the website and it also contains the share, save, like, and download buttons.</li>
+                </ul>
               </article>
-            </article>
 
-            {/* CLIENT REVIEW */}
-            <article className="pt-8 pb-5 lg:py-10 flex flex-col gap-4 lg:gap-2">
-              {/* HEADER */}
-              <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
-                Client Review
-              </h2>
-
-              {/* QUOTE */}
-              <article className="flex gap-2 lg:gap-4">
-                {/* LEFT */}
-                <article className="w-[34px] lg:w-auto h-auto shrink-0">
-                  <Image src={quote1} alt="" />
-                </article>
-
-                {/* CONTENT */}
-                <article className="pt-2 lg:pt-6 flex flex-col gap-4 lg:gap-5">
-                  {/* MAIN BODY */}
-                  <p className="text-[12px] lg:text-[18px] leading-[140%]">
-                    You did an amazing job with the prototype and designs, I
-                    really can’t wait to work with you in future.
-                  </p>
-                  {/* FROM  */}
-                  <article className="flex flex-col gap-2">
-                    <h6 className="text-[16px] lg:text-[24px] font-bold">
-                      Joseph Boyede
-                    </h6>
-                    <h6 className="text-[14px] lg:text-[18px]">
-                      CEO, Jogovest
-                    </h6>
-                  </article>
-                </article>
-
-                {/* RIGHT */}
-                <article className="w-[34px] lg:w-auto h-auto shrink-0">
-                  <Image src={quote2} alt="" />
-                </article>
-              </article>
             </article>
           </Container>
         </section>
