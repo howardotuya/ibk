@@ -330,7 +330,7 @@ export default function Jogovest() {
               </h2>
 
               {/* QUOTE */}
-              <article className="flex gap-4">
+              <article className="flex gap-2 lg:gap-4">
                 {/* LEFT */}
                 <article className="w-[34px] lg:w-auto h-auto shrink-0">
                   <Image src={quote1} alt="" />
@@ -339,7 +339,7 @@ export default function Jogovest() {
                 {/* CONTENT */}
                 <article className="pt-2 lg:pt-6 flex flex-col gap-4 lg:gap-5">
                   {/* MAIN BODY */}
-                  <p className="text-[12px] lg:text-[14px] leading-[140%]">
+                  <p className="text-[12px] lg:text-[18px] leading-[140%]">
                     You did an amazing job with the prototype and designs, I
                     really can’t wait to work with you in future.
                   </p>

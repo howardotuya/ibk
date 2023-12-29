@@ -4,6 +4,7 @@
 
 body {
   color: #0c0d0d;
+  line-height: normal;
 }
 
 @layer utilities {
