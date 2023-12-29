@@ -37,7 +37,7 @@ export default function Home() {
         <Container>
           <main>
             {/* HERO SECTION */}
-            <section className="py-14 lg:py-20 flex flex-col gap-6 lg:gap-10">
+            <section className="pt-14 lg:pt-20 flex flex-col gap-6 lg:gap-10">
               {/* TOP */}
               <article className="">
                 <h1 className="max-w-[895px] text-[32px] lg:text-[72px] leading-[120%] lg:leading-[100%] font-medium tracking-[-1.28px] lg:tracking-[-2.88px]">
@@ -202,7 +202,9 @@ export default function Home() {
             </section>
 
             {/* DIVIDER */}
-            <Divider bgColor={"bg-[#E5E8E8]"} />
+            <div className="pt-14 lg:pt-20" id="recent-works">
+              <Divider bgColor={"bg-[#E5E8E8]"} />
+            </div>
 
             {/* RECENT WORKS */}
             <section className="py-14 lg:pt-14 lg:pb-[108px] flex flex-col gap-6 lg:gap-14">
@@ -305,7 +307,10 @@ export default function Home() {
                       </p>
                     </article>
                     <article className="flex">
-                      <Button text={"Read case study"} route={"/"} />
+                      <Button
+                        text={"Read case study"}
+                        route={"/case-study/jogovest"}
+                      />
                     </article>
                   </article>
                 </article>

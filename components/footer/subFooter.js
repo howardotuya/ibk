@@ -6,11 +6,11 @@ import Link from "next/link";
 export default function SubFooter({ first, link }) {
   return (
     <>
-      <Link href={link} className="bg-[#7BFAAD] block">
+      <Link href={link} className="bg-[#7BFAAD] block px-5 xl:px-0">
         <Container>
           <article className="py-6 lg:py-10 flex justify-between items-center">
             {/* NEXT CASE STUDY */}
-            <h3 className="text-[20px] lg:text-[40px] font-medium tracking-[-0.2px] lg:tracking-[-0.4px]">
+            <h3 className="italic text-[20px] lg:text-[40px] font-medium tracking-[-0.2px] lg:tracking-[-0.4px]">
               NEXT CASE STUDY
             </h3>
             {/* JOGOVEST */}
