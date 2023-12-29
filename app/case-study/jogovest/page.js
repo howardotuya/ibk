@@ -172,8 +172,8 @@ export default function Jogovest() {
                     Regular Communications
                   </h4>
                   <p className="text-[#4C5251] leading-[140%] text-[14px] lg:text-[16px]">
-                    I introduced "daily" meeting once a week with the CEO and
-                    CTO of Jogovest joining.
+                    I introduced &quot;daily&quot; meeting once a week with the
+                    CEO and CTO of Jogovest joining.
                   </p>
                 </div>
               </div>
@@ -345,8 +345,12 @@ export default function Jogovest() {
                   </p>
                   {/* FROM  */}
                   <article className="flex flex-col gap-2">
-                    <h6 className="text-[16px] lg:text-[24px] font-bold">Joseph Boyede</h6>
-                    <h6 className="text-[14px] lg:text-[18px]">CEO, Jogovest</h6>
+                    <h6 className="text-[16px] lg:text-[24px] font-bold">
+                      Joseph Boyede
+                    </h6>
+                    <h6 className="text-[14px] lg:text-[18px]">
+                      CEO, Jogovest
+                    </h6>
                   </article>
                 </article>
 
