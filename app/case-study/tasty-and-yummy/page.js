@@ -166,10 +166,10 @@ export default function TAY() {
                     section to something more fun and creative.
                   </li>
                   <li>
-                    I had to remove this navigation because it won't look nice
+                    I had to remove this navigation because it won&apos;t look nice
                     on the responsiveness and one of the potential users told me
                     that it is better to use Google and YouTube video which is
-                    free, and post the video on the site's YouTube channel. This
+                    free, and post the video on the site&apos;s YouTube channel. This
                     way the developer can embed the video link into the website
                     for free. Google API enables the video to play on the
                     website and it also contains the share, save, like, and
