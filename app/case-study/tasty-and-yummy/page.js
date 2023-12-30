@@ -1,12 +1,12 @@
 import Container from "@/components/container/container";
 import Navbar from "@/components/navbar/Navbar";
 import Image from "next/image";
+import Link from "next/link";
 
 // IMAGE IMPORTATION
 import tay1 from "@/public/images/PNG/tay/tay1.png";
 import tay2 from "@/public/images/PNG/tay/tay2.png";
 import tay3 from "@/public/images/PNG/tay/pns.png";
-import tay4 from "@/public/images/PNG/tay/pns.svg";
 
 import ds1 from "@/public/images/PNG/tay/ds1.png";
 import ds2 from "@/public/images/PNG/tay/ds2.png";
@@ -16,12 +16,10 @@ import ds5 from "@/public/images/PNG/tay/ds5.png";
 import ds6 from "@/public/images/PNG/tay/ds6.png";
 import ds7 from "@/public/images/PNG/tay/ds7.png";
 
+import ut1 from "@/public/images/PNG/tay/ut1.png";
+
 import Footer from "@/components/footer/footer";
 import SubFooter from "@/components/footer/subFooter";
-
-import quote1 from "@/public/images/SVG/quote1.svg";
-import quote2 from "@/public/images/SVG/quote2.svg";
-import Link from "next/link";
 
 export default function TAY() {
   return (
@@ -51,7 +49,7 @@ export default function TAY() {
             {/* HEADING + Project OVERVIEW */}
             <section className="pt-10 lg:pt-20 pb-5 lg:pb-11 flex flex-col gap-4 lg:gap-10">
               <h1 className="text-[32px] lg:text-[72px] font-medium leading-[120%] lg:leading-[100%] tracking-[-1.28px] lg:tracking-[-2.88px]">
-                Tasty & Yummy Recipe Website
+                Tasty & Yummy <span className="hidden lg:inline">Recipe Website</span>
               </h1>
 
               {/* PROJECT OVERVIEW */}
@@ -69,9 +67,9 @@ export default function TAY() {
             </section>
 
             {/* PROBLEM STATEMENT + GOAL + IMAGE */}
-            <article className="pt-8 pb-5 lg:py-0 grid lg:grid-cols-[1fr_auto] items-center gap-4 lg:gap-6 ">
+            <article className="pt-8 pb-5 lg:py-0 grid lg:grid-cols-[1fr_auto] items-center gap-6 ">
               {/* PROBLEM STATEMENT AND GOAL */}
-              <article className="flex flex-col gap-4 lg:gap-10">
+              <article className="flex flex-col gap-8 lg:gap-10">
                 {/* PROBLEM STATEMENT */}
                 <article className="flex flex-col gap-4 lg:gap-6">
                   <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
@@ -104,7 +102,7 @@ export default function TAY() {
             </article>
 
             {/* User Research based on Pain Points and Needs */}
-            <article className="pt-8 pb-5 flex flex-col gap-5 lg:gap-6 lg:py-10">
+            <article className="pt-8 pb-5 flex flex-col gap-6 lg:gap-8 lg:py-10">
               {/* UR 1.1 */}
               <article className="flex flex-col gap-4 lg:gap-6">
                 <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
@@ -116,6 +114,7 @@ export default function TAY() {
                   how Tasty & Yummy can help them get the best experience.
                 </p>
               </article>
+
               {/* UR 1.2 */}
               <article>
                 <Image
@@ -133,7 +132,8 @@ export default function TAY() {
               {/* RM 1.1 */}
               <article className="flex flex-col gap-4 lg:gap-6">
                 <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
-                  Research Methodology and Findings
+                  Research Methodology
+                  <span className="hidden lg:block"> and Findings</span>
                 </h2>
                 <p className="max-w-[326px] lg:max-w-none text-[14px] lg:text-[18px] leading-[140%] lg:leading-normal lg:tracking-[-0.18px]">
                   Before coming up with the actual design:
@@ -181,7 +181,6 @@ export default function TAY() {
 
             {/* Innovative Feature “Shopping Integration” */}
             <article className="pt-8 pb-5 lg:py-10 flex flex-col gap-7 lg:gap-8">
-              {/* IF 1.1 */}
               <article className="flex flex-col gap-4 lg:gap-6">
                 <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
                   <span className="font-normal">Innovative Feature</span>{" "}
@@ -190,32 +189,231 @@ export default function TAY() {
                 <p className="max-w-[326px] lg:max-w-[1136px] text-[14px] lg:text-[18px] leading-[140%] lg:leading-normal lg:tracking-[-0.18px]">
                   After the research and understanding the needs of the users, I
                   came up with an innovative feature{" "}
-                  <span className="text-[#DC511A] font-semibold">“shopping integration”</span>{" "}
+                  <span className="text-[#DC511A] font-semibold">
+                    “shopping integration”
+                  </span>{" "}
                   to help customers get ingredients from the site.
                 </p>
               </article>
+            </article>
 
-              {/* IF 1.2 x-7 */}
-              <article>
+            {/* Design Solution */}
+            <article className="pt-8 pb-5 flex flex-col gap-6 lg:gap-8 lg:py-10">
+              {/* DS 1.1 */}
+              <article className="flex flex-col gap-4 lg:gap-6">
+                <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
+                  Design Solution
+                </h2>
+                <p className="max-w-[807px] text-[14px] lg:text-[18px] leading-[140%] lg:leading-normal">
+                  Before I jumped into the design solution, it was important to
+                  define what success mean to the users and the business.
+                </p>
+              </article>
 
+              {/* DS 1.2 x-7 */}
+              <article className="flex flex-col gap-10 lg:gap-[84px]">
                 {/* 1.2.1 */}
-                <article>
+                <article className="flex gap-2 lg:gap-[52px] items-start">
                   {/* IMAGE */}
-                  <Image src={d1} alt="" />
+                  <article className="max-w-[610px] h-auto rounded-[2px] shadow-[0px_8px_16px_0px_rgba(135,_96,_56,_0.15)]">
+                    <Image src={ds1} alt="" placeholder="blur" />
+                  </article>
+
                   {/* TEXTS */}
-                  <article>
-                    <h4>Hero Section</h4>
-                    <p>The idea is to design something simple and relatable. I had to use a fancy font.</p>
+                  <article className="flex flex-col gap-2 lg:gap-6 lg:pt-16 w-[177px] lg:w-[458px] shrink-0">
+                    <h4 className="text-[14px] lg:text-[24px] font-semibold cod-gray-800">
+                      Hero Section
+                    </h4>
+                    <p className="text-[12px] lg:text-[18px] leading-[140%]">
+                      The idea is to design something simple and relatable. I
+                      had to use a fancy font.
+                    </p>
                   </article>
                 </article>
 
+                {/* 1.2.2 */}
+                <article className="flex gap-2 lg:gap-[52px] items-start">
+                  {/* IMAGE */}
+                  <article className="max-w-[610px] h-auto rounded-[2px] shadow-[0px_8px_16px_0px_rgba(135,_96,_56,_0.15)]">
+                    <Image src={ds2} alt="" placeholder="blur" />
+                  </article>
+
+                  {/* TEXTS */}
+                  <article className="flex flex-col gap-2 lg:gap-6 lg:pt-16 w-[177px] lg:w-[458px] shrink-0">
+                    <h4 className="text-[14px] lg:text-[24px] font-semibold cod-gray-800">
+                      Featured Meals
+                    </h4>
+                    <p className="text-[12px] lg:text-[18px] leading-[140%]">
+                      The featured recipe section comprises the most engaging
+                      recipes, so the user can decide to check out any of these
+                      meals.
+                    </p>
+                  </article>
+                </article>
+
+                {/* 1.2.3 */}
+                <article className="flex gap-2 lg:gap-[52px] items-start">
+                  {/* IMAGE */}
+                  <article className="max-w-[610px] h-auto rounded-[2px] shadow-[0px_8px_16px_0px_rgba(135,_96,_56,_0.15)]">
+                    <Image src={ds3} alt="" placeholder="blur" />
+                  </article>
+
+                  {/* TEXTS */}
+                  <article className="flex flex-col gap-2 lg:gap-6 lg:pt-16 w-[177px] lg:w-[458px] shrink-0">
+                    <h4 className="text-[14px] lg:text-[24px] font-semibold cod-gray-800">
+                      Dietary Restrictions
+                    </h4>
+                    <p className="text-[12px] lg:text-[18px] leading-[140%]">
+                      This section contains different types of special diets
+                      which include weight loss, weight gain, diabetes, and
+                      fertility.
+                    </p>
+                  </article>
+                </article>
+
+                {/* 1.2.4 */}
+                <article className="flex gap-2 lg:gap-[52px] items-start">
+                  {/* IMAGE */}
+                  <article className="max-w-[610px] h-auto rounded-[2px] shadow-[0px_8px_16px_0px_rgba(135,_96,_56,_0.15)]">
+                    <Image src={ds4} alt="" placeholder="blur" />
+                  </article>
+
+                  {/* TEXTS */}
+                  <article className="flex flex-col gap-2 lg:gap-6 lg:pt-16 w-[177px] lg:w-[458px] shrink-0">
+                    <h4 className="text-[14px] lg:text-[24px] font-semibold cod-gray-800">
+                      Reviews
+                    </h4>
+                    <p className="text-[12px] lg:text-[18px] leading-[140%]">
+                      The review section is gotten from users who have tested
+                      the platform.
+                    </p>
+                  </article>
+                </article>
+
+                {/* 1.2.5 */}
+                <article className="flex gap-2 lg:gap-[52px] items-start">
+                  {/* IMAGE */}
+                  <article className="max-w-[610px] h-auto rounded-[2px] shadow-[0px_8px_16px_0px_rgba(135,_96,_56,_0.15)]">
+                    <Image src={ds5} alt="" placeholder="blur" />
+                  </article>
+
+                  {/* TEXTS */}
+                  <article className="flex flex-col gap-2 lg:gap-6 lg:pt-16 w-[177px] lg:w-[458px] shrink-0">
+                    <h4 className="text-[14px] lg:text-[24px] font-semibold cod-gray-800">
+                      Sign up
+                    </h4>
+                    <p className="text-[12px] lg:text-[18px] leading-[140%]">
+                      I included a simple sign-up/ sign in page that allows
+                      users sign in with their google account. Once a user signs
+                      in, he/she can have the saved or downloaded recipe videos
+                      uploaded to their profile.
+                    </p>
+                  </article>
+                </article>
+
+                {/* 1.2.6 */}
+                <article className="flex gap-2 lg:gap-[52px] items-start">
+                  {/* IMAGE */}
+                  <article className="max-w-[610px] h-auto rounded-[2px] shadow-[0px_8px_16px_0px_rgba(135,_96,_56,_0.15)]">
+                    <Image src={ds6} alt="" placeholder="blur" />
+                  </article>
+
+                  {/* TEXTS */}
+                  <article className="flex flex-col gap-2 lg:gap-6 lg:pt-16 w-[177px] lg:w-[458px] shrink-0">
+                    <h4 className="text-[14px] lg:text-[24px] font-semibold cod-gray-800">
+                      Sign in
+                    </h4>
+                    <p className="text-[12px] lg:text-[18px] leading-[140%]">
+                      I included a simple sign-up/ sign in page that allows
+                      users sign in with their google account. Once a user signs
+                      in, he/she can have the saved or downloaded recipe videos
+                      uploaded to their profile.
+                    </p>
+                  </article>
+                </article>
+
+                {/* 1.2.7 */}
+                <article className="flex gap-2 lg:gap-[52px] items-start">
+                  {/* IMAGE */}
+                  <article className="max-w-[610px] h-auto rounded-[2px] shadow-[0px_8px_16px_0px_rgba(135,_96,_56,_0.15)]">
+                    <Image src={ds7} alt="" placeholder="blur" />
+                  </article>
+
+                  {/* TEXTS */}
+                  <article className="flex flex-col gap-2 lg:gap-6 lg:pt-16 w-[177px] lg:w-[458px] shrink-0">
+                    <h4 className="text-[14px] lg:text-[24px] font-semibold cod-gray-800">
+                      Shopping Integration
+                    </h4>
+                    <p className="text-[12px] lg:text-[18px] leading-[140%]">
+                      The shopping integration allows people to buy ingredients
+                      from Glovo instead of going to a local store.
+                    </p>
+                  </article>
+                </article>
+              </article>
+            </article>
+
+            {/* User Testing */}
+            <article className="pt-8 pb-5 flex flex-col gap-6 lg:gap-8 lg:py-10">
+              {/* UT 1.1 */}
+              <article className="flex flex-col gap-4 lg:gap-6">
+                <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
+                  User Testing
+                </h2>
+                <p className="max-w-[895px] text-[14px] lg:text-[18px] leading-[140%] lg:leading-normal">
+                  I Informed the user to go through the platform and make sure
+                  that they understood what it was about before the test began
+                  so that there were no incorrect answers. I told them to
+                  describe their reasoning out loud for each action they took
+                  and Insist that they speak openly and honestly about their
+                  experiences.
+                </p>
+              </article>
+
+              {/* UT 1.2 */}
+              <Image className="shrink-0" src={ut1} alt="" placeholder="blur" />
+            </article>
+
+            {/* How it works “Prototype” */}
+            <article className="pt-8 pb-5 flex flex-col gap-6 lg:gap-8 lg:py-10">
+              {/* HIW 1.1 */}
+              <article className="flex flex-col gap-4 lg:gap-6">
+                <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
+                  How it works “Prototype”
+                </h2>
+              </article>
+
+              {/* UT 1.2 */}
+              <Image className="shrink-0" src={ut1} alt="" placeholder="blur" />
+            </article>
+
+            {/* What Comes Next? */}
+            <article className="pt-8 pb-5 lg:py-10 flex flex-col gap-4 lg:gap-6">
+              {/* WCN 1.1 */}
+              <article className="flex flex-col gap-4 lg:gap-6">
+                <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
+                  What Comes Next?
+                </h2>
+              </article>
+
+              {/* RM 1.2 */}
+              <article>
+                <ul className="text-[14px] lg:text-[18px] leading-[140%] flex flex-col gap-4 lg:gap-4 list-decimal pl-4 lg:pl-6">
+                  <li>We will include a full recipe page</li>
+                  <li>Add a recipe page for children</li>
+                  <li>Leave options for anonymous reviews</li>
+                  <li>
+                    Conduct more research and usability testing in order to get
+                    more feedback from users
+                  </li>
+                </ul>
               </article>
             </article>
           </Container>
         </section>
 
         {/* NEXT PROJECT */}
-        <SubFooter first={"Tasty and Yummy"} link={"/"} />
+        <SubFooter main={"Go Back To"} first={"Oppia"} link={"/case-study/oppia"} />
       </main>
 
       {/* FOOTER */}

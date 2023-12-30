@@ -3,7 +3,7 @@ import Container from "../container/container";
 import next from "@/public/images/SVG/next.svg";
 import Link from "next/link";
 
-export default function SubFooter({ first, link }) {
+export default function SubFooter({ main="NEXT CASE STUDY", first, link }) {
   return (
     <>
       <Link href={link} className="bg-[#7BFAAD] block px-5 xl:px-0">
@@ -11,7 +11,7 @@ export default function SubFooter({ first, link }) {
           <article className="py-6 lg:py-10 flex justify-between items-center">
             {/* NEXT CASE STUDY */}
             <h3 className="italic text-[20px] lg:text-[40px] font-medium tracking-[-0.2px] lg:tracking-[-0.4px]">
-              NEXT CASE STUDY
+              {main}
             </h3>
             {/* JOGOVEST */}
             <article className="flex items-center gap-3">
