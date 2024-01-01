@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Tasty and Yummy | IBK',
+  title: 'Tasty and Yummy',
   description: 'Done by Howard Otuya',
 }
 

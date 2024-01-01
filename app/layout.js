@@ -7,8 +7,14 @@ import Loading from "./loading";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Homepage | IBK",
+  title: {
+    default: 'Homepage | IBK',
+    template: '%s | IBK'
+  },
   description: "Done by Howard Otuya",
+  twitter: {
+    card: "summary_large_image"
+  }
 };
 
 export default function RootLayout({ children }) {
