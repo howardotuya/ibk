@@ -48,7 +48,7 @@ export default function Home() {
               </article>
 
               {/* TEXT - RIGHT */}
-              <article className="pt-4 lg:pt-[148px] pb-14 lg:pb-0 flex flex-col gap-6">
+              <article className="py-4 lg:pt-[148px] lg:pb-0 flex flex-col gap-6">
                 <h1 className="text-[32px] lg:text-[72px] font-medium leading-[100%] tracking-[-1.28px] lg:tracking-[-2.88px]">
                   About IBK
                 </h1>

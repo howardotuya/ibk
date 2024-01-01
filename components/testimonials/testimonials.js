@@ -14,12 +14,19 @@ export default function Testimonials() {
     {
       id: 0,
       comment:
+        "Abejide Ibukun was my UI/UX mentor, a great communicator and an amazing designer who is passionate about problem solving through design. She takes her time to mentor individuals and she’s willing to put in extra help whenever you need it. Her expertise as a designer is substantial. She is definitely a good addition to any team and does not only have the technical skills to show, she also has people skills and she’s someone anyone would enjoy working with.",
+      name: "Marvinrose Chibuezem",
+      occupation: "Web developer, Bowmenn Trucking",
+    },
+    {
+      id: 1,
+      comment:
         "I wholeheartedly endorse Abejide for her exceptional UI/UX design skills. Her creativity and user-centric approach consistently result in visually stunning and intuitive interfaces. A true team player with a keen eye for detail, Abejide is a valuable asset to any design project. It's been a pleasure working with her, and I'm confident she will continue to impress in her future endeavors.",
       name: "Bryan Pablo",
       occupation: "Software Developer, Prifina",
     },
     {
-      id: 1,
+      id: 2,
       comment:
         "She is an outstanding product designer and pays attention to details. She is a great person to work with all round.",
       name: "Funmi Olatunbosun",
@@ -39,8 +46,13 @@ export default function Testimonials() {
         <article className="pt-2 lg:pt-6 flex flex-col gap-6 lg:gap-10">
           {/* TOP - TEXT */}
           <article className="flex flex-col gap-4 lg:gap-6">
-            <p className="text-[12px] lg:text-[18px] leading-normal lg:leading-[140%]">
-              {Testimonials[number].comment}
+            <p className="relative text-[12px] lg:text-[18px] leading-normal lg:leading-[140%]">
+              {/* absolute - main */}
+              <span className="absolute top-0 left-0 right-0">
+                {Testimonials[number].comment}
+              </span>
+              {/* relative - height max - visibility none */}
+              <span className=" invisible">{Testimonials[0].comment}</span>
             </p>
 
             {/* NAM AND OCCUPATION */}
@@ -63,9 +75,9 @@ export default function Testimonials() {
               alt=""
               onClick={() => {
                 if (number === 0) {
-                  setNumber(Testimonials.length - 1)
+                  setNumber(Testimonials.length - 1);
                 } else {
-                  setNumber(number-1);
+                  setNumber(number - 1);
                 }
               }}
             />
@@ -76,7 +88,7 @@ export default function Testimonials() {
               src={arrowRight}
               alt=""
               onClick={() => {
-                if (number === (Testimonials.length - 1)) {
+                if (number === Testimonials.length - 1) {
                   setNumber(0);
                 } else {
                   setNumber(number + 1);
