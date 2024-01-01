@@ -32,7 +32,7 @@ export default function Footer() {
             {/* LINKS */}
             <article className="flex items-center gap-8">
               <article>
-                <Button text={"Get in touch"} route={""} />
+                <Button text={"Get in touch"} route={"mailto:ibukunabejide8@gmail.com"} />
               </article>
               <article className="flex items-center gap-6">
                 {/* TWITTER */}

@@ -311,8 +311,16 @@ export default function Oppia() {
               </article>
               {/* IMAGERY */}
               <article className="mt-4 mb-6 lg:mt-8 lg:mb-10">
-                <Image className="hidden lg:block w-full h-auto" src={ut} alt="" />
-                <Image className="block lg:hidden w-full h-auto" src={ut2} alt="" />
+                <Image
+                  className="hidden lg:block w-full h-auto"
+                  src={ut}
+                  alt=""
+                />
+                <Image
+                  className="block lg:hidden w-full h-auto"
+                  src={ut2}
+                  alt=""
+                />
               </article>
 
               {/* SUBHEADING + TEXTS */}

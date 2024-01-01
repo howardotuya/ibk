@@ -109,11 +109,12 @@ export default function Home() {
               <article className="relative shrink-0 flex lg:hidden justify-center items-center">
                 <Link
                   className="absolute absolute-center whitespace-nowrap leading-6 block font-bold text-black text-[16px]"
-                  href={""}
+                  href={"/Ibukun-Abejide-Resume-2023.pdf"}
+                  download={"Ibukun_Abejide_Resume_2023.pdf"}
                 >
                   Download resume
                 </Link>
-
+ 
                 {/* BUTTON IMAGE - CENTERED */}
                 <Image
                   className="w-[277px] h-auto"
@@ -186,7 +187,8 @@ export default function Home() {
                 <article className="hidden lg:block relative shrink-0">
                   <Link
                     className="absolute absolute-center whitespace-nowrap leading-6 block font-bold text-black text-[20px]"
-                    href={""}
+                    href={"/Ibukun-Abejide-Resume-2023.pdf"}
+                    download={"Ibukun_Abejide_Resume_2023.pdf"}
                   >
                     Download resume
                   </Link>

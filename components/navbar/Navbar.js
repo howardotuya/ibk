@@ -68,7 +68,11 @@ export default function Navbar() {
             </Link>
 
             {/* Resume */}
-            <Link className="flex flex-col gap-2" href={"/"}>
+            <Link
+              className="flex flex-col gap-2"
+              download={"Ibukun_Abejide_Resume_2023.pdf"}
+              href={"/Ibukun-Abejide-Resume-2023.pdf"}
+            >
               {/* TEXT PLUS CHEVRON ICON */}
               <article className="flex items-end justify-between">
                 <p className="text-[14px]">Resume</p>
@@ -81,7 +85,7 @@ export default function Navbar() {
 
           {/* Button */}
           <Button
-            route={"/"}
+            route={"mailto:ibukunabejide8@gmail.com"}
             text={"Get in touch"}
             additionalStyle={"font-semibold"}
           />
@@ -122,14 +126,21 @@ export default function Navbar() {
               <Link className="p-2" href={"/#recent-works"}>
                 Works
               </Link>
-              <Link className="p-2" href={""}>
+              <Link
+                className="p-2"
+                download={"Ibukun_Abejide_Resume_2023.pdf"}
+                href={"/Ibukun-Abejide-Resume-2023.pdf"}
+              >
                 Resume
               </Link>
             </nav>
 
             {/* BUTTON */}
             <article className="hidden lg:block">
-              <Button text={"Get in touch"} route={"/"} />
+              <Button
+                text={"Get in touch"}
+                route={"mailto:ibukunabejide8@gmail.com"}
+              />
             </article>
 
             {/* HAMBURGER MENU - MOBILE ONLY */}

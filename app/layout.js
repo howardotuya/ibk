@@ -8,13 +8,17 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
-    default: 'Homepage | IBK',
-    template: '%s | IBK'
+    default: "Homepage | IBK",
+    template: "%s | IBK",
   },
-  description: "Done by Howard Otuya",
+  description:
+    "Hi, my name is Ibukun Abejide, a passionate product designer on a mission to build successful products for millions of users across the world. I have experience working in the Fintech, E-commerce, EdTech and AI sectors and have also helped more than 100 people get into tech.",
+  alternates: {
+    canonical: process.env.NEXT_PUBLIC_BASE_URL,
+  },
   twitter: {
-    card: "summary_large_image"
-  }
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({ children }) {
