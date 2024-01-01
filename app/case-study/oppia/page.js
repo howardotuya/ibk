@@ -169,7 +169,7 @@ export default function Oppia() {
             </article>
 
             {/* Our Process using the “How Might We Technique” */}
-            <article className="pt-8 pb-14 gap-9 lg:pt-10 lg:pb-[134px] flex flex-col lg:gap-[76px]">
+            <article className="pt-8 pb-14 gap-9 lg:pt-10 lg:pb-[134px] flex flex-col mlg:gap-[76px]">
               {/* 1.1 */}
               <article className="flex flex-col gap-4 lg:gap-6">
                 <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
@@ -183,7 +183,7 @@ export default function Oppia() {
               </article>
 
               {/* 1.2 */}
-              <article className="relative max-w-[420px] mlg:max-w-none">
+              <article className="relative mlg:max-w-none">
                 <p className="text-[14px] mlg:text-[24px] leading-[140%] font-semibold italic">
                   How Might We{" "}
                   <span className="bg-[#EE813A] not-italic relative">
@@ -193,11 +193,7 @@ export default function Oppia() {
                       src={hmw4}
                       alt=""
                     />
-                    <Image
-                      className="block mlg:hidden absolute top-[-33px] left-[61px]"
-                      src={what}
-                      alt=""
-                    />
+                    
                   </span>{" "}
                   for{" "}
                   <span className="bg-[#3AEE81] not-italic relative">
@@ -207,11 +203,7 @@ export default function Oppia() {
                       src={hmw3}
                       alt=""
                     />
-                    <Image
-                      className="block mlg:hidden absolute top-[14px] right-[4px]"
-                      src={who}
-                      alt=""
-                    />
+                    
                   </span>{" "}
                   <span className="relative">
                     globally in
@@ -220,11 +212,7 @@ export default function Oppia() {
                       src={hmw2}
                       alt=""
                     />
-                    <Image
-                      className="block mlg:hidden absolute top-[16px] right-0"
-                      src={where}
-                      alt=""
-                    />
+                    
                   </span>{" "}
                   order to enjoy free access to education.
                 </p>
@@ -237,11 +225,7 @@ export default function Oppia() {
                 />
 
                 {/* WHO */}
-                <Image
-                  className="block mlg:hidden absolute bottom-[-36px] left-[70px]"
-                  src={why}
-                  alt=""
-                />
+                
                 <Image
                   className="hidden mlg:block absolute bottom-[-88px] left-[170px]"
                   src={hmw1}

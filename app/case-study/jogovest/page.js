@@ -140,16 +140,16 @@ export default function Jogovest() {
 
               {/* WA 1.2 */}
               <div className="grid gap-5 lg:grid-cols-2">
-                <div className="p-10 bg-[#F5F6F6] rounded-[12px] flex flex-col gap-4">
-                  <h4 className="text-[24px] lg:text-[32px] font-semibold text-[#0C0D0D]">
+                <div className="lg:p-10 py-8 px-5 bg-[#F5F6F6] rounded-[12px] flex flex-col gap-4">
+                  <h4 className="text-[20px] lg:text-[32px] font-medium text-[#0C0D0D]">
                     Iterations
                   </h4>
                   <p className="text-[#4C5251] leading-[140%] text-[14px] lg:text-[16px]">
                     I iterated a lot before I came up with the final design.
                   </p>
                 </div>
-                <div className="p-10 bg-[#F5F6F6] rounded-[12px] flex flex-col gap-4">
-                  <h4 className="text-[24px] lg:text-[32px] font-semibold text-[#0C0D0D]">
+                <div className="lg:p-10 py-8 px-5 bg-[#F5F6F6] rounded-[12px] flex flex-col gap-4">
+                  <h4 className="text-[20px] lg:text-[32px] font-medium text-[#0C0D0D]">
                     Flexible Approach
                   </h4>
                   <p className="text-[#4C5251] leading-[140%] text-[14px] lg:text-[16px]">
@@ -158,8 +158,8 @@ export default function Jogovest() {
                     goals.
                   </p>
                 </div>
-                <div className="p-10 bg-[#F5F6F6] rounded-[12px] flex flex-col gap-4">
-                  <h4 className="text-[24px] lg:text-[32px] font-semibold text-[#0C0D0D]">
+                <div className="lg:p-10 py-8 px-5 bg-[#F5F6F6] rounded-[12px] flex flex-col gap-4">
+                  <h4 className="text-[20px] lg:text-[32px] font-medium text-[#0C0D0D]">
                     In house testing
                   </h4>
                   <p className="text-[#4C5251] leading-[140%] text-[14px] lg:text-[16px]">
@@ -167,8 +167,8 @@ export default function Jogovest() {
                     the product before it went into development.
                   </p>
                 </div>
-                <div className="p-10 bg-[#F5F6F6] rounded-[12px] flex flex-col gap-4">
-                  <h4 className="text-[24px] lg:text-[32px] font-semibold text-[#0C0D0D]">
+                <div className="lg:p-10 py-8 px-5 bg-[#F5F6F6] rounded-[12px] flex flex-col gap-4">
+                  <h4 className="text-[20px] lg:text-[32px] font-medium text-[#0C0D0D]">
                     Regular Communications
                   </h4>
                   <p className="text-[#4C5251] leading-[140%] text-[14px] lg:text-[16px]">
@@ -186,7 +186,7 @@ export default function Jogovest() {
                 <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
                   Challenges and Solutions
                 </h2>
-                <p className="max-w-[895px] text-[14px] lg:text-[18px] leading-[140%] lg:leading-normal lg:tracking-[-0.18px]">
+                <p className="max-w-[616px] text-[14px] lg:text-[18px] leading-[140%] lg:leading-normal lg:tracking-[-0.18px]">
                   I was the sole designer for the project, so I had to do the
                   research, competitive analysis, I also designed the admin
                   dashboard, landing page and the mobile app
