@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@plaiceholder/next": "^3.0.0",
+    "keen-slider": "^6.8.6",
     "next": "14.0.4",
     "plaiceholder": "^3.0.0",
     "react": "^18",
