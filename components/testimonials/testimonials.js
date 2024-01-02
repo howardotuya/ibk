@@ -21,12 +21,19 @@ export default function Testimonials() {
     {
       id: 1,
       comment:
+        "I highly recommend Abejide for her exceptional UX design skills. I can assure that she is a very dedicated and proactive designer. It was amazing to collaborate with her and I would gladly recommend her to any project.",
+      name: "Julio Sergio",
+      occupation: "Full Stack Developer, Prifina",
+    },
+    {
+      id: 2,
+      comment:
         "I wholeheartedly endorse Abejide for her exceptional UI/UX design skills. Her creativity and user-centric approach consistently result in visually stunning and intuitive interfaces. A true team player with a keen eye for detail, Abejide is a valuable asset to any design project. It's been a pleasure working with her, and I'm confident she will continue to impress in her future endeavors.",
       name: "Bryan Pablo",
       occupation: "Software Developer, Prifina",
     },
     {
-      id: 2,
+      id: 3,
       comment:
         "She is an outstanding product designer and pays attention to details. She is a great person to work with all round.",
       name: "Funmi Olatunbosun",
@@ -45,25 +52,44 @@ export default function Testimonials() {
         {/* CENTER CONTENT */}
         <article className="pt-2 lg:pt-6 flex flex-col gap-6 lg:gap-10">
           {/* TOP - TEXT */}
-          <article className="flex flex-col gap-4 lg:gap-6">
-            <p className="relative text-[12px] lg:text-[18px] leading-normal lg:leading-[140%]">
-              {/* absolute - main */}
-              <span className="absolute top-0 left-0 right-0">
-                {Testimonials[number].comment}
-              </span>
-              {/* relative - height max - visibility none */}
-              <span className=" invisible">{Testimonials[0].comment}</span>
-            </p>
 
-            {/* NAM AND OCCUPATION */}
-            <article className="flex flex-col gap-2">
-              <h4 className="text-[16px] lg:text-[32px] font-bold leading-normal">
-                {Testimonials[number].name}
-              </h4>
-              <p className="text-[16px] lg:text-[18px] ">
-                {Testimonials[number].occupation}
-              </p>
-            </article>
+          {/* absolute - main */}
+          <article className="relative">
+            <span className="absolute top-0 left-0 right-0">
+              <article className="flex flex-col gap-4 lg:gap-6">
+                <p className="relative text-[12px] lg:text-[18px] leading-normal lg:leading-[140%]">
+                  {Testimonials[number].comment}
+                </p>
+
+                {/* NAME AND OCCUPATION */}
+                <article className="flex flex-col gap-2">
+                  <h4 className="text-[16px] lg:text-[32px] font-bold leading-normal">
+                    {Testimonials[number].name}
+                  </h4>
+                  <p className="text-[16px] lg:text-[18px] ">
+                    {Testimonials[number].occupation}
+                  </p>
+                </article>
+              </article>
+            </span>
+            {/* relative - height max - visibility none */}
+            <span className=" invisible">
+              <article className="flex flex-col gap-4 lg:gap-6">
+                <p className="relative text-[12px] lg:text-[18px] leading-normal lg:leading-[140%]">
+                  {Testimonials[0].comment}
+                </p>
+
+                {/* NAME AND OCCUPATION */}
+                <article className="flex flex-col gap-2">
+                  <h4 className="text-[16px] lg:text-[32px] font-bold leading-normal">
+                    {Testimonials[0].name}
+                  </h4>
+                  <p className="text-[16px] lg:text-[18px] ">
+                    {Testimonials[0].occupation}
+                  </p>
+                </article>
+              </article>
+            </span>
           </article>
 
           {/* BOTTOM - ARROW */}
