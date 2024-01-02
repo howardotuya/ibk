@@ -2,6 +2,7 @@ import Container from "@/components/container/container";
 import Navbar from "@/components/navbar/Navbar";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 
 // IMAGE IMPORTATION
 import tay1 from "@/public/images/PNG/tay/tay1.png";
@@ -394,7 +395,7 @@ export default function TAY() {
                   title="Tasty and Yummy - Prototype"
                 ></iframe>
               </div>
-              <script src="https://player.vimeo.com/api/player.js"></script>
+              <Script src="https://player.vimeo.com/api/player.js" />
             </article>
 
             {/* What Comes Next? */}
