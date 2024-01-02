@@ -21,7 +21,7 @@ export const metadata = {
   },
   openGraph: {
     images: [{
-      url: "https://ibukunabejide.com/opengraph-image.PNG",
+      url: "https://ibukunabejide.com/opengraph-image.png",
       width: 1200,
       height: 630
     }]
