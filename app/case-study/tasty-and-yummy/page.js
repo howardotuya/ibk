@@ -49,7 +49,8 @@ export default function TAY() {
             {/* HEADING + Project OVERVIEW */}
             <section className="pt-10 lg:pt-20 pb-5 lg:pb-11 flex flex-col gap-4 lg:gap-10">
               <h1 className="text-[32px] lg:text-[72px] font-medium leading-[120%] lg:leading-[100%] tracking-[-1.28px] lg:tracking-[-2.88px]">
-                Tasty & Yummy <span className="hidden lg:inline">Recipe Website</span>
+                Tasty & Yummy{" "}
+                <span className="hidden lg:inline">Recipe Website</span>
               </h1>
 
               {/* PROJECT OVERVIEW */}
@@ -166,14 +167,14 @@ export default function TAY() {
                     section to something more fun and creative.
                   </li>
                   <li>
-                    I had to remove this navigation because it won&apos;t look nice
-                    on the responsiveness and one of the potential users told me
-                    that it is better to use Google and YouTube video which is
-                    free, and post the video on the site&apos;s YouTube channel. This
-                    way the developer can embed the video link into the website
-                    for free. Google API enables the video to play on the
-                    website and it also contains the share, save, like, and
-                    download buttons.
+                    I had to remove this navigation because it won&apos;t look
+                    nice on the responsiveness and one of the potential users
+                    told me that it is better to use Google and YouTube video
+                    which is free, and post the video on the site&apos;s YouTube
+                    channel. This way the developer can embed the video link
+                    into the website for free. Google API enables the video to
+                    play on the website and it also contains the share, save,
+                    like, and download buttons.
                   </li>
                 </ul>
               </article>
@@ -383,8 +384,17 @@ export default function TAY() {
                 </h2>
               </article>
 
-              {/* UT 1.2 */}
-              <Image className="shrink-0" src={ut1} alt="" placeholder="blur" />
+              {/* UT 1.2 - VIDEO EMBEDDING */}
+              <div className="pt-[56%] relative">
+                <iframe
+                  src="https://player.vimeo.com/video/899048663?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  className="absolute top-0 left-0 w-full h-full"
+                  title="Tasty and Yummy - Prototype"
+                ></iframe>
+              </div>
+              <script src="https://player.vimeo.com/api/player.js"></script>
             </article>
 
             {/* What Comes Next? */}
@@ -413,7 +423,11 @@ export default function TAY() {
         </section>
 
         {/* NEXT PROJECT */}
-        <SubFooter main={"Go Back To"} first={"Oppia"} link={"/case-study/oppia"} />
+        <SubFooter
+          main={"Go Back To"}
+          first={"Oppia"}
+          link={"/case-study/oppia"}
+        />
       </main>
 
       {/* FOOTER */}
