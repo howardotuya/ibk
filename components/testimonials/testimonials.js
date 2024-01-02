@@ -54,42 +54,20 @@ export default function Testimonials() {
           {/* TOP - TEXT */}
 
           {/* absolute - main */}
-          <article className="relative">
-            <span className="absolute top-0 left-0 right-0">
-              <article className="flex flex-col gap-4 lg:gap-6">
-                <p className="relative text-[12px] lg:text-[18px] leading-normal lg:leading-[140%]">
-                  {Testimonials[number].comment}
-                </p>
+          <article className="flex flex-col gap-4 lg:gap-6">
+            <p className="relative text-[12px] lg:text-[18px] leading-normal lg:leading-[140%]">
+              {Testimonials[number].comment}
+            </p>
 
-                {/* NAME AND OCCUPATION */}
-                <article className="flex flex-col gap-2">
-                  <h4 className="text-[16px] lg:text-[32px] font-bold leading-normal">
-                    {Testimonials[number].name}
-                  </h4>
-                  <p className="text-[16px] lg:text-[18px] ">
-                    {Testimonials[number].occupation}
-                  </p>
-                </article>
-              </article>
-            </span>
-            {/* relative - height max - visibility none */}
-            <span className=" invisible">
-              <article className="flex flex-col gap-4 lg:gap-6">
-                <p className="relative text-[12px] lg:text-[18px] leading-normal lg:leading-[140%]">
-                  {Testimonials[0].comment}
-                </p>
-
-                {/* NAME AND OCCUPATION */}
-                <article className="flex flex-col gap-2">
-                  <h4 className="text-[16px] lg:text-[32px] font-bold leading-normal">
-                    {Testimonials[0].name}
-                  </h4>
-                  <p className="text-[16px] lg:text-[18px] ">
-                    {Testimonials[0].occupation}
-                  </p>
-                </article>
-              </article>
-            </span>
+            {/* NAME AND OCCUPATION */}
+            <article className="flex flex-col gap-2">
+              <h4 className="text-[16px] lg:text-[32px] font-bold leading-normal">
+                {Testimonials[number].name}
+              </h4>
+              <p className="text-[16px] lg:text-[18px] ">
+                {Testimonials[number].occupation}
+              </p>
+            </article>
           </article>
 
           {/* BOTTOM - ARROW */}
