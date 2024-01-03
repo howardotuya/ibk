@@ -91,7 +91,7 @@ export default function Home() {
                     of customers. <br />
                     <br /> I love to evolve and face new challenges, that was
                     why I transitioned into tech. Check out my recent interview
-                    on not just design podcast for more gist on my journey into
+                    on <Link target="_blank" href="https://www.youtube.com/playlist?list=PLn5O3WWmVpuKiWkfzhmPMO0MSdiqbvQUa" className="font-bold">not just design podcast</Link> for more gist on my journey into
                     tech.
                   </p>
                 </article>
