@@ -271,9 +271,27 @@ export default function Home() {
 
                     {/* BOOKS - LIST OF TEXTS */}
                     <article className="flex flex-col gap-4 text-[14px] lg:text-[16px]">
-                      <p>Steal like an artist</p>
-                      <p>How to sell yourself</p>
-                      <p>The indispensable Designer </p>
+                      <Link className="underline"
+                        href="https://austinkleon.com/steal/"
+                        target="_blank"
+                      >
+                        Steal like an artist
+                      </Link>
+                      <Link className="underline"
+                        href="https://www.goodreads.com/en/book/show/257789"
+                        target="_blank"
+                      >
+                        How to sell yourself
+                      </Link>
+                      <Link className="underline"
+                        href="https://www.uxpin.com/studio/ebooks/the-indispensable-designer-a-guide-to-influential-design-signup"
+                        target="_blank"
+                      >
+                        The indispensable Designer
+                      </Link>
+                      <p></p>
+                      <p></p>
+                      <p> </p>
                     </article>
                   </article>
 
@@ -350,9 +368,24 @@ export default function Home() {
 
                     {/* BOOKS - LIST OF TEXTS */}
                     <article className="flex flex-col gap-4 text-[14px] lg:text-[16px]">
-                      <p>I said what I said</p>
-                      <p>Road to 30</p>
-                      <p>Not Just Design</p>
+                      <Link className="underline"
+                        href="https://isaidwhatisaidpodcast.com/episodes/"
+                        target="_blank"
+                      >
+                        I said what I said
+                      </Link>
+                      <Link className="underline"
+                        href="https://podcasts.apple.com/ng/podcast/road-to-30-podcast/id1459267077"
+                        target="_blank"
+                      >
+                        Road to 30
+                      </Link>
+                      <Link className="underline"
+                        target="_blank"
+                        href="https://www.youtube.com/playlist?list=PLn5O3WWmVpuKiWkfzhmPMO0MSdiqbvQUa"
+                      >
+                        Not Just Design
+                      </Link>
                     </article>
                   </article>
                 </article>
