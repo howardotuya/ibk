@@ -57,7 +57,10 @@ export default function Navbar() {
             </Link>
 
             {/* Works */}
-            <Link className="flex flex-col gap-2" href={"/#recent-works"}>
+            <Link
+              href={process.env.NEXT_PUBLIC_BASE_URL + "/#recent-works"}
+              className="flex flex-col gap-2"
+            >
               {/* TEXT PLUS CHEVRON ICON */}
               <article className="flex items-end justify-between">
                 <p className="text-[14px]">Works</p>
@@ -70,6 +73,7 @@ export default function Navbar() {
             {/* Resume */}
             <Link
               className="flex flex-col gap-2"
+              target="_blank"
               download={"Ibukun_Abejide_Resume_2023.pdf"}
               href={"/Ibukun-Abejide-Resume-2023.pdf"}
             >
@@ -123,11 +127,15 @@ export default function Navbar() {
               <Link className="p-2" href={"/about"}>
                 About
               </Link>
-              <Link className="p-2" href={"/#recent-works"}>
+              <Link
+                className="p-2"
+                href={process.env.NEXT_PUBLIC_BASE_URL + "/#recent-works"}
+              >
                 Works
               </Link>
               <Link
                 className="p-2"
+                target="_blank"
                 download={"Ibukun_Abejide_Resume_2023.pdf"}
                 href={"/Ibukun-Abejide-Resume-2023.pdf"}
               >
