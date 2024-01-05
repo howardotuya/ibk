@@ -14,7 +14,17 @@ import gallery3 from "@/public/images/PNG/gallery3.png";
 import gallery4 from "@/public/images/PNG/gallery4.png";
 import Footer from "@/components/footer/footer";
 
-export default function Home() {
+// METADATA
+export const metadata = {
+  title: 'About',
+  description:
+    "Hi, my name is Ibukun Abejide, a passionate product designer on a mission to build successful products for millions of users across the world. I have experience working in the Fintech, E-commerce, EdTech and AI sectors and have also helped more than 100 people get into tech.",
+  alternates: {
+    canonical: process.env.NEXT_PUBLIC_BASE_URL + "/about",
+  },
+}
+
+export default function About() {
   return (
     <>
       {/* NAVBAR */}
