@@ -16,7 +16,7 @@ export default function Navbar() {
       <article
         className={`${
           isActive ? "block" : "hidden"
-        } desktopHidden z-[99999] h-screen absolute top-0 bottom-0 left-0 right-0 bg-white`}
+        } desktopHidden h-screen z-[9999] absolute top-0 bottom-0 left-0 right-0 bg-white`}
       >
         <article className="p-5 flex flex-col gap-[52px]">
           {/* CANCEL */}
@@ -97,7 +97,7 @@ export default function Navbar() {
       </article>
 
       {/* NAVBAR */}
-      <div className="bg-white px-5 xl:px-10">
+      <div className="relative z-[999] bg-white px-5 xl:px-10">
         <Container>
           <header className="flex items-center justify-between py-3 bg-white">
             {/* LOGO */}
