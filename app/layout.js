@@ -20,12 +20,14 @@ export const metadata = {
     card: "summary_large_image",
   },
   openGraph: {
-    images: [{
-      url: "https://ibukunabejide.com/opengraph-image.png",
-      width: 1200,
-      height: 630
-    }]
-  }
+    images: [
+      {
+        url: process.env.NEXT_PUBLIC_BASE_URL + "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
