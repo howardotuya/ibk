@@ -122,7 +122,7 @@ export default function About() {
                   <br />
                   <p>
                     2. Worked on multiple features on an EdTech product that
-                    increased the number of users to 1000.
+                    increased the number of users to 10,000.
                   </p>
                   <br />
                   <p>
