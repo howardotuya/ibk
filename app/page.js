@@ -23,6 +23,10 @@ import jogovest2 from "@/public/images/PNG/jogovest2.png";
 import mjogovest1 from "@/public/images/PNG/mjogovest1.png";
 import mjogovest2 from "@/public/images/PNG/mjogovest2.png";
 import tastyandyummy from "@/public/images/PNG/tastyandyummy.png";
+import form1 from "@/public/images/PNG/form1.png";
+import form2 from "@/public/images/PNG/form2.png";
+import form3 from "@/public/images/PNG/form3.png";
+import form4 from "@/public/images/PNG/form4.png";
 
 export default function Home() {
   return (
@@ -34,7 +38,7 @@ export default function Home() {
 
       {/* MAIN CONTENT */}
       <main className="px-5 xl:px-0">
-          {/* HERO SECTION */}
+        {/* HERO SECTION */}
         <Container>
           <section className="pt-14 lg:pt-20 flex flex-col gap-6 lg:gap-10">
             {/* TOP */}
@@ -207,7 +211,7 @@ export default function Home() {
         <div className="pt-14 lg:pt-20" id="recent-works">
           <Divider bgColor={"bg-[#E5E8E8]"} />
         </div>
-        
+
         <Container>
           {/* RECENT WORKS */}
           <section className="py-14 lg:pt-14 lg:pb-[108px] flex flex-col gap-6 lg:gap-14">
@@ -350,6 +354,31 @@ export default function Home() {
                     src={tastyandyummy}
                     alt="Tasty and Yummy website"
                   />
+                </article>
+              </article>
+
+              {/* Visual Design */}
+              <article className="flex flex-col gap-6 p-8 lg:p-14 rounded-[12px] bg-[#EFFEF3]">
+                {/* TEXT */}
+                <article>
+                  <h3 className="text-[24px] lg:text-[40px] font-semibold text-[#434747">
+                    Visual Designs
+                  </h3>
+                </article>
+                {/* IMAGES */}
+                <article className="grid lg:grid-cols-2 gap-x-6 lg:gap-x-8 gap-y-6 items-start">
+                  <article className="border-[0.91px] border-[#CECED2] shadow-[-21.69px_-2.763px_90.36px_0px_rgba(239,254,243,0.15)]">
+                    <Image src={form1} alt="" />
+                  </article>
+                  <article className="border-[0.91px] border-[#CECED2] shadow-[-21.69px_-2.763px_90.36px_0px_rgba(239,254,243,0.15)]">
+                    <Image src={form2} alt="" />
+                  </article>
+                  <article className="border-[0.91px] border-[#CECED2] shadow-[-21.69px_-2.763px_90.36px_0px_rgba(239,254,243,0.15)]">
+                    <Image src={form3} alt="" />
+                  </article>
+                  <article className="border-[0.91px] border-[#CECED2] shadow-[-21.69px_-2.763px_90.36px_0px_rgba(239,254,243,0.15)]">
+                    <Image src={form4} alt="" />
+                  </article>
                 </article>
               </article>
             </section>
