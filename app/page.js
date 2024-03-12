@@ -366,7 +366,7 @@ export default function Home() {
                   </h3>
                 </article>
                 {/* IMAGES */}
-                <article className="grid lg:grid-cols-2 gap-x-6 lg:gap-x-8 gap-y-6 items-start">
+                <article className="grid grid-cols-2 gap-x-6 lg:gap-x-8 gap-y-6 items-start">
                   <article className="border-[0.91px] border-[#CECED2] shadow-[-21.69px_-2.763px_90.36px_0px_rgba(239,254,243,0.15)]">
                     <Image src={form1} alt="" />
                   </article>
