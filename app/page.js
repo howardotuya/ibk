@@ -358,15 +358,18 @@ export default function Home() {
               </article>
 
               {/* Visual Design */}
-              <article className="flex flex-col gap-6 p-8 lg:p-14 rounded-[12px] bg-[#EFFEF3]">
+              <article className="flex flex-col gap-4 lg:gap-8 p-8 lg:p-14 rounded-[12px] bg-[#EFFEF3]">
                 {/* TEXT */}
-                <article>
-                  <h3 className="text-[24px] lg:text-[40px] font-semibold text-[#434747">
+                <article className="flex flex-col gap-4 lg:gap-6">
+                  <h3 className="text-[24px] lg:text-[40px] font-semibold text-[#434747]">
                     Visual Designs
                   </h3>
+                  <h5 className="lg:text-[32px] text-[#434747] font-bold lg:font-semibold">
+                    Form Creation Dashboard
+                  </h5>
                 </article>
                 {/* IMAGES */}
-                <article className="grid lg:grid-cols-2 gap-x-6 lg:gap-x-8 gap-y-6 items-start">
+                <article className="grid lg:grid-cols-2 gap-x-6 lg:gap-x-8 gap-y-4 lg:gap-y-6 items-start">
                   <article className="border-[0.91px] border-[#CECED2] shadow-[-21.69px_-2.763px_90.36px_0px_rgba(239,254,243,0.15)]">
                     <Image src={form1} alt="" />
                   </article>
