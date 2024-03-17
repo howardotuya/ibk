@@ -203,7 +203,19 @@ export default function Jogovest() {
                 </p>
               </article>
             </article>
+          </Container>
 
+          {/* NDA */}
+          <article className="bg-[#7BFAAD] py-5 lg:py-10 -mx-5 xl:mx-0 pl-5 pr-[38px]">
+            <Container>
+              <h3 className="text-[24px] lg:text-[40px] font-semibold text-[#434747] italic leading-normal max-w-[1104px]">
+                I signed an NDA for this project, so I won&apos;t be able to
+                reveal more screens and research.
+              </h3>
+            </Container>
+          </article>
+
+          <Container>
             {/* Product Features */}
             <article className="pt-8 pb-5 lg:py-10 flex flex-col gap-6 lg:gap-12">
               {/* TEXT */}
@@ -226,11 +238,7 @@ export default function Jogovest() {
                   </article>
                   {/* Seperator */}
                   <article className="shrink-0">
-                    <Image
-                      className="hidden lg:block"
-                      src={arrow}
-                      alt=""
-                    />
+                    <Image className="hidden lg:block" src={arrow} alt="" />
                     <Image
                       className="block lg:hidden"
                       src={smallArrow}
@@ -378,7 +386,11 @@ export default function Jogovest() {
         </section>
 
         {/* NEXT PROJECT */}
-        <SubFooter short={true} first={"Tasty and Yummy"} link={"/case-study/tasty-and-yummy"} />
+        <SubFooter
+          short={true}
+          first={"Tasty and Yummy"}
+          link={"/case-study/tasty-and-yummy"}
+        />
       </main>
 
       {/* FOOTER */}
