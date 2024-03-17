@@ -362,7 +362,7 @@ export default function Home() {
                 {/* TEXT */}
                 <article className="flex flex-col gap-4 lg:gap-6">
                   <h3 className="text-[24px] lg:text-[40px] font-semibold text-[#434747]">
-                    Visual Designs
+                    Visual Snapshots
                   </h3>
                   <h5 className="lg:text-[32px] text-[#434747] font-bold lg:font-semibold">
                     Form Creation Dashboard
