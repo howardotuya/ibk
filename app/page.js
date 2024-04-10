@@ -187,22 +187,6 @@ export default function Home() {
               </article>
 
               {/* right */}
-              <article className="hidden lg:block relative shrink-0">
-                <Link
-                  className="absolute absolute-center whitespace-nowrap leading-6 block font-bold text-black text-[20px]"
-                  href={"/Ibukun-Abejide-Resume-2023.pdf"}
-                  download={"Ibukun_Abejide_Resume_2023.pdf"}
-                >
-                  Download resume
-                </Link>
-
-                {/* BUTTON IMAGE - CENTERED */}
-                <Image
-                  className="w-[333.108px] h-auto"
-                  src={buttonBlack}
-                  alt="Download resume"
-                />
-              </article>
             </article>
           </section>
         </Container>
@@ -358,15 +342,12 @@ export default function Home() {
               </article>
 
               {/* Visual Design */}
-              <article className="flex flex-col gap-4 lg:gap-8 p-8 lg:p-14 rounded-[12px] bg-[#EFFEF3]">
+              <article className="flex mt-6 lg:mt-[60px] flex-col gap-4 lg:gap-20 ">
                 {/* TEXT */}
                 <article className="flex flex-col gap-4 lg:gap-6">
-                  <h3 className="text-[24px] lg:text-[40px] font-semibold text-[#434747]">
+                  <h3 className="text-[24px] leading-[38.4px] lg:text-[56px] lg:leading-[56px] font-medium text-[#434747]">
                     Visual Snapshots
                   </h3>
-                  <h5 className="lg:text-[32px] text-[#434747] font-bold lg:font-semibold">
-                    Form Creation Dashboard
-                  </h5>
                 </article>
                 {/* IMAGES */}
                 <article className="grid lg:grid-cols-2 gap-x-6 lg:gap-x-8 gap-y-4 lg:gap-y-6 items-start">
