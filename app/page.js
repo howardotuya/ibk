@@ -27,6 +27,7 @@ import form1 from "@/public/images/PNG/form1.png";
 import form2 from "@/public/images/PNG/form2.png";
 import form3 from "@/public/images/PNG/form3.png";
 import form4 from "@/public/images/PNG/form4.png";
+import prototype from "@/public/images/prototype.gif";
 
 export default function Home() {
   return (
@@ -342,15 +343,19 @@ export default function Home() {
               </article>
 
               {/* Visual Design */}
-              <article className="flex mt-6 lg:mt-[60px] flex-col gap-4 lg:gap-20 ">
+              <article className="flex mt-6 lg:mt-[60px] flex-col gap-6 lg:gap-11 ">
                 {/* TEXT */}
                 <article className="flex flex-col gap-4 lg:gap-6">
-                  <h3 className="text-[24px] leading-[38.4px] lg:text-[56px] lg:leading-[56px] font-medium text-[#434747]">
+                  <h3 className="text-[24px] leading-[38.4px] lg:text-[56px] lg:leading-[56px] font-medium text-[#0C0D0D]">
                     Visual Snapshots
                   </h3>
                 </article>
+                {/* Prototype */}
+                <article>
+                  <Image src={prototype} alt="GIF video" />
+                </article>
                 {/* IMAGES */}
-                <article className="grid lg:grid-cols-2 gap-x-6 lg:gap-x-8 gap-y-4 lg:gap-y-6 items-start">
+                {/* <article className="grid lg:grid-cols-2 gap-x-6 lg:gap-x-8 gap-y-4 lg:gap-y-6 items-start">
                   <article className="border-[0.91px] border-[#CECED2] shadow-[-21.69px_-2.763px_90.36px_0px_rgba(239,254,243,0.15)]">
                     <Image src={form1} alt="" />
                   </article>
@@ -363,7 +368,7 @@ export default function Home() {
                   <article className="border-[0.91px] border-[#CECED2] shadow-[-21.69px_-2.763px_90.36px_0px_rgba(239,254,243,0.15)]">
                     <Image src={form4} alt="" />
                   </article>
-                </article>
+                </article> */}
               </article>
             </section>
           </section>
