@@ -27,7 +27,7 @@ import form1 from "@/public/images/PNG/form1.png";
 import form2 from "@/public/images/PNG/form2.png";
 import form3 from "@/public/images/PNG/form3.png";
 import form4 from "@/public/images/PNG/form4.png";
-import prototype from "@/public/images/prototype.gif";
+import prototype from "@/public/images/prototype2.gif";
 
 export default function Home() {
   return (
