@@ -1,11 +1,24 @@
 import React from "react";
 import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Suspense } from "react";
 import Loading from "./loading";
 import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const cooper = localFont({
+  src: [
+    {
+      path: "../public/font/cooper-medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+  ],
+  display: "swap",
+  variable: "--font-cooper",
+});
 
 export const metadata = {
   title: {
@@ -34,7 +47,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} ${cooper.variable}`}>
         <Suspense fallback={<Loading />}>{children}</Suspense>
       </body>
       <Script
@@ -50,4 +63,4 @@ export default function RootLayout({ children }) {
       </Script>
     </html>
   );
-} 
+}

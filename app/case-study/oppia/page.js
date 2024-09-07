@@ -65,43 +65,84 @@ export default function Oppia() {
         </section>
 
         {/* REST OF THE BODY */}
-        <section className="px-5 xl:px-0">
-          <Container>
-            {/* HEADING + Project OVERVIEW */}
-            <section className="pt-10 lg:pt-20 pb-5 lg:pb-11 flex flex-col gap-4 lg:gap-10">
-              <h1 className="text-[32px] lg:text-[72px] font-medium leading-[120%] lg:leading-[100%] tracking-[-1.28px] lg:tracking-[-2.88px]">
-                Oppia Beta Android App
-              </h1>
 
+        <section className="px-5 xl:px-0 border-b border-[#EFFEF3]">
+          <Container>
+            <div className="flex flex-col gap-4 lg:gap-6 my-6 lg:my-10">
+              <h1 className="text-[#0C0D0D] font-cooper lg:text-[24px] tracking-[-0.64px] lg:tracking-[-0.96px]">
+                Oppia
+              </h1>
+              <p className="text-[24px] lg:text-[48px] font-medium leading-[120%] tracking-[-0.96px] lg:tracking-[-1.92px]">
+                Designed the language feature and conducted user research to
+                help improve the user experience on the app
+              </p>
+            </div>
+          </Container>
+        </section>
+
+        <section className="px-5 xl:px-0 border-b border-[#EFFEF3]">
+          <Container>
+            <section className="py-8 lg:py-10 flex flex-col gap-4 lg:gap-10">
               {/* PROJECT OVERVIEW */}
               <article className="flex flex-col gap-4 lg:gap-6">
                 <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
                   Project overview
                 </h2>
                 <p className="text-[14px] lg:text-[18px] leading-[140%] lg:leading-normal lg:tracking-[-0.18px]">
-                  Oppia Foundation is a platform that provides education for
-                  those who lack access to it. Statistics shows that 61 million
-                  children aren’t able to attend primary education worldwide and
-                  17 million will never be able to step their foot in school if
-                  the trend continues.
+                  Oppia is a learning platform aimed at providing quality
+                  education to children who lack access to traditional
+                  schooling. Given that 61 million children worldwide are unable
+                  to attend primary education, and 17 million will never step
+                  foot in a school if current trends persist, Oppia's mission is
+                  critical. The language and voice feature was designed to
+                  enhance the accessibility of the app, making it easier for
+                  children from diverse linguistic backgrounds to learn
+                  effectively.
+                </p>
+              </article>
+            </section>
+          </Container>
+        </section>
+
+        <section className="px-5 xl:px-0">
+          <Container>
+            {/* ROLE */}
+            <section className="py-8 lg:py-10 flex flex-col gap-4 lg:gap-10">
+              <article className="flex flex-col gap-4 lg:gap-6">
+                <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
+                  My Role
+                </h2>
+                <p className="text-[14px] lg:text-[18px] leading-[140%] lg:leading-normal lg:tracking-[-0.18px]">
+                  As the Lead Product Designer, I was responsible for
+                  conceptualizing, designing, and implementing the language and
+                  voice features. This involved conducting user research,
+                  developing user personas, creating wireframes and prototypes,
+                  and working closely with developers and educators to ensure
+                  the features were effective and aligned with the educational
+                  goals of Oppia.
                 </p>
               </article>
             </section>
 
             {/* PROBLEM STATEMENT + GOAL + IMAGE */}
-            <article className="pt-8 pb-5 lg:py-0 grid lg:grid-cols-[1fr_auto] items-center gap-4 lg:gap-6 ">
+            <article className="py-8 lg:py-10 grid lg:grid-cols-[1fr_auto] items-center gap-4 lg:gap-6 ">
               {/* PROBLEM STATEMENT AND GOAL */}
-              <article className="flex flex-col gap-4 lg:gap-10">
+              <article className="flex flex-col gap-8 lg:gap-10">
                 {/* PROBLEM STATEMENT */}
                 <article className="flex flex-col gap-4 lg:gap-6">
                   <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
                     Problem Statement
                   </h2>
                   <p className="text-[14px] lg:text-[18px] leading-[140%] lg:leading-normal lg:tracking-[-0.18px]">
-                    A lot of underdeveloped children in Nigeria and around the
-                    world do not understand English language. Oppia is looking
-                    to include language translation feature in order to reach a
-                    wider audience.
+                    Millions of children worldwide lack access to primary
+                    education due to various barriers, including language and
+                    literacy challenges. Oppia aims to address this by providing
+                    an inclusive learning platform. The current version of the
+                    app lacks features that accommodate children who are
+                    non-native speakers or have limited reading skills. There is
+                    a need to design language and voice functionalities that can
+                    make the app more accessible and engaging for these
+                    children.
                   </p>
                 </article>
 
@@ -111,9 +152,10 @@ export default function Oppia() {
                     Goal
                   </h2>
                   <p className="text-[14px] lg:text-[18px] leading-[140%] lg:leading-normal lg:tracking-[-0.18px]">
-                    The goal is to simplify the experience of the app and make
-                    it easily accessible to every underprivileged children
-                    around the world.
+                    To enhance the accessibility of the Oppia Android learning
+                    app by integrating language and voice features that cater to
+                    children from diverse linguistic backgrounds and varying
+                    levels of literacy.
                   </p>
                 </article>
               </article>
@@ -124,17 +166,41 @@ export default function Oppia() {
               </article>
             </article>
 
+            {/* PRODUCT METRICS */}
+            <section className="py-8 lg:py-10 flex flex-col gap-4 lg:gap-10">
+              <article className="flex flex-col gap-4 lg:gap-6">
+                <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
+                  Product Metrics
+                </h2>
+                <p className="text-[14px] lg:text-[18px] leading-[140%] lg:leading-normal lg:tracking-[-0.18px]">
+                  Currently we have <span className="font-bold">4</span>{" "}
+                  languages on the app, and through our analytics we have gotten{" "}
+                  <span className="font-bold">10,000</span> more children
+                  onboarded on the app and we are looking to add more languages
+                  on the app.
+                </p>
+              </article>
+            </section>
+
             {/* RESEARCH AND ANALYSIS */}
-            <article className="pt-8 pb-5 flex flex-col gap-5 lg:gap-6 lg:py-10">
+            <article className="pt-8 pb-5 flex flex-col gap-5 lg:gap-8 lg:py-10">
               {/* RAA 1.1 */}
               <article className="flex flex-col gap-4 lg:gap-6">
                 <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
-                  Research & Analysis
+                  Research & Analysis{" "}
+                  <span className="hidden lg:inline">
+                    (How we generated the product metrics)
+                  </span>
                 </h2>
                 <p className="max-w-[807px] text-[14px] lg:text-[18px] leading-[140%] lg:leading-normal lg:tracking-[-0.18px]">
                   Before coming up with the solution, I conducted interview with
-                  children within the range of 7-14. Here are the interview
-                  questions and key insights from the research
+                  children within the range of{" "}
+                  <span className="font-bold">7-14</span>.
+                </p>
+
+                <p className="hidden lg:block mt-4 text-[18px] font-bold tracking-[-0.18px] italic">
+                  Here are the interview questions and key insights from the
+                  research
                 </p>
               </article>
 
@@ -167,8 +233,8 @@ export default function Oppia() {
                   {/* LISTING */}
                   <article className="text-[14px] lg:text-[18px] leading-[140%] lg:leading-normal lg:tracking-[-0.18px] flex flex-col gap-4">
                     <p>
-                      1. 30% of the mobile app users needed interpreters to help
-                      translate{" "}
+                      1. <span className="font-bold">30%</span> of the mobile
+                      app users needed interpreters to help translate{" "}
                     </p>
                     <p>2. Email and Text Notifications</p>
                     <p>3. The app is very seamless and easy to use</p>
@@ -179,7 +245,7 @@ export default function Oppia() {
             </article>
 
             {/* Our Process using the “How Might We Technique” */}
-            <article className="pt-8 pb-14 gap-9 lg:pt-10 lg:pb-[134px] flex flex-col mlg:gap-[76px]">
+            <article className="py-8 gap-9 lg:pt-[92px] lg:pb-[134px] flex flex-col mlg:gap-[76px]">
               {/* 1.1 */}
               <article className="flex flex-col gap-4 lg:gap-6">
                 <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
@@ -203,7 +269,6 @@ export default function Oppia() {
                       src={hmw4}
                       alt=""
                     />
-                    
                   </span>{" "}
                   for{" "}
                   <span className="bg-[#3AEE81] not-italic relative">
@@ -213,7 +278,6 @@ export default function Oppia() {
                       src={hmw3}
                       alt=""
                     />
-                    
                   </span>{" "}
                   <span className="relative">
                     globally in
@@ -222,7 +286,6 @@ export default function Oppia() {
                       src={hmw2}
                       alt=""
                     />
-                    
                   </span>{" "}
                   order to enjoy free access to education.
                 </p>
@@ -235,7 +298,7 @@ export default function Oppia() {
                 />
 
                 {/* WHO */}
-                
+
                 <Image
                   className="hidden mlg:block absolute bottom-[-88px] left-[170px]"
                   src={hmw1}
@@ -260,7 +323,7 @@ export default function Oppia() {
               </article>
 
               {/* IMAGERY */}
-              <article className="flex items-center self-center">
+              <article className="flex items-center ">
                 {/* IMAGE 1 */}
                 <article className="w-[137px] max-w-[234px] lg:w-full h-auto shrink-0">
                   <Image src={ds1} alt="" />
@@ -318,33 +381,42 @@ export default function Oppia() {
               </article>
 
               {/* SUBHEADING + TEXTS */}
-              <article className="flex flex-col gap-4 lg:gap-6">
-                <h4 className="text-[18px] lg:text-[24px] font-semibold cod-gray-800">
+              <article className="flex flex-col gap-4">
+                <h4 className="text-[18px] lg:text-[32px] font-semibold cod-gray-800">
                   Results from the testing
                 </h4>
-                <article className="flex flex-col gap-6 text-[14px] lg:text-[18px] leading-[140%] lg:leading-normal lg:tracking-[-0.18px]">
-                  <p>
+                <ul className="list-disc *:ml-6 flex flex-col gap-6 text-[14px] lg:text-[18px] leading-[140%] lg:leading-normal lg:tracking-[-0.18px]">
+                  <li>
                     From the testing, we gathered that users should be able to
                     choose the language they want at the onboarding stage.
-                  </p>
-                  <p>The app is fun and educative.</p>
-                  <p>It is easy to locate the language app.</p>
-                </article>
+                  </li>
+                  <li>The app is fun and educative.</li>
+                  <li>It is easy to locate the language app.</li>
+                </ul>
               </article>
             </article>
 
-            {/* Product Metrics */}
+            {/* Challenges Faced */}
             <article className="max-w-[1077px] pt-8 pb-5 lg:py-10 ">
               {/* HEADING + TEXT */}
               <article className="flex flex-col gap-4 lg:gap-6">
                 <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
-                  Product Metrics
+                  Challenges Faced
                 </h2>
-                <p className="text-[14px] lg:text-[18px] leading-[140%] lg:leading-normal lg:tracking-[-0.18px]">
-                  Currently we have 4 languages on the app, and through our
-                  analytics we have gotten 10,000 more children onboarded on the
-                  app and we are looking to add more languages on the app.
-                </p>
+                <div className="text-[14px] lg:text-[18px] leading-[140%] tracking-[-0.14px] lg:tracking-[0.18px]">
+                  <h6 className="font-medium">Diverse Linguistic Needs:</h6>
+                  <ul className="list-disc ml-6">
+                    <li>
+                      Addressing the wide range of languages spoken by the
+                      target user base.
+                    </li>
+                    <div className="lg:hidden">&nbsp;</div>
+                    <li>
+                      Solved this by prioritizing the most commonly spoken
+                      languages and planning for future expansions.
+                    </li>
+                  </ul>
+                </div>
               </article>
             </article>
 

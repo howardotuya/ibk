@@ -63,14 +63,24 @@ export default function Jogovest() {
         </section>
 
         {/* REST OF THE BODY */}
+        <section className="px-5 xl:px-0 lg:border-b border-[#EFFEF3]">
+          <Container>
+            <div className="flex flex-col gap-4 lg:gap-6 my-6 lg:my-10">
+              <h1 className="text-[#0C0D0D] font-cooper lg:text-[24px] tracking-[-0.64px] lg:tracking-[-0.96px]">
+                Jogovest
+              </h1>
+              <p className="text-[24px] lg:text-[48px] font-medium leading-[120%] tracking-[-0.96px] lg:tracking-[-1.92px]">
+                Designed an investment platform tailored to meet the unique
+                needs of Nigerian investors.
+              </p>
+            </div>
+          </Container>
+        </section>
+
         <section className="px-5 xl:px-0">
           <Container>
             {/* HEADING + Project OVERVIEW */}
-            <section className="pt-10 lg:pt-20 pb-5 lg:pb-11 flex flex-col gap-4 lg:gap-10">
-              <h1 className="text-[32px] lg:text-[72px] font-medium leading-[120%] lg:leading-[100%] tracking-[-1.28px] lg:tracking-[-2.88px]">
-                Jogovest Investment App
-              </h1>
-
+            <section className="pt-2 pb-3 lg:py-[38px] flex flex-col gap-4 lg:gap-10">
               {/* PROJECT OVERVIEW */}
               <article className="max-w-[326px] lg:max-w-none flex flex-col gap-4 lg:gap-6">
                 <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
@@ -86,9 +96,9 @@ export default function Jogovest() {
             </section>
 
             {/* PROBLEM STATEMENT + GOAL + IMAGE */}
-            <article className="pt-8 pb-5 lg:py-0 grid lg:grid-cols-[1fr_auto] items-center gap-4 lg:gap-6 ">
+            <article className="pt-8 pb-5 lg:py-0 grid lg:grid-cols-[1fr_auto] items-center gap-10 lg:gap-6 ">
               {/* PROBLEM STATEMENT AND GOAL */}
-              <article className="flex flex-col gap-4 lg:gap-10">
+              <article className="flex flex-col gap-8 lg:gap-10">
                 {/* PROBLEM STATEMENT */}
                 <article className="flex flex-col gap-4 lg:gap-6">
                   <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
@@ -121,7 +131,7 @@ export default function Jogovest() {
             </article>
 
             {/* RESEARCH AND ANALYSIS */}
-            <article className="pt-8 pb-5 flex flex-col gap-5 lg:gap-6 lg:py-10">
+            <article className="pt-6 pb-5 flex flex-col gap-5 lg:gap-6 lg:py-10">
               {/* RAA 1.1 */}
               <article className="flex flex-col gap-4 lg:gap-6">
                 <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
@@ -140,7 +150,7 @@ export default function Jogovest() {
             </article>
 
             {/* Work Approach */}
-            <article className="pt-8 pb-5 flex flex-col gap-5 lg:gap-6 lg:py-10">
+            <article className="pt-10 pb-5 flex flex-col gap-5 lg:gap-6 lg:py-10">
               {/* WA 1.1 */}
               <article className="flex flex-col">
                 <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
@@ -163,9 +173,9 @@ export default function Jogovest() {
                     Flexible Approach
                   </h4>
                   <p className="text-[#4C5251] leading-[140%] text-[14px] lg:text-[16px]">
-                    I maintained a flexible approach to be able to meet client’s
-                    changing needs, to meet not only technical, but business
-                    goals.
+                    I maintained a flexible approach to be able to meet
+                    client&apos;s changing needs, to meet not only technical,
+                    but business goals.
                   </p>
                 </div>
                 <div className="lg:p-10 py-8 px-5 bg-[#F5F6F6] rounded-[12px] flex flex-col gap-4">
@@ -363,7 +373,7 @@ export default function Jogovest() {
                   {/* MAIN BODY */}
                   <p className="text-[12px] lg:text-[18px] leading-[140%]">
                     You did an amazing job with the prototype and designs, I
-                    really can’t wait to work with you in future.
+                    really can&apos;t wait to work with you in future.
                   </p>
                   {/* FROM  */}
                   <article className="flex flex-col gap-2">
@@ -388,7 +398,7 @@ export default function Jogovest() {
         {/* NEXT PROJECT */}
         <SubFooter
           short={true}
-          first={"Tasty and Yummy"}
+          first={"PBH Website"}
           link={"/case-study/tasty-and-yummy"}
         />
       </main>

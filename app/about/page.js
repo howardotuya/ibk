@@ -6,6 +6,7 @@ import Link from "next/link";
 import Button from "@/components/button/button";
 
 // IMAGE IMPORTATION
+import about from "@/public/images/PNG/about-new.jpeg";
 import about1 from "@/public/images/PNG/about1.png";
 import mabout1 from "@/public/images/PNG/mabout1.png";
 import gallery1 from "@/public/images/PNG/gallery1.png";
@@ -16,13 +17,13 @@ import Footer from "@/components/footer/footer";
 
 // METADATA
 export const metadata = {
-  title: 'About',
+  title: "About",
   description:
     "Hi, my name is Ibukun Abejide, a passionate product designer on a mission to build successful products for millions of users across the world. I have experience working in the Fintech, E-commerce, EdTech and AI sectors and have also helped more than 100 people get into tech.",
   alternates: {
     canonical: process.env.NEXT_PUBLIC_BASE_URL + "/about",
   },
-}
+};
 
 export default function About() {
   return (
@@ -33,43 +34,35 @@ export default function About() {
       </div>
 
       {/* MAIN CONTENT */}
-      <div className="px-5 xl:px-0">
+      <div className="pt-5 lg:pt-10 px-5 xl:px-0">
         <Container>
           <main>
             {/* HERO SECTION */}
-            <section className="grid items-center lg:grid-cols-[auto_1fr] gap-4">
+            <section className="grid items-start lg:grid-cols-[auto_1fr] gap-4 lg:gap-8">
               {/* IMAGE - LEFT */}
-              <article className="flex justify-center items-center">
-                {/* MOBILE */}
-                <Image
-                  className="block lg:hidden max-w-[242.985px] w-full h-auto shrink-0"
-                  src={mabout1}
-                  placeholder="blur"
-                  alt=""
-                />
-
-                {/* DESKTOP */}
-                <Image
-                  className="hidden lg:block w-full min-w-[546px] max-w-[546px] h-auto shrink-0"
-                  src={about1}
-                  placeholder="blur"
-                  alt=""
-                />
+              <article className="flex justify-start items-start">
+                <div className="relative w-full max-w-[408px] lg:w-[408px] h-[282px] lg:h-[460px] overflow-hidden rounded-[16px] border-[4px] border-[#E5E8E8]">
+                  <Image
+                    className="object-cover object-[center_24%] lg:object-center"
+                    src={about}
+                    alt="Ibukun"
+                    fill
+                  />
+                </div>
               </article>
 
               {/* TEXT - RIGHT */}
-              <article className="py-4 lg:pt-[148px] lg:pb-0 flex flex-col gap-6">
+              <article className="py-4 lg:pt-[96.5px] lg:pb-0 flex flex-col gap-6">
                 <h1 className="text-[32px] lg:text-[72px] font-medium leading-[100%] tracking-[-1.28px] lg:tracking-[-2.88px]">
                   About IBK
                 </h1>
 
                 <p className="cod-gray-700 text-justify text-[14px] lg:text-[18px] leading-[120%] lg:leading-[140%]">
-                  My name is Ibukun Abejide, I am a Product Designer currently
-                  working at Prifina. Prior to that, I worked at Oppia
-                  Foundation, a platform for educating less privilege children
-                  where I contributed to the implementation of the voice and
-                  language feature which resulted into 10,000 more users across
-                  Africa.{" "}
+                  My name is Ibukun Abejide, I am a Product Designer, I worked
+                  at Oppia Foundation, a platform for educating less privilege
+                  children where I contributed to the implementation of the
+                  voice and language feature which resulted into 10,000 more
+                  users across Africa.{" "}
                   <span>
                     <br />
                     <br />
@@ -101,8 +94,15 @@ export default function About() {
                     of customers. <br />
                     <br /> I love to evolve and face new challenges, that was
                     why I transitioned into tech. Check out my recent interview
-                    on <Link target="_blank" href="https://www.youtube.com/playlist?list=PLn5O3WWmVpuKiWkfzhmPMO0MSdiqbvQUa" className="font-bold">not just design podcast</Link> for more gist on my journey into
-                    tech.
+                    on{" "}
+                    <Link
+                      target="_blank"
+                      href="https://www.youtube.com/playlist?list=PLn5O3WWmVpuKiWkfzhmPMO0MSdiqbvQUa"
+                      className="font-bold"
+                    >
+                      not just design podcast
+                    </Link>{" "}
+                    for more gist on my journey into tech.
                   </p>
                 </article>
               </article>
@@ -281,19 +281,22 @@ export default function About() {
 
                     {/* BOOKS - LIST OF TEXTS */}
                     <article className="flex flex-col gap-4 text-[14px] lg:text-[16px]">
-                      <Link className="underline"
+                      <Link
+                        className="underline"
                         href="https://austinkleon.com/steal/"
                         target="_blank"
                       >
                         Steal like an artist
                       </Link>
-                      <Link className="underline"
+                      <Link
+                        className="underline"
                         href="https://www.goodreads.com/en/book/show/257789"
                         target="_blank"
                       >
                         How to sell yourself
                       </Link>
-                      <Link className="underline"
+                      <Link
+                        className="underline"
                         href="https://www.uxpin.com/studio/ebooks/the-indispensable-designer-a-guide-to-influential-design-signup"
                         target="_blank"
                       >
@@ -378,19 +381,22 @@ export default function About() {
 
                     {/* BOOKS - LIST OF TEXTS */}
                     <article className="flex flex-col gap-4 text-[14px] lg:text-[16px]">
-                      <Link className="underline"
+                      <Link
+                        className="underline"
                         href="https://isaidwhatisaidpodcast.com/episodes/"
                         target="_blank"
                       >
                         I said what I said
                       </Link>
-                      <Link className="underline"
+                      <Link
+                        className="underline"
                         href="https://podcasts.apple.com/ng/podcast/road-to-30-podcast/id1459267077"
                         target="_blank"
                       >
                         Road to 30
                       </Link>
-                      <Link className="underline"
+                      <Link
+                        className="underline"
                         target="_blank"
                         href="https://www.youtube.com/playlist?list=PLn5O3WWmVpuKiWkfzhmPMO0MSdiqbvQUa"
                       >

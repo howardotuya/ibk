@@ -85,6 +85,17 @@ export default function Navbar() {
               {/* DIVIDER */}
               <Divider bgColor={"bg-[#E5E8E8]"} />
             </Link>
+
+            {/* My Services */}
+            <Link className="flex flex-col gap-2" target="" href={"/"}>
+              {/* TEXT PLUS CHEVRON ICON */}
+              <article className="flex items-end justify-between">
+                <p className="text-[14px]">My Services</p>
+                <Image src={chevron} alt="" />
+              </article>
+              {/* DIVIDER */}
+              <Divider bgColor={"bg-[#E5E8E8]"} />
+            </Link>
           </article>
 
           {/* Button */}
@@ -132,6 +143,9 @@ export default function Navbar() {
                 href={process.env.NEXT_PUBLIC_BASE_URL + "/#recent-works"}
               >
                 Works
+              </Link>
+              <Link className="p-2" href={"/"}>
+                Services
               </Link>
               <Link
                 className="p-2"

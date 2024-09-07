@@ -25,6 +25,9 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      fontFamily: {
+        cooper: "var(--font-cooper)",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

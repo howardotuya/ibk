@@ -23,6 +23,9 @@ import jogovest2 from "@/public/images/PNG/jogovest2.png";
 import mjogovest1 from "@/public/images/PNG/mjogovest1.png";
 import mjogovest2 from "@/public/images/PNG/mjogovest2.png";
 import tastyandyummy from "@/public/images/PNG/tastyandyummy.png";
+import pbh from "@/public/images/PNG/pbh.png";
+import peerless from "@/public/images/PNG/peerless.png";
+import peekpile from "@/public/images/PNG/peekpile.png";
 import form1 from "@/public/images/PNG/form1.png";
 import form2 from "@/public/images/PNG/form2.png";
 import form3 from "@/public/images/PNG/form3.png";
@@ -199,7 +202,7 @@ export default function Home() {
 
         <Container>
           {/* RECENT WORKS */}
-          <section className="py-14 lg:pt-14 lg:pb-[108px] flex flex-col gap-6 lg:gap-14">
+          <section className="py-14 lg:pt-14 lg:pb-14 flex flex-col gap-6 lg:gap-14">
             {/* TEXT */}
             <h2 className="text-[32px] leading-[120%] tracking-[-1.28px] lg:text-[56px] lg:leading-[100%] lg:tracking-[-2.24px] font-medium">
               Recent works
@@ -212,7 +215,7 @@ export default function Home() {
                 {/* LEFT */}
                 <article className="flex flex-col gap-6 lg:gap-10 lg:pt-14 lg:pb-[156px]">
                   <article className="flex flex-col gap-2 lg:gap-6">
-                    <h3 className="cod-grap-800 text-[24px] lg:text-[40px] font-semibold">
+                    <h3 className="text-[#434747] text-[24px] lg:text-[40px] font-semibold">
                       Oppia
                     </h3>
                     <p className="text-[14px] lg:text-[20px] leading-[140%]">
@@ -237,24 +240,28 @@ export default function Home() {
                     className="shrink-0 w-[234.358px] h-auto hidden lg:block self-start"
                     src={oppia2}
                     alt="Oppia Mobile App"
+                    placeholder="blur"
                   />
                   <Image
                     className="w-[137.679px] h-auto block lg:hidden shrink-0 self-start"
                     quality={100}
                     src={moppia1}
                     alt="Oppia Mobile App"
+                    placeholder="blur"
                   />
                   {/*  */}
                   <Image
                     className="shrink-0 w-[234.358px] h-auto hidden lg:block mt-[90px] lg:mt-0 self-end"
                     src={oppia1}
                     alt="Oppia Mobile App"
+                    placeholder="blur"
                   />
                   <Image
                     className="w-[137.679px] h-auto block lg:hidden shrink-0 mt-[90px] lg:mt-0 self-end"
                     quality={100}
                     src={moppia2}
                     alt="Oppia Mobile App"
+                    placeholder="blur"
                   />
                 </article>
               </article>
@@ -268,28 +275,32 @@ export default function Home() {
                     className="shrink-0 w-[234.358px] h-auto hidden lg:block self-start"
                     src={jogovest1}
                     alt="Jogovest Mobile App"
+                    placeholder="blur"
                   />
                   <Image
                     className="w-[137.679px] h-auto block lg:hidden shrink-0 self-start"
                     src={mjogovest1}
                     alt="Jogovest Mobile App"
+                    placeholder="blur"
                   />
                   <Image
                     className="shrink-0 w-[234.358px] h-auto hidden lg:block pt-[90px] lg:pt-0 self-end"
                     src={jogovest2}
                     alt="Jogovest Mobile App"
+                    placeholder="blur"
                   />
                   <Image
                     className="w-[137.679px] h-auto block lg:hidden shrink-0 pt-[90px] lg:pt-0 self-end"
                     src={mjogovest2}
                     alt="Jogovest Mobile App"
+                    placeholder="blur"
                   />
                 </article>
 
                 {/* RIGHT */}
                 <article className="order-1 lg:order-2 flex flex-col gap-6 lg:gap-10 lg:pt-14 lg:pb-[186px]">
                   <article className="flex flex-col gap-2 lg:gap-6">
-                    <h3 className="cod-grap-800 text-[24px] lg:text-[40px] font-semibold">
+                    <h3 className="text-[#434747] text-[24px] lg:text-[40px] font-semibold">
                       Jogovest
                     </h3>
                     <p className="text-[14px] lg:text-[20px] leading-[140%]">
@@ -307,19 +318,19 @@ export default function Home() {
                 </article>
               </article>
 
-              {/* Tasty & Yummy */}
-              <article className="rounded-[12px] bg-[#FEF6EE] gap-12 p-8 lg:p-0 lg:pl-14 lg:pr-7 grid lg:grid-cols-[1fr_auto] lg:gap-x-8">
+              {/* PBH Credit Solution */}
+              <article className="rounded-[12px] bg-[#FEF6EE] gap-7 p-8 lg:p-0 lg:pl-14 lg:pr-7 grid lg:grid-cols-[1fr_auto] lg:gap-x-8">
                 {/* LEFT */}
                 <article className="flex flex-col gap-6 lg:gap-10 lg:pt-[56px] lg:pb-[128px]">
                   <article className="flex flex-col gap-2 lg:gap-6">
-                    <h3 className="cod-grap-800 text-[24px] lg:text-[40px] font-semibold">
-                      Tasty & Yummy
+                    <h3 className="text-[#434747] text-[24px] lg:text-[40px] font-semibold">
+                      PBH Credit Solution
                     </h3>
                     <p className="text-[14px] lg:text-[20px] leading-[140%]">
-                      Tasty and Yummy is a recipe platform for cook enthusiasts,
-                      stay at home mums. I designed the landing page, the sign
-                      up page and the recipe page and integrated the shopping
-                      feature that helps users shop for ingredients via the
+                      PBH Credit solution is a platform that helps to resolve
+                      credit dispute, create credit report analysis, and help in
+                      monitoring credit score for citizens in the United States.
+                      I conducted qualitative research and also designed the
                       website.
                     </p>
                   </article>
@@ -336,39 +347,82 @@ export default function Home() {
                   {/* 234.358px */}
                   <Image
                     className="w-[543px] h-auto shrink-0"
-                    src={tastyandyummy}
-                    alt="Tasty and Yummy website"
+                    src={pbh}
+                    alt="PBH Credit Solution"
+                    placeholder="blur"
                   />
                 </article>
               </article>
 
-              {/* Visual Design */}
-              <article className="flex mt-6 lg:mt-[60px] flex-col gap-6 lg:gap-11 ">
-                {/* TEXT */}
-                <article className="flex flex-col gap-4 lg:gap-6">
-                  <h3 className="text-[24px] leading-[38.4px] lg:text-[56px] lg:leading-[56px] font-medium text-[#0C0D0D]">
-                    Visual Snapshots
-                  </h3>
+              {/* PEERLESS */}
+              <article className="rounded-[12px] bg-[#F4F6FF] gap-[42px] p-8 lg:p-0 lg:pl-7 lg:pr-4 grid lg:grid-cols-[auto_1fr] lg:gap-x-14">
+                {/* LEFT */}
+                <article className="order-2 lg:order-1 flex w-full gap-x-6 items-center">
+                  {/* 234.358px */}
+                  <Image
+                    className="w-[543px] h-auto shrink-0"
+                    src={peerless}
+                    alt="peekpile"
+                    placeholder="blur"
+                  />
                 </article>
-                {/* Prototype */}
-                <article>
-                  <Image src={prototype} alt="GIF video" />
+
+                {/* RIGHT */}
+                <article className="order-1 lg:order-2 flex flex-col gap-6 lg:gap-10 lg:pt-[56px] lg:pb-[128px]">
+                  <article className="flex flex-col gap-2 lg:gap-6">
+                    <h3 className="text-[#434747] text-[24px] lg:text-[40px] font-semibold">
+                      Peerless
+                    </h3>
+                    <p className="text-[14px] lg:text-[20px] leading-[140%]">
+                      Peerless is a digital banking solution to help manage
+                      fundamental banking functions like account management,
+                      account opening, loans, interest calculations and
+                      mortgage. I did the research and designed the admin
+                      dashboards.
+                    </p>
+                  </article>
+                  <article className="flex">
+                    <Button
+                      text={"Read case study"}
+                      route={"/case-study/tasty-and-yummy"}
+                    />
+                  </article>
                 </article>
-                {/* IMAGES */}
-                {/* <article className="grid lg:grid-cols-2 gap-x-6 lg:gap-x-8 gap-y-4 lg:gap-y-6 items-start">
-                  <article className="border-[0.91px] border-[#CECED2] shadow-[-21.69px_-2.763px_90.36px_0px_rgba(239,254,243,0.15)]">
-                    <Image src={form1} alt="" />
+              </article>
+
+              {/* Peekpile */}
+              <article className="rounded-[12px] bg-[#F4F6FF] gap-12 p-8 lg:p-0 lg:pl-14 lg:pr-7 grid lg:grid-cols-[1fr_auto] lg:gap-x-8">
+                {/* LEFT */}
+                <article className="flex flex-col gap-6 lg:gap-10 lg:pt-[56px] lg:pb-[128px]">
+                  <article className="flex flex-col gap-2 lg:gap-6">
+                    <h3 className="text-[#434747] text-[24px] lg:text-[40px] font-semibold">
+                      Peekpile
+                    </h3>
+                    <p className="text-[14px] lg:text-[20px] leading-[140%] max-w-[513px]">
+                      Peekpile is a user friendly SAAS App that allows companies
+                      to create personalized feedback form for clients and
+                      provide intuitive analysis page to interpret the
+                      collective data.
+                    </p>
                   </article>
-                  <article className="border-[0.91px] border-[#CECED2] shadow-[-21.69px_-2.763px_90.36px_0px_rgba(239,254,243,0.15)]">
-                    <Image src={form2} alt="" />
+                  <article className="flex">
+                    <Button
+                      text={"Read case study"}
+                      route={"/case-study/tasty-and-yummy"}
+                    />
                   </article>
-                  <article className="border-[0.91px] border-[#CECED2] shadow-[-21.69px_-2.763px_90.36px_0px_rgba(239,254,243,0.15)]">
-                    <Image src={form3} alt="" />
-                  </article>
-                  <article className="border-[0.91px] border-[#CECED2] shadow-[-21.69px_-2.763px_90.36px_0px_rgba(239,254,243,0.15)]">
-                    <Image src={form4} alt="" />
-                  </article>
-                </article> */}
+                </article>
+
+                {/* RIGHT */}
+                <article className="flex w-full gap-x-6 items-center">
+                  {/* 234.358px */}
+                  <Image
+                    className="w-[543px] h-auto shrink-0"
+                    src={peekpile}
+                    alt="peekpile"
+                    placeholder="blur"
+                  />
+                </article>
               </article>
             </section>
           </section>
