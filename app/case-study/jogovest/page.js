@@ -399,7 +399,7 @@ export default function Jogovest() {
         <SubFooter
           short={true}
           first={"PBH Website"}
-          link={"/case-study/tasty-and-yummy"}
+          link={"/case-study/pbh-credit-solutions"}
         />
       </main>
 

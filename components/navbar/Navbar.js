@@ -144,7 +144,11 @@ export default function Navbar() {
               >
                 Works
               </Link>
-              <Link className="p-2" href={"/"}>
+              <Link
+                className="p-2"
+                target="_blank"
+                href={"https://selar.co/m/ibukun-abejide1"}
+              >
                 Services
               </Link>
               <Link
