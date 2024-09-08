@@ -224,8 +224,8 @@ export default function TAY() {
                     Regular Communications
                   </h4>
                   <p className="text-[#4C5251] leading-[140%] text-[14px] lg:text-[16px]">
-                    I introduced "daily" meeting once a week with the CEO and
-                    CTO of PBH Credit Solutions joining.
+                    I introduced &quot;daily&quot; meeting once a week with the
+                    CEO and CTO of PBH Credit Solutions joining.
                   </p>
                 </div>
               </div>
