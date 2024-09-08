@@ -26,11 +26,6 @@ import tastyandyummy from "@/public/images/PNG/tastyandyummy.png";
 import pbh from "@/public/images/PNG/pbh.png";
 import peerless from "@/public/images/PNG/peerless.png";
 import peekpile from "@/public/images/PNG/peekpile.png";
-import form1 from "@/public/images/PNG/form1.png";
-import form2 from "@/public/images/PNG/form2.png";
-import form3 from "@/public/images/PNG/form3.png";
-import form4 from "@/public/images/PNG/form4.png";
-import prototype from "@/public/images/prototype2.gif";
 
 export default function Home() {
   return (
@@ -337,7 +332,7 @@ export default function Home() {
                   <article className="flex">
                     <Button
                       text={"Read case study"}
-                      route={"/case-study/tasty-and-yummy"}
+                      route={"/case-study/pbh-credit-solutions"}
                     />
                   </article>
                 </article>
@@ -384,7 +379,7 @@ export default function Home() {
                   <article className="flex">
                     <Button
                       text={"Read case study"}
-                      route={"/case-study/tasty-and-yummy"}
+                      route={"/case-study/peerless"}
                     />
                   </article>
                 </article>
@@ -408,7 +403,7 @@ export default function Home() {
                   <article className="flex">
                     <Button
                       text={"Read case study"}
-                      route={"/case-study/tasty-and-yummy"}
+                      route={"/case-study/peekpile"}
                     />
                   </article>
                 </article>
