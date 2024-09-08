@@ -93,11 +93,11 @@ export default function Oppia() {
                   education to children who lack access to traditional
                   schooling. Given that 61 million children worldwide are unable
                   to attend primary education, and 17 million will never step
-                  foot in a school if current trends persist, Oppia's mission is
-                  critical. The language and voice feature was designed to
-                  enhance the accessibility of the app, making it easier for
-                  children from diverse linguistic backgrounds to learn
-                  effectively.
+                  foot in a school if current trends persist, Oppia&apos;s
+                  mission is critical. The language and voice feature was
+                  designed to enhance the accessibility of the app, making it
+                  easier for children from diverse linguistic backgrounds to
+                  learn effectively.
                 </p>
               </article>
             </section>

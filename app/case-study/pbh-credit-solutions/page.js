@@ -174,7 +174,7 @@ export default function TAY() {
                       advise on how to use credit card.
                     </p>
                     <p>3. None of the participants have.</p>
-                    <p>4. They don’t have bad credit issues. </p>
+                    <p>4. They don&apos;t have bad credit issues. </p>
                     <p>5. Yes, they will. </p>
                   </article>
                 </article>
@@ -205,9 +205,9 @@ export default function TAY() {
                     Flexible Approach
                   </h4>
                   <p className="text-[#4C5251] leading-[140%] text-[14px] lg:text-[16px]">
-                    I maintained a flexible approach to be able to meet client’s
-                    changing needs, to meet not only technical, but business
-                    goals.
+                    I maintained a flexible approach to be able to meet
+                    client&apos;s changing needs, to meet not only technical,
+                    but business goals.
                   </p>
                 </div>
                 <div className="lg:p-10 py-8 px-5 bg-[#F5F6F6] rounded-[12px] flex flex-col gap-4">
