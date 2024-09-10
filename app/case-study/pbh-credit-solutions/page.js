@@ -245,7 +245,6 @@ export default function TAY() {
                   </p>
                 </div>
 
-                <script src="https://player.vimeo.com/api/player.js"></script>
                 {/* UT 1.2 - VIDEO EMBEDDING */}
                 <div className="pt-[56%] relative">
                   <iframe
