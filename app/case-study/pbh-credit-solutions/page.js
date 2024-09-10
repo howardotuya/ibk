@@ -245,7 +245,18 @@ export default function TAY() {
                   </p>
                 </div>
 
-                <Image className="w-full h-auto" src={prototype} alt="" />
+                <script src="https://player.vimeo.com/api/player.js"></script>
+                {/* UT 1.2 - VIDEO EMBEDDING */}
+                <div className="pt-[56%] relative">
+                  <iframe
+                    src="https://player.vimeo.com/video/1007908038?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    className="absolute top-0 left-0 w-full h-full"
+                    title="Tasty and Yummy - Prototype"
+                  ></iframe>
+                </div>
+                <Script src="https://player.vimeo.com/api/player.js" />
               </article>
             </section>
 
