@@ -393,110 +393,65 @@ export default function Home() {
               </article>
 
               {/* PBH Credit Solution */}
-              <article className="relative rounded-[12px] bg-[#FEF6EE] gap-7 pt-[42px] md:pt-[42px] pb-4 px-6 md:p-8 lg:p-0 lg:pl-14 lg:pr-7 grid lg:grid-cols-[1fr_auto] lg:gap-x-8">
+              <article className="relative rounded-[12px] bg-[#FEF6EE] gap-7 py-4 px-6 md:p-8 lg:p-0 lg:pl-14 lg:pr-7 grid lg:grid-cols-[1fr_auto] lg:gap-x-8">
                 {/* LEFT */}
-                <article className="flex flex-col gap-6 lg:gap-10 lg:pt-[56px] lg:pb-[128px]">
-                  <article className="flex flex-col gap-2 lg:gap-6">
-                    <h3 className="text-[#434747] text-[24px] lg:text-[40px] font-semibold">
-                      PBH Credit Solution
-                    </h3>
-                    <p className="text-[14px] lg:text-[20px] leading-[140%]">
-                      PBH Credit solution is a platform that helps to resolve
-                      credit dispute, create credit report analysis, and help in
-                      monitoring credit score for citizens in the United States.
-                      I conducted qualitative research and also designed the
-                      website.
-                    </p>
+                <div className="flex flex-col gap-4">
+                  <div
+                    className={clsx(
+                      "lg:hidden flex items-center gap-3 flex-wrap",
+                    )}
+                  >
+                    <Badge text={"In Development"} status={"dev"} />
+                    <Badge text={"Consulting"} />
+                    <Badge text={"Website"} />
+                    <Badge text={"Mobile"} />
+                  </div>
+
+                  <article className="flex flex-col gap-6 lg:gap-10 lg:pt-[56px] lg:pb-[128px]">
+                    <article className="flex flex-col gap-2 lg:gap-6">
+                      <h3 className="text-[#434747] text-[24px] lg:text-[40px] font-semibold">
+                        PBH Credit Solution
+                      </h3>
+                      <p className="text-[14px] lg:text-[20px] leading-[140%]">
+                        PBH Credit solution is a platform that helps to resolve
+                        credit dispute, create credit report analysis, and help
+                        in monitoring credit score for citizens in the United
+                        States. I conducted qualitative research and also
+                        designed the website.
+                      </p>
+                    </article>
+                    <article className="flex gap-4">
+                      <ButtonLarge
+                        text={"Read case study"}
+                        route={"/case-study/pbh-credit-solutions"}
+                      />
+                      <ButtonSecondary text={"Under Development"} route={"#"} />
+                    </article>
                   </article>
-                  <article className="flex">
-                    <Button
-                      text={"Read case study"}
-                      route={"/case-study/pbh-credit-solutions"}
-                    />
-                  </article>
-                </article>
+                </div>
 
                 {/* RIGHT */}
-                <article className="flex w-full gap-x-6 items-center">
+                <article className="flex w-full items-center justify-center lg:justify-end">
                   {/* 234.358px */}
                   <Image
-                    className="w-[543px] h-auto shrink-0"
+                    className="w-full max-w-[543px] h-auto"
                     src={pbh}
                     alt="PBH Credit Solution"
                     placeholder="blur"
                   />
                 </article>
-              </article>
 
-              {/* PEERLESS */}
-              <article className="rounded-[12px] bg-[#F4F6FF] gap-[42px] p-8 lg:p-0 lg:pl-7 lg:pr-4 grid lg:grid-cols-[auto_1fr] lg:gap-x-14">
-                {/* LEFT */}
-                <article className="order-2 lg:order-1 flex w-full gap-x-6 items-center">
-                  {/* 234.358px */}
-                  <Image
-                    className="w-[543px] h-auto shrink-0"
-                    src={peerless}
-                    alt="peekpile"
-                    placeholder="blur"
-                  />
-                </article>
-
-                {/* RIGHT */}
-                <article className="order-1 lg:order-2 flex flex-col gap-6 lg:gap-10 lg:pt-[56px] lg:pb-[128px]">
-                  <article className="flex flex-col gap-2 lg:gap-6">
-                    <h3 className="text-[#434747] text-[24px] lg:text-[40px] font-semibold">
-                      Peerless
-                    </h3>
-                    <p className="text-[14px] lg:text-[20px] leading-[140%]">
-                      Peerless is a digital banking solution to help manage
-                      fundamental banking functions like account management,
-                      account opening, loans, interest calculations and
-                      mortgage. I did the research and designed the admin
-                      dashboards.
-                    </p>
-                  </article>
-                  <article className="flex">
-                    <Button
-                      text={"Read case study"}
-                      route={"/case-study/peerless"}
-                    />
-                  </article>
-                </article>
-              </article>
-
-              {/* Peekpile */}
-              <article className="rounded-[12px] bg-[#F4F6FF] gap-12 p-8 lg:p-0 lg:pl-14 lg:pr-7 grid lg:grid-cols-[1fr_auto] lg:gap-x-8">
-                {/* LEFT */}
-                <article className="flex flex-col gap-6 lg:gap-10 lg:pt-[56px] lg:pb-[128px]">
-                  <article className="flex flex-col gap-2 lg:gap-6">
-                    <h3 className="text-[#434747] text-[24px] lg:text-[40px] font-semibold">
-                      Peekpile
-                    </h3>
-                    <p className="text-[14px] lg:text-[20px] leading-[140%] max-w-[513px]">
-                      Peekpile is a user friendly SAAS App that allows companies
-                      to create personalized feedback form for clients and
-                      provide intuitive analysis page to interpret the
-                      collective data.
-                    </p>
-                  </article>
-                  <article className="flex">
-                    <Button
-                      text={"Read case study"}
-                      route={"/case-study/peekpile"}
-                    />
-                  </article>
-                </article>
-
-                {/* RIGHT */}
-                <article className="flex w-full gap-x-6 items-center">
-                  {/* 234.358px */}
-                  <Image
-                    className="w-[543px] h-auto shrink-0"
-                    src={peekpile}
-                    alt="peekpile"
-                    placeholder="blur"
-                  />
-                </article>
+                <div
+                  className={clsx(
+                    "absolute top-4 left-6 lg:top-[unset] lg:bottom-6 lg:left-[56px]",
+                    "hidden lg:flex justify-center items-center gap-3",
+                  )}
+                >
+                  <Badge text={"In Development"} status={"dev"} />
+                  <Badge text={"Consulting"} />
+                  <Badge text={"Website"} />
+                  <Badge text={"Mobile"} />
+                </div>
               </article>
             </section>
           </section>
