@@ -47,7 +47,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${cooper.variable}`}>
+      <body className={`${inter.className} ${cooper.variable} font-light`}>
         <Suspense fallback={<Loading />}>{children}</Suspense>
       </body>
       <Script

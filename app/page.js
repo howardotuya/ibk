@@ -26,6 +26,17 @@ import tastyandyummy from "@/public/images/PNG/tastyandyummy.png";
 import pbh from "@/public/images/PNG/pbh.png";
 import peerless from "@/public/images/PNG/peerless.png";
 import peekpile from "@/public/images/PNG/peekpile.png";
+// --
+import easySpend from "@/public/images/home/easy-spend.svg";
+import baristaBuddy from "@/public/images/home/barista-buddy.svg";
+import buildCo from "@/public/images/home/buildco.svg";
+import alaire from "@/public/images/home/alaire.svg";
+import sendable from "@/public/images/home/sendable.svg";
+import phbSmall from "@/public/images/home/pbh.svg";
+import ButtonLarge from "@/components/button/button-large";
+import ButtonSecondary from "@/components/button/button-secondary";
+import Badge from "@/components/badge/badge";
+import clsx from "clsx";
 
 export default function Home() {
   return (
@@ -55,43 +66,60 @@ export default function Home() {
                   Some companies I have worked with
                 </h6>
                 {/* LIST OF COMPANIES */}
-                <article className="flex items-center gap-[52px]">
-                  {/* PRIFINA */}
+                <article className="flex items-center gap-12">
+                  <article>
+                    <Image className="w-[96px] h-auto" src={easySpend} alt="" />
+                  </article>
+
                   <article className="flex items-center gap-2">
                     {/* LEFT */}
                     <Image
-                      className="w-[50px] h-[50px]"
+                      className="w-[34px] h-auto"
                       src={prifinaLeft}
                       alt="Prifina Company Logo"
                     />
                     {/* RIGHT */}
                     <Image
-                      className=""
+                      className="w-[60px] h-auto"
                       src={prifinaRight}
                       alt="Prifina Company Logo"
                     />
                   </article>
 
-                  {/* OPPIA */}
                   <article className="flex items-center gap-2">
                     {/* LEFT */}
                     <Image
-                      className="w-6 h-[23.517px]"
+                      className="w-6 h-auto"
                       src={oppiaLeft}
                       alt="Oppia Company Logo"
                     />
                     {/* RIGHT */}
                     <Image
-                      className=""
+                      className="w-[147px] h-auto"
                       src={oppiaRight}
                       alt="Oppia Company Logo"
                     />
                   </article>
 
-                  {/* JOGOVEST */}
                   <article>
-                    <Image src={jogovest} alt="Jogovest Company Logo" />
+                    <Image
+                      className="w-[100px] h-auto"
+                      src={jogovest}
+                      alt="Jogovest Company Logo"
+                    />
                   </article>
+                </article>
+
+                <article className="flex items-center gap-12">
+                  <Image className="h-auto w-[78px]" src={sendable} alt="" />
+                  <Image className="h-auto w-[92px]" src={buildCo} alt="" />
+                  <Image className="h-auto w-[54px]" src={alaire} alt="" />
+                  <Image
+                    className="h-auto w-[92px]"
+                    src={baristaBuddy}
+                    alt=""
+                  />
+                  <Image className="h-auto w-[50px]" src={phbSmall} alt="" />
                 </article>
               </article>
 
@@ -101,8 +129,12 @@ export default function Home() {
                   Hi, my name is Ibukun Abejide, a passionate product designer
                   on a mission to build successful products for millions of
                   users across the world. I have experience working in the
-                  Fintech, E-commerce, EdTech and AI sectors and have also
-                  helped more than 100 people get into tech.
+                  Fintech, E-commerce, EdTech, SaaS, Fashion, B2B, and AI
+                  sectors in UK, USA, Australia, and Nigeria.
+                  <br />
+                  Beyond design, I’m committed to giving back, I have mentored
+                  over 100 aspiring designers, helping them take confident steps
+                  into the tech world.
                 </p>
               </article>
             </article>
@@ -131,47 +163,53 @@ export default function Home() {
                 Some companies I have worked with
               </h6>
               {/* LIST OF COMPANIES */}
-              <article className="flex items-center gap-y-6 gap-x-10 lg:gap-[52px] flex-wrap">
-                {/* PRIFINA */}
+              <article className="grid grid-cols-3 gap-y-6 items-center">
                 <article className="flex items-center gap-2">
                   {/* LEFT */}
                   <Image
-                    className="w-[38.07px] h-[38.07px] lg:w-[50px] lg:h-[50px]"
+                    className="w-[38px] h-auto"
                     src={prifinaLeft}
-                    alt="Prifina company logo"
+                    alt="Prifina Company Logo"
                   />
                   {/* RIGHT */}
                   <Image
                     className="w-[43px] h-auto"
                     src={prifinaRight}
-                    alt="Prifina company logo"
+                    alt="Prifina Company Logo"
                   />
                 </article>
 
-                {/* OPPIA */}
-                <article className="flex items-center gap-2">
+                <article className="flex items-center gap-[2.28px]">
                   {/* LEFT */}
                   <Image
-                    className="w-[18.273px] h-auto"
+                    className="w-[18px] h-auto"
                     src={oppiaLeft}
-                    alt="Oppia company logo"
+                    alt="Oppia Company Logo"
                   />
                   {/* RIGHT */}
                   <Image
-                    className="w-[103.549px] h-auto"
+                    className="w-[103px] h-auto"
                     src={oppiaRight}
-                    alt="Oppia company logo"
+                    alt="Oppia Company Logo"
                   />
                 </article>
 
-                {/* JOGOVEST */}
+                <Image
+                  className="w-[100px] h-auto"
+                  src={jogovest}
+                  alt="Jogovest Company Logo"
+                />
+
                 <article>
-                  <Image
-                    className="w-[99.361px]"
-                    src={jogovest}
-                    alt="Jogovest company logo"
-                  />
+                  <Image className="w-[96px] h-auto" src={easySpend} alt="" />
                 </article>
+
+                <Image className="h-auto w-[78px]" src={sendable} alt="" />
+
+                <Image className="h-auto w-[92px]" src={buildCo} alt="" />
+                <Image className="h-auto w-[54px]" src={alaire} alt="" />
+                <Image className="h-auto w-[92px]" src={baristaBuddy} alt="" />
+                <Image className="h-auto w-[50px]" src={phbSmall} alt="" />
               </article>
             </article>
 
@@ -179,9 +217,9 @@ export default function Home() {
             <article className="flex items-center gap-24 justify-between">
               {/* left */}
               <article>
-                <p className="jaffa-600 italic leading-[160%] lg:leading-normal text-[16px] lg:text-[24px] tracking-[-0.64px] lg:tracking-[-0.96px]">
-                  “Design isn’t finished until somebody is using it” - Brenda
-                  Laurel
+                <p className="max-w-[600px] jaffa-600 italic leading-[160%] lg:leading-normal text-[16px] lg:text-[24px] tracking-[-0.64px] lg:tracking-[-0.96px]">
+                  My mantra as a Product Designer - “Design isn’t finished until
+                  somebody is using it” - Brenda Laurel
                 </p>
               </article>
 
@@ -206,7 +244,7 @@ export default function Home() {
             {/* 3 CASE STUDIES */}
             <section className="w-full flex flex-col gap-5">
               {/* OPPIA */}
-              <article className="rounded-[12px] bg-[#EFFEF3] p-8 gap-12 lg:p-0 lg:px-14 grid lg:grid-cols-[1fr_auto] lg:gap-x-8">
+              <article className="relative rounded-[12px] bg-[#EFFEF3] pt-[42px] md:pt-[42px] pb-4 px-6 md:p-8 gap-12 lg:p-0 lg:px-14 grid lg:grid-cols-[1fr_auto] lg:gap-x-8">
                 {/* LEFT */}
                 <article className="flex flex-col gap-6 lg:gap-10 lg:pt-14 lg:pb-[156px]">
                   <article className="flex flex-col gap-2 lg:gap-6">
@@ -220,9 +258,13 @@ export default function Home() {
                       increase in the number of users.
                     </p>
                   </article>
-                  <article className="flex">
-                    <Button
+                  <article className="flex gap-4 lg:gap-6">
+                    <ButtonLarge
                       text={"Read case study"}
+                      route={"/case-study/oppia"}
+                    />
+                    <ButtonSecondary
+                      text={"View live app"}
                       route={"/case-study/oppia"}
                     />
                   </article>
@@ -259,10 +301,21 @@ export default function Home() {
                     placeholder="blur"
                   />
                 </article>
+
+                <div
+                  className={clsx(
+                    "absolute top-4 left-6 lg:top-[unset] lg:bottom-6 lg:left-[56px]",
+                    "flex justify-center items-center gap-3",
+                  )}
+                >
+                  <Badge text={"Shipped"} status={"shipped"} />
+                  <Badge text={"Edtech"} />
+                  <Badge text={"Mobile App "} />
+                </div>
               </article>
 
               {/* Jogovest */}
-              <article className="rounded-[12px] bg-[#F5F6F6] p-8 gap-12 lg:p-0 lg:pl-14 lg:pr-7 grid lg:grid-cols-[auto_1fr] lg:gap-x-8">
+              <article className="relative rounded-[12px] bg-[#F5F6F6] pt-6 pb-4 px-6 md:p-8 gap-12 lg:p-0 lg:pl-14 lg:pr-7 grid lg:grid-cols-[auto_1fr] lg:gap-x-8">
                 {/* LEFT */}
                 <article className="order-2 lg:order-1 flex justify-center lg:justify-center w-full gap-x-6">
                   {/* 234.358px */}
@@ -293,28 +346,54 @@ export default function Home() {
                 </article>
 
                 {/* RIGHT */}
-                <article className="order-1 lg:order-2 flex flex-col gap-6 lg:gap-10 lg:pt-14 lg:pb-[186px]">
-                  <article className="flex flex-col gap-2 lg:gap-6">
-                    <h3 className="text-[#434747] text-[24px] lg:text-[40px] font-semibold">
-                      Jogovest
-                    </h3>
-                    <p className="text-[14px] lg:text-[20px] leading-[140%]">
-                      As the solo designer, I played a pivotal strategic role in
-                      designing the mobile app with the goal of achieving a
-                      product market fit.
-                    </p>
-                  </article>
-                  <article className="flex">
-                    <Button
+                <article className="relative order-1 lg:order-2 flex flex-col gap-6 lg:gap-10 lg:pt-14 lg:pb-[186px]">
+                  <div className="flex flex-col gap-4">
+                    <div
+                      className={clsx(
+                        "flex lg:hidden items-center gap-3 flex-wrap",
+                      )}
+                    >
+                      <Badge text={"In Development"} status={"dev"} />
+                      <Badge text={"Fintech"} />
+                      <Badge text={"Mobile App"} />
+                      <Badge text={"Mobile App"} />
+                    </div>
+
+                    <article className="flex flex-col gap-2 lg:gap-6">
+                      <h3 className="text-[#434747] text-[24px] lg:text-[40px] font-semibold">
+                        Jogovest
+                      </h3>
+                      <p className="text-[14px] lg:text-[20px] leading-[140%]">
+                        As the solo designer, I played a pivotal strategic role
+                        in designing the mobile app with the goal of achieving a
+                        product market fit.
+                      </p>
+                    </article>
+                  </div>
+                  <article className="flex gap-4">
+                    <ButtonLarge
                       text={"Read case study"}
                       route={"/case-study/jogovest"}
                     />
+                    <ButtonSecondary text={"Under Development"} route={"#"} />
                   </article>
+
+                  <div
+                    className={clsx(
+                      "hidden absolute top-[-26px] left-0 lg:top-[unset] lg:bottom-6 lg:left-0",
+                      "lg:flex items-center gap-y-1 gap-x-3 flex-wrap",
+                    )}
+                  >
+                    <Badge text={"In Development"} status={"dev"} />
+                    <Badge text={"Fintech"} />
+                    <Badge text={"Mobile App"} />
+                    <Badge text={"Mobile App"} />
+                  </div>
                 </article>
               </article>
 
               {/* PBH Credit Solution */}
-              <article className="rounded-[12px] bg-[#FEF6EE] gap-7 p-8 lg:p-0 lg:pl-14 lg:pr-7 grid lg:grid-cols-[1fr_auto] lg:gap-x-8">
+              <article className="relative rounded-[12px] bg-[#FEF6EE] gap-7 pt-[42px] md:pt-[42px] pb-4 px-6 md:p-8 lg:p-0 lg:pl-14 lg:pr-7 grid lg:grid-cols-[1fr_auto] lg:gap-x-8">
                 {/* LEFT */}
                 <article className="flex flex-col gap-6 lg:gap-10 lg:pt-[56px] lg:pb-[128px]">
                   <article className="flex flex-col gap-2 lg:gap-6">
