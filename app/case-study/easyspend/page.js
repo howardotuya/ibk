@@ -38,11 +38,11 @@ import clsx from "clsx";
 
 // METADATA
 export const metadata = {
-  title: "BuildCO",
+  title: "EasySpend",
   description:
-    "BuildCO is an e-commerce platform for furniture, home fittings, power tools, machinery rental, and artisan hire, including a B2B direct-ordering system with credit and site management workflows.",
+    "EasySpend is a fintech platform for digital payments, bill payments, virtual cards, and crypto wallet management across mobile and web.",
   alternates: {
-    canonical: process.env.NEXT_PUBLIC_BASE_URL + "/case-study/buildco",
+    canonical: process.env.NEXT_PUBLIC_BASE_URL + "/case-study/easyspend",
   },
 };
 
