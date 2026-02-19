@@ -58,20 +58,27 @@ export default function About() {
                 </h1>
 
                 <p className="cod-gray-700 text-justify text-[14px] lg:text-[18px] leading-[120%] lg:leading-[140%]">
-                  My name is Ibukun Abejide, I am a Product Designer, I worked
-                  at Oppia Foundation, a platform for educating less privilege
-                  children where I contributed to the implementation of the
-                  voice and language feature which resulted into 10,000 more
-                  users across Africa.{" "}
+                  My name is Ibukun Abejide, and I’m a Product Designer
+                  passionate about crafting impactful experiences. I began my
+                  journey by replicating designs, but today I create innovative
+                  solutions that serve both local and international markets.
                   <span>
                     <br />
                     <br />
                   </span>
-                  My favorite part of being a designer is the ability to
-                  understand user&apos;s needs, solve their problems and also
-                  ensure the company is making good business decisions. Asides
-                  from being a designer, I have also mentored over 100 people
-                  who are passionate about design.{" "}
+                  Over the years, I’ve built expertise across diverse sectors;
+                  E-commerce, Healthcare, Finance, Fashion, AI, SaaS, Education,
+                  designing for both B2B and B2C products. What excites me most
+                  about design is bridging the gap between user needs and
+                  business goals: solving real problems for people while driving
+                  smart outcomes for companies.
+                  <span>
+                    <br />
+                    <br />
+                  </span>
+                  Beyond design, I’m committed to giving back I’ve mentored over
+                  100 aspiring designers, helping them take confident steps into
+                  the tech world.
                 </p>
               </article>
             </section>
@@ -116,13 +123,12 @@ export default function About() {
                 {/* SUB TEXT */}
                 <article className="cod-gray-700 text-[14px] lg:text-[16px] leading-[140%]">
                   <p>
-                    1. Helped more than 100 people transition into Product
-                    Design.
+                    1. Helped over 100 people transition into tech across Africa
+                    and Europe.
                   </p>
                   <br />
                   <p>
-                    2. Worked on multiple features on an EdTech product that
-                    increased the number of users to 10,000.
+                    2. Helped startups and scaleup expand their business growth.
                   </p>
                   <br />
                   <p>

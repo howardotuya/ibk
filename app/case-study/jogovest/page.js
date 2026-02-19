@@ -21,6 +21,7 @@ import SubFooter from "@/components/footer/subFooter";
 
 import quote1 from "@/public/images/SVG/quote1.svg";
 import quote2 from "@/public/images/SVG/quote2.svg";
+import Script from "next/script";
 
 // METADATA
 export const metadata = {
@@ -353,6 +354,29 @@ export default function Jogovest() {
                 </article>
               </article>
             </article>
+
+            <section className="pt-8 pb-10 lg:py-10 flex flex-col gap-4 lg:gap-8">
+              <article className="flex flex-col gap-5 lg:gap-10">
+                {/* HEADER */}
+                <div>
+                  <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
+                    How it works “Prototype”
+                  </h2>
+                </div>
+
+                {/* UT 1.2 - VIDEO EMBEDDING */}
+                <div className="pt-[56%] relative">
+                  <iframe
+                    src="https://player.vimeo.com/video/1017878555?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    className="absolute top-0 left-0 w-full h-full"
+                    title="Tasty and Yummy - Prototype"
+                  ></iframe>
+                </div>
+                <Script src="https://player.vimeo.com/api/player.js" />
+              </article>
+            </section>
 
             {/* CLIENT REVIEW */}
             <article className="pt-8 pb-5 lg:py-10 flex flex-col gap-4 lg:gap-2">
