@@ -5,6 +5,8 @@ import Footer from "@/components/footer/footer";
 import SubFooter from "@/components/footer/subFooter";
 import clsx from "clsx";
 
+import ut from "@/public/images/PNG/oppia/ut.png";
+import ut2 from "@/public/images/PNG/oppia/ut2.png";
 import baristabuddy1 from "@/public/images/case-study/baristabuddy/1.png";
 import baristabuddy2 from "@/public/images/case-study/baristabuddy/2.png";
 import baristabuddy3 from "@/public/images/case-study/baristabuddy/3.png";
@@ -34,88 +36,117 @@ export const metadata = {
 
 const designBlocks = [
   {
-    title: "Admin Dashboard",
-    text: "The admin dashboard consolidates asset health, urgent requests, active jobs, and client highlights so operations leads can prioritize action quickly.",
+    title: "Dashboard/ Homepage",
+    text: "The dashboard contains the total number of assets, Number of clients, Work orders in progress, Scheduled service, Calendar, Urgent work orders.",
     image: baristabuddy4,
     reverse: false,
   },
   {
-    title: "Asset Management",
-    text: "Asset records are organized in a searchable table with status tags for in-service, assigned, repair, and retired states to improve fleet visibility.",
+    title: "Clients",
+    text: "On the client page, the admin can see all the registered client details on the platform and also register a new client.",
     image: baristabuddy5,
     reverse: true,
   },
   {
-    title: "Client Management",
-    text: "Client onboarding and relationship tracking are handled in one view, helping teams manage contacts, location data, and assigned machine counts.",
+    title: "Assets",
+    text: "On this page, the admin can see all the assets assigned to each clients, the status of the assets and also register new assets.",
     image: baristabuddy6,
     reverse: false,
   },
   {
-    title: "Inventory Management",
-    text: "Inventory data captures categories, units, stock levels, and reorder thresholds to prevent supply gaps across active service routes.",
+    title: "Work orders",
+    text: "On this page, the admin can document service activities, manage work orders and optimize routes.",
     image: baristabuddy7,
     reverse: true,
   },
   {
-    title: "Work Order Operations",
-    text: "Work order dashboards surface progress, completion trends, and service outcomes so dispatch teams can coordinate field execution efficiently.",
+    title: "Technicians",
+    text: "On this page, the admin can manage technicians’ record, assignment and work schedule.",
     image: baristabuddy8,
     reverse: false,
   },
   {
-    title: "Technician Directory",
-    text: "Technician records include assignment data and current availability to make staffing decisions clear during high-volume service windows.",
+    title: "Inventory",
+    text: "On this page, the admin can track, and manage inventory items for each client.",
     image: baristabuddy9,
     reverse: true,
   },
   {
-    title: "Technician Dashboard",
-    text: "Technicians get a focused task hub with daily schedules, route summaries, and priority labels to support fast planning at shift start.",
+    title: "Service Logs",
+    text: "On this page, admins can create new service logs and manage all clients’ service logs.",
+
     image: baristabuddy10,
     reverse: false,
   },
   {
-    title: "Service Logs",
-    text: "Service activities are captured with status tracking in a standardized log format, improving reporting quality and accountability.",
+    title: "Schedule",
+    text: "On this page, the admin can manage recurring maintenance schedules for all coffee machines and also create new schedule.",
     image: baristabuddy11,
     reverse: true,
   },
   {
-    title: "Service Schedule",
-    text: "Recurring maintenance schedules are managed in a dedicated table that balances due dates, technicians, route numbers, and completion states.",
+    title: "Dashboard",
+    text: "On the dashboard, technicians can see assigned schedules, Route overview and work orders.",
     image: baristabuddy12,
     reverse: false,
   },
   {
-    title: "Field Service Form",
-    text: "Field service entry screens simplify job logging with structured inputs for machine type, time windows, and task checklist completion.",
+    title: "Work Order",
+    text: "On this page, technicians can see today’s task, scheduled tasks, low severity and high priority tasks.",
     image: baristabuddy13,
     reverse: true,
   },
   {
-    title: "Technician Work Orders",
-    text: "Route-filtered work order views help technicians stay on schedule while keeping service scope and asset volume explicit.",
+    title: "Field service",
+    text: "On this page, technicians can log in their scheduled service and tasks.",
     image: baristabuddy14,
     reverse: false,
   },
   {
     title: "Route Management",
-    text: "Route planning is presented in a clean table model with service type and priority visibility for efficient same-day execution.",
+    text: "On this page, technicians can access assigned routes and asset visits for efficient planning.",
     image: baristabuddy15,
     reverse: true,
   },
   {
-    title: "Inventory Usage Tracking",
-    text: "Technicians can record consumed inventory directly in workflow, improving stock accuracy and reducing reconciliation delays.",
+    title: "Inventory",
+    text: "On this page, technicians can record all the inventory items they used and also see the history.",
     image: baristabuddy16,
     reverse: false,
   },
   {
-    title: "My Profile",
-    text: "Profile and policy information are accessible in one place, giving users control over account details while preserving trust and transparency.",
+    title: "Profile",
+    text: "On this page, technicians can view their profile and also make changes.",
     image: baristabuddy17,
     reverse: true,
+  },
+];
+
+const productMetrics = [
+  {
+    metric: "Average service scheduling time",
+    baseline: "15mins",
+    result: "4mins",
+  },
+  {
+    metric: "Missed service logs",
+    baseline: "23%",
+    result: "4%",
+  },
+  {
+    metric: "Asset reallocation time",
+    baseline: "2 days",
+    result: "< 1 hour",
+  },
+  {
+    metric: "Technician reporting accuracy",
+    baseline: "68%",
+    result: "95%",
+  },
+  {
+    metric: "Admin dashboard usage",
+    baseline: "-",
+    result: "100% adoption",
   },
 ];
 
@@ -146,9 +177,10 @@ export default function BaristaBuddy() {
                 BaristaBuddy
               </h1>
               <p className="text-[24px] lg:text-[48px] font-medium leading-[120%] tracking-[-0.96px] lg:tracking-[-1.92px]">
-                Designed a service operations platform for managing coffee
-                machine assets, technicians, work orders, and inventory at
-                scale.
+                Designed a web based platform designed to streamline the
+                management of client contracts, coffee machine assets, service
+                scheduling, technician assignments, and consumable inventory for
+                a coffee service company
               </p>
             </div>
           </Container>
@@ -162,11 +194,13 @@ export default function BaristaBuddy() {
                   Project overview
                 </h2>
                 <p className="text-[14px] lg:text-[20px] leading-[140%] lg:leading-normal lg:tracking-[-0.2px]">
-                  BaristaBuddy is a coffee equipment operations platform built
-                  for teams that maintain machine fleets across multiple client
-                  locations. It combines client records, asset inventory,
-                  scheduling, technician workflows, and service reporting into a
-                  single operational system.
+                  Barista Buddy is a web-based platform designed to streamline
+                  the management of client contracts, coffee machine assets,
+                  service scheduling, technician assignments, and consumable
+                  inventory for a coffee service company. The product was
+                  developed to replace fragmented spreadsheets and manual
+                  processes that caused inefficiencies in tracking client assets
+                  and service logs.
                 </p>
               </article>
             </section>
@@ -181,25 +215,35 @@ export default function BaristaBuddy() {
                   Problem Statement
                 </h2>
                 <p className="text-[14px] lg:text-[20px] leading-[140%] lg:leading-normal lg:tracking-[-0.2px]">
-                  Service teams managing coffee machines often work with
-                  fragmented tools. Client records, asset lifecycle status,
-                  technician schedules, and inventory updates are separated,
-                  causing:
+                  Before the Barista Buddy, the company’s operations relied
+                  heavily on disconnected tools and manual recordkeeping.
+                </p>
+
+                <p className="mt-2 text-[#262C2C] font-medium text-[20px] leading-[24px] tracking-[-0.2px]">
+                  This led to:
                 </p>
                 <ul className="pl-6 list-disc list-outside space-y-6 text-[14px] lg:text-[20px] leading-[140%] lg:leading-normal lg:tracking-[-0.2px]">
-                  <li>Delayed response to urgent machine failures.</li>
-                  <li>Low visibility into technician workload and routes.</li>
-                  <li>Poor consistency in service and maintenance records.</li>
-                  <li>Inventory mismatches and avoidable stock-outs.</li>
+                  <li>
+                    Inefficient scheduling and frequent service overlaps or
+                    missed appointments.
+                  </li>
+                  <li>
+                    Lack of real-time visibility into asset conditions and
+                    technician performance.
+                  </li>
+                  <li>
+                    Difficulty managing inventory, leading to shortages or
+                    overstocking.
+                  </li>
+                  <li>
+                    Cumbersome communication between admins and technicians,
+                    especially for urgent work orders.
+                  </li>
                 </ul>
-                <p className="mt-2 text-[14px] lg:text-[20px] leading-[140%] lg:leading-normal lg:tracking-[-0.2px]">
-                  BaristaBuddy was designed to centralize these workflows and
-                  give operations teams a reliable daily command center.
-                </p>
               </article>
 
               <article className="max-w-[569px] mt-8 w-full h-auto shrink-0 flex-0 rounded-[4px] overflow-hidden">
-                <Image src={baristabuddy3} alt="Barista workspace" />
+                <Image src={baristabuddy2} alt="Barista workspace" />
               </article>
             </article>
 
@@ -208,157 +252,213 @@ export default function BaristaBuddy() {
                 <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
                   Goal
                 </h2>
+                <p className="text-[14px] lg:text-[20px] leading-[140%] lg:leading-normal lg:tracking-[-0.2px]">
+                  The primary goal was to build a centralized platform where all
+                  roles Admins and Technicians could efficiently manage assets,
+                  clients, and service operations in real time.
+                </p>
+
+                <p className="mt-2 text-[#262C2C] font-medium text-[20px] leading-[24px] tracking-[-0.2px]">
+                  Specific objectives included:
+                </p>
                 <ul className="pl-6 list-disc list-outside space-y-6 text-[14px] lg:text-[20px] leading-[140%] lg:leading-normal lg:tracking-[-0.2px]">
-                  <li>Unify service operations into one platform workflow.</li>
                   <li>
-                    Improve speed from issue detection to assignment and
-                    completion.
+                    Enable Admins to manage clients, assets, services, and
+                    technicians from a single dashboard.
                   </li>
                   <li>
-                    Increase data accuracy in asset, service, and inventory
-                    records.
+                    Give Technicians mobile-friendly access to their schedules,
+                    routes, and service logs.
                   </li>
                   <li>
-                    Help technicians execute field tasks with clear route and
-                    priority context.
+                    Reduce operational delays by automating linkages between
+                    assets, clients and service records.
                   </li>
                   <li>
-                    Provide managers with measurable operational visibility.
+                    Improve data accuracy and accountability through real time
+                    updates and restricted permissions.
                   </li>
                 </ul>
               </article>
 
               <article className="max-w-[569px] mt-8 w-full h-auto shrink-0 flex-0 rounded-[4px] overflow-hidden">
-                <Image src={baristabuddy2} alt="Technicians on site" />
+                <Image src={baristabuddy3} alt="Technicians on site" />
               </article>
             </article>
 
-            <article className="pt-8 pb-5 flex flex-col gap-5 lg:gap-8 lg:py-10">
-              <article className="flex flex-col gap-4 lg:gap-6">
-                <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
-                  Research & Analysis{" "}
-                  <span className="hidden lg:inline">
-                    (How we generated the product metrics)
-                  </span>
-                </h2>
-                <p className="text-[14px] lg:text-[20px] leading-[140%] lg:leading-normal lg:tracking-[-0.20px]">
-                  We reviewed current service workflows with operations leads
-                  and field technicians, then mapped key bottlenecks across
-                  dispatching, logging, and asset maintenance routines.
-                </p>
-              </article>
-
-              <article className="flex flex-col gap-5 lg:gap-4">
-                <h5 className="text-[16px] lg:text-[24px] font-semibold lg:font-medium">
-                  Key insights from research:
-                </h5>
-                <ul className="max-w-[789px] list-disc pl-6 text-[14px] lg:text-[20px] leading-[140%] lg:leading-normal lg:tracking-[-0.20px] flex flex-col gap-4">
-                  <li>
-                    Teams needed one source of truth for asset and client data.
-                  </li>
-                  <li>
-                    Dispatch decisions improved when route, status, and
-                    technician availability were visible together.
-                  </li>
-                  <li>
-                    Structured service logs reduced ambiguity during audits and
-                    follow-up maintenance.
-                  </li>
-                  <li>
-                    Inventory recording had to be embedded into daily field
-                    flows to remain accurate.
-                  </li>
-                </ul>
-              </article>
-            </article>
-
-            <article className="py-8 lg:py-10 grid gap-4 lg:gap-6">
+            <article className="py-20 grid gap-4 lg:gap-6">
               <article className="flex flex-col gap-4 lg:gap-6">
                 <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
                   Product Metrics
                 </h2>
 
-                <p className="text-[14px] lg:text-[20px] leading-[140%] lg:leading-normal lg:tracking-[-0.2px]">
-                  Success was measured using operational and user performance
-                  indicators:
-                </p>
+                <div className="">
+                  <div className="grid grid-cols-1 gap-4 pb-4 border-b border-[#E5E8E8] lg:grid-cols-[2.1fr_1fr_1fr]">
+                    <p className="text-[#343A3A] text-[18px] lg:text-[24px] font-semibold">
+                      Metrics
+                    </p>
+                    <p className="text-[#343A3A] text-[18px] lg:text-[24px] font-semibold">
+                      Baseline
+                    </p>
+                    <p className="text-[#343A3A] text-[18px] lg:text-[24px] font-semibold">
+                      Post launch Result
+                    </p>
+                  </div>
 
-                <ul className="pl-6 list-disc list-outside space-y-6 text-[14px] lg:text-[20px] leading-[140%] lg:leading-normal lg:tracking-[-0.2px]">
-                  <li>
-                    <span className="font-medium">Work Order Cycle Time -</span>{" "}
-                    assignment-to-completion duration.
-                  </li>
-                  <li>
-                    <span className="font-medium">
-                      Service Log Completion -
-                    </span>{" "}
-                    percentage of tasks documented correctly.
-                  </li>
-                  <li>
-                    <span className="font-medium">Asset Downtime Rate -</span>{" "}
-                    machine unavailability reduction over time.
-                  </li>
-                  <li>
-                    <span className="font-medium">Inventory Accuracy -</span>{" "}
-                    variance between recorded and actual consumables.
-                  </li>
-                  <li>
-                    <span className="font-medium">Technician Throughput -</span>{" "}
-                    completed services per technician per cycle.
-                  </li>
-                </ul>
+                  <div className="pt-2">
+                    {productMetrics.map((item) => (
+                      <div
+                        key={item.metric}
+                        className="grid grid-cols-1 gap-3 py-5 lg:grid-cols-[2.1fr_1fr_1fr] lg:py-6"
+                      >
+                        <p className="text-[#343A3A] text-[18px] lg:text-[24px] lg:leading-[29px]">
+                          {item.metric}
+                        </p>
+                        <p className="text-[#343A3A] text-[18px] lg:text-[24px] lg:leading-[29px]">
+                          {item.baseline}
+                        </p>
+                        <p className="text-[#343A3A] text-[18px] lg:text-[24px] lg:leading-[29px]">
+                          {item.result}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </article>
             </article>
 
-            <article className="py-8 lg:py-10 grid gap-4 lg:gap-6">
+            <article className="py-20 flex flex-col gap-5 lg:gap-8">
+              <article className="flex flex-col gap-4 lg:gap-6">
+                <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
+                  Research & Analysis
+                </h2>
+
+                <p className="text-[14px] lg:text-[20px] leading-[140%] lg:leading-normal lg:tracking-[-0.2px]">
+                  Before coming up with the solution, I conducted interview with
+                  the stakeholders: Service Managers, Technicians and Admin
+                  staff
+                </p>
+              </article>
+
+              <article className="grid gap-5 lg:grid-cols-[52%_48%] lg:gap-10">
+                <article className="flex flex-col gap-5 lg:gap-4">
+                  <h5 className="text-[16px] lg:text-[24px] font-semibold lg:font-medium">
+                    The discovery phase included:
+                  </h5>
+
+                  <ol className="list-decimal pl-6 text-[14px] lg:text-[20px] leading-[140%] lg:leading-normal lg:tracking-[-0.20px] flex flex-col gap-4">
+                    <li>
+                      Stakeholder interviews with service managers, technicians,
+                      and admin staff.
+                    </li>
+                    <li>
+                      Process mapping to identify inefficiencies in client and
+                      asset management.
+                    </li>
+                    <li>
+                      Competitive analysis of existing asset management tools
+                      (e.g., ServiceM8, UpKeep).
+                    </li>
+                  </ol>
+                </article>
+
+                <article className="flex flex-col gap-5 lg:gap-4">
+                  <h5 className="text-[16px] lg:text-[24px] font-semibold lg:font-medium">
+                    Key Insights
+                  </h5>
+
+                  <ol className="list-decimal pl-6 text-[14px] lg:text-[20px] leading-[140%] lg:leading-normal lg:tracking-[-0.20px] flex flex-col gap-4">
+                    <li>
+                      Admins needed a multi-layered dashboard with at-a-glance
+                      KPIs and full data control.
+                    </li>
+                    <li>
+                      Technicians preferred mobile simplicity with limited
+                      actions, log service, upload photos, mark completion.
+                    </li>
+                    <li>
+                      Data needed to auto-link dynamically (Clients ↔ Assets ↔
+                      Services ↔ Technicians) to minimize redundancy.
+                    </li>
+                    <li>
+                      Service logs were often lost or incomplete enforcing
+                      structure and traceability was critical.
+                    </li>
+                  </ol>
+                </article>
+              </article>
+            </article>
+
+            <article className="py-20 grid gap-4 lg:gap-6">
               <article className="flex flex-col gap-4 lg:gap-6">
                 <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
                   Design Process
                 </h2>
 
-                <ul className="max-w-[1128px] pl-6 list-disc list-outside space-y-6 text-[14px] lg:text-[20px] leading-[140%] lg:leading-normal lg:tracking-[-0.2px]">
-                  <li>
-                    <span className="font-medium">Discovery & Mapping:</span>{" "}
-                    Defined admin and technician responsibilities end-to-end.
-                  </li>
-                  <li>
-                    <span className="font-medium">
-                      Information Architecture:
-                    </span>{" "}
-                    Structured modules around clients, assets, scheduling, and
-                    field activity.
-                  </li>
-                  <li>
-                    <span className="font-medium">Wireframing:</span> Designed
-                    table-first layouts to support dense operational data.
-                  </li>
-                  <li>
-                    <span className="font-medium">UI System:</span> Applied
-                    status-focused visual cues for urgency, progress, and
-                    completion.
-                  </li>
-                  <li>
-                    <span className="font-medium">Workflow Validation:</span>{" "}
-                    Iterated route planning and service logging with team
-                    feedback.
-                  </li>
-                  <li>
-                    <span className="font-medium">Handoff:</span> Delivered
-                    consistent interaction patterns for admin and field roles.
-                  </li>
-                </ul>
+                <div className="text-[20px] tracking-[-0.2px]">
+                  <p>1. Information Architecture</p>
+                  <p className="mt-4 font-medium">
+                    The team structured the system around five primary modules:
+                  </p>
+                  <ul className="mt-6 pl-6 list-disc list-outside space-y-4">
+                    <li>Clients</li>
+                    <li>Assets</li>
+                    <li>Service and work orders</li>
+                    <li>Technicians</li>
+                    <li>Inventory</li>
+                  </ul>
+                </div>
+
+                <div className="mt-8 text-[20px] tracking-[-0.2px]">
+                  <p>2. User Flows</p>
+                  <p className="mt-4 font-medium">
+                    Admins and Technicians had distinct flows
+                  </p>
+                  <ul className="mt-6 pl-6 list-disc list-outside space-y-4">
+                    <li>
+                      <span className="font-medium">Admins:</span> Manage →
+                      Schedule → Assign → Track
+                    </li>
+                    <li>
+                      <span className="font-medium">Technicians:</span> View →
+                      Execute → Log → Complete
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="mt-8 text-[20px] tracking-[-0.2px]">
+                  <p>3. Wireframes & Prototyping</p>
+                  <p className="mt-4 font-medium">
+                    High Fidelity prototypes focused on:
+                  </p>
+                  <ul className="mt-6 pl-6 list-disc list-outside space-y-4">
+                    <li>
+                      A dashboard-first approach (KPIs, quick links, and
+                      alerts).
+                    </li>
+                    <li>
+                      Pop-up modals for fast data entry (to reduce navigation
+                      friction).
+                    </li>
+                    <li>Calendar/List toggles for schedule visualization.</li>
+                  </ul>
+                </div>
               </article>
             </article>
 
-            <article className="pt-8 pb-5 lg:py-10 flex flex-col gap-6 lg:gap-10">
+            <article className="py-20 flex flex-col gap-6 lg:gap-10">
               <article className="flex flex-col gap-4 lg:gap-6">
                 <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
                   Design Solution
                 </h2>
+
+                <div className="text-[32px] text-[#2F3434] tracking-[-0.32px] font-bold">
+                  <h3>Admin Role</h3>
+                </div>
               </article>
 
               <div className="w-full">
-                {designBlocks.map((block, index) => (
+                {designBlocks.slice(0, 8).map((block, index) => (
                   <div
                     key={block.title + index}
                     className={clsx(
@@ -382,6 +482,36 @@ export default function BaristaBuddy() {
                   </div>
                 ))}
               </div>
+
+              <div className="mt-[176px] relative">
+                <h2 className="text-[32px] text-[#2F3434] font-bold tracking-[-0.32px]">
+                  Technician Role
+                </h2>
+              </div>
+
+              {designBlocks.slice(8).map((block, index) => (
+                <div
+                  key={block.title + index}
+                  className={clsx(
+                    index === 0 ? "mt-8" : "mt-[124px]",
+                    "max-w-[1200px]",
+                    "flex flex-col lg:flex-row gap-6 items-center justify-between",
+                    block.reverse && "lg:flex-row-reverse",
+                  )}
+                >
+                  <Image
+                    className="max-w-[594px] w-full h-auto"
+                    src={block.image}
+                    alt={block.title}
+                  />
+                  <div className="max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]">
+                    <h6 className="font-semibold">{block.title}</h6>
+                    <p className="mt-4 leading-[140%] tracking-[-0.24px]">
+                      {block.text}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </article>
 
             <article className="pt-8 pb-5 lg:pt-10 lg:pb-0">
@@ -390,22 +520,21 @@ export default function BaristaBuddy() {
                   User Testing
                 </h2>
                 <p className="text-[14px] lg:text-[20px] leading-[140%] lg:leading-normal lg:tracking-[-0.20px]">
-                  Usability testing was conducted with admin staff and
-                  technicians to validate operational clarity, task speed, and
-                  field usability.
+                  Testing was conducted with Admins, Technicians and customer
+                  support
                 </p>
               </article>
 
-              <article className="mt-4 mb-6 lg:mt-8 lg:mb-0 grid lg:grid-cols-2 gap-4 lg:gap-6">
+              <article className="mt-4 mb-6 lg:mt-8 lg:mb-0">
                 <Image
-                  className="w-full h-auto"
-                  src={baristabuddy10}
-                  alt="Technician dashboard"
+                  className="hidden lg:block w-full h-auto"
+                  src={ut}
+                  alt=""
                 />
                 <Image
-                  className="w-full h-auto"
-                  src={baristabuddy4}
-                  alt="Admin dashboard"
+                  className="block lg:hidden w-full h-auto"
+                  src={ut2}
+                  alt=""
                 />
               </article>
             </article>
@@ -416,13 +545,12 @@ export default function BaristaBuddy() {
               </h2>
               <div className="text-[14px] lg:text-[20px] leading-[140%] tracking-[-0.14px] lg:tracking-[0.20px]">
                 <ul className="list-disc ml-6 space-y-6">
-                  <li>Reduce time to assign and complete service jobs.</li>
+                  <li>Validate ease of navigation for both roles.</li>
                   <li>
-                    Improve data quality in service logs and asset updates.
+                    Test real-time data synchronization between Admin and
+                    Technician views.
                   </li>
-                  <li>
-                    Validate route and priority visibility for technician teams.
-                  </li>
+                  <li>Observe task completion times and error frequency.</li>
                 </ul>
               </div>
             </article>
@@ -434,16 +562,18 @@ export default function BaristaBuddy() {
               <div className="text-[14px] lg:text-[20px] leading-[140%] tracking-[-0.14px] lg:tracking-[0.20px]">
                 <ul className="list-disc ml-6 space-y-6">
                   <li>
-                    Admin users completed high-frequency tasks with fewer clicks
-                    after dashboard consolidation.
+                    Admins appreciated the dynamic linking of clients and assets
+                    but requested color-coded status indicators for better
+                    prioritization.
                   </li>
                   <li>
-                    Technicians reported better confidence when priorities and
-                    route data were surfaced upfront.
+                    Technicians found the modal-based service checklist
+                    intuitive but requested offline support for areas with low
+                    connectivity.
                   </li>
                   <li>
-                    Service logs became more complete with structured form
-                    fields and guided inputs.
+                    Overall, data latency between admin updates and technician
+                    devices was under 2 seconds, meeting real-time requirements.
                   </li>
                 </ul>
               </div>
@@ -454,30 +584,30 @@ export default function BaristaBuddy() {
                 Results
               </h2>
               <p className="text-[14px] lg:text-[20px] leading-[140%] tracking-[-0.14px] lg:tracking-[0.20px]">
-                Post-launch usage indicated stronger operational control and
-                cleaner execution across service workflows.
+                After deployment:
               </p>
               <div className="text-[14px] lg:text-[20px] leading-[140%] tracking-[-0.14px] lg:tracking-[0.20px]">
                 <ul className="list-disc ml-6 space-y-6">
                   <li>
-                    <span className="font-bold">Faster dispatch cycles</span>{" "}
-                    due to clearer assignment and status management.
+                    Reduced manual data entry by{" "}
+                    <span className="font-bold">70%.</span>
                   </li>
                   <li>
                     <span className="font-bold">Improved asset visibility</span>{" "}
                     from centralized fleet and service history tracking.
                   </li>
                   <li>
-                    <span className="font-bold">
-                      Higher inventory reliability
-                    </span>{" "}
-                    through integrated usage updates by field teams.
+                    Improved service and
+                    <span className="font-bold">reliability</span> and{" "}
+                    <span className="font-bold">accountability.</span>
                   </li>
                   <li>
-                    <span className="font-bold">
-                      Better service consistency
-                    </span>{" "}
-                    from standardized work order and logging workflows.
+                    Enhanced <span className="font-bold">collaboration</span>{" "}
+                    between office admins and field technicians.
+                  </li>
+                  <li>
+                    Increased <span className="font-bold">visibility</span> into
+                    client contracts, service history, and asset lifecycles.
                   </li>
                 </ul>
               </div>
@@ -491,17 +621,16 @@ export default function BaristaBuddy() {
               <div className="text-[14px] lg:text-[20px] leading-[140%] tracking-[-0.14px] lg:tracking-[0.20px]">
                 <ul className="list-disc ml-6 space-y-6">
                   <li>
-                    <span className="font-medium">Data density:</span> Keeping
-                    large operational tables readable without losing detail.
+                    <span className="font-medium">Data Integration:</span>{" "}
+                    Importing historical client and asset records required
+                    extensive data cleaning.
                   </li>
                   <li>
-                    <span className="font-medium">Role-specific needs:</span>{" "}
-                    Designing different experiences for admin and technician
-                    users while keeping the system cohesive.
-                  </li>
-                  <li>
-                    <span className="font-medium">Status consistency:</span>{" "}
-                    Aligning terminology and visual states across modules.
+                    <span className="font-medium">
+                      Feature Scope Management:
+                    </span>{" "}
+                    Prioritizing essential workflows without overcomplicating
+                    the UI demanded constant stakeholder alignment.
                   </li>
                 </ul>
               </div>
@@ -513,11 +642,12 @@ export default function BaristaBuddy() {
               </h2>
 
               <div className="text-[14px] lg:text-[20px] leading-[140%] tracking-[-0.14px] lg:tracking-[0.2px]">
-                BaristaBuddy established a practical and scalable system for
-                coffee machine service operations. By connecting assets,
-                schedules, technicians, and inventory in one workflow, the
-                platform improved execution speed, data quality, and daily
-                decision-making for both operations leaders and field staff.
+                The Barista Buddy manager successfully transformed a paper-based
+                service operation into a digital, data-driven ecosystem. By
+                combining thoughtful UX design, role-based access control, and
+                real-time synchronization, the system empowered both
+                administrators and field technicians to operate with speed,
+                accuracy, and accountability
               </div>
             </article>
           </Container>
