@@ -3,7 +3,8 @@ import Navbar from "@/components/navbar/Navbar";
 import Image from "next/image";
 
 // OLD IMAGE IMPORTATION
-import oppia4 from "@/public/images/PNG/oppia/oppia4.png";
+import problemStatement from "@/public/images/case-study/easyspend/problem-statement.png";
+import goal from "@/public/images/case-study/easyspend/goal.png";
 import ut from "@/public/images/PNG/oppia/ut.png";
 import ut2 from "@/public/images/PNG/oppia/ut2.png";
 import banner from "@/public/images/case-study/easyspend/banner.png";
@@ -132,7 +133,7 @@ export default function Oppia() {
               </article>
 
               <article className="max-w-[569px] mt-8 w-full h-auto shrink-0 flex-0 rounded-[4px] overflow-hidden">
-                <Image src={oppia4} alt="" />
+                <Image src={problemStatement} alt="" />
               </article>
             </article>
 
@@ -168,7 +169,7 @@ export default function Oppia() {
               </article>
 
               <article className="max-w-[569px] mt-8 w-full h-auto shrink-0 flex-0 rounded-[4px] overflow-hidden">
-                <Image src={oppia4} alt="" />
+                <Image src={goal} alt="" />
               </article>
             </article>
 
