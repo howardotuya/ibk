@@ -877,13 +877,16 @@ export default function Oppia() {
               </h2>
               <div className="text-[14px] lg:text-[20px] leading-[140%] tracking-[-0.14px] lg:tracking-[0.20px]">
                 <ul className="list-disc ml-6 space-y-6">
-                  <li>Navigation ease and discoverability of core features</li>
+                  <li>
+                    Verify clarity of course-partnering and service creation.
+                  </li>
 
                   <li>
-                    Transaction flow efficiency (Bill payment, Crypto
-                    conversion, fund transfers)
+                    Evaluate how easily users could find and book lessons.
                   </li>
-                  <li>User confidence in security and reliability</li>
+                  <li>
+                    Observe if pros could update availability without conflicts.
+                  </li>
                 </ul>
               </div>
             </article>
@@ -998,7 +1001,7 @@ export default function Oppia() {
         </section>
 
         {/* NEXT PROJECT */}
-        <SubFooter first={"Sendable"} link={"/case-study/sendable"} />
+        <SubFooter first={"BuildCo"} link={"/case-study/buildco"} />
       </main>
 
       {/* FOOTER */}

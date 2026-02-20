@@ -1086,7 +1086,7 @@ export default function Oppia() {
         </section>
 
         {/* NEXT PROJECT */}
-        <SubFooter first={"Easyspend"} link={"/case-study/easyspend"} />
+        <SubFooter first={"Alaire"} link={"/case-study/alaire"} />
       </main>
 
       {/* FOOTER */}

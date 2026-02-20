@@ -5,6 +5,8 @@ import Footer from "@/components/footer/footer";
 import SubFooter from "@/components/footer/subFooter";
 import clsx from "clsx";
 
+import ut from "@/public/images/PNG/oppia/ut.png";
+import ut2 from "@/public/images/PNG/oppia/ut2.png";
 import sendable1 from "@/public/images/case-study/sendable/1.png";
 import sendable2 from "@/public/images/case-study/sendable/2.png";
 import sendable3 from "@/public/images/case-study/sendable/3.png";
@@ -42,136 +44,142 @@ export const metadata = {
 
 const designBlocks = [
   {
-    title: "Golfer Dashboard",
-    text: "The golfer dashboard focuses on speed. Users can search instructors, scan available coaches, and quickly access booking and profile actions from one clean surface.",
-    image: sendable5,
-    reverse: false,
-  },
-  {
-    title: "Booking History",
-    text: "Session tabs for pending, active, and completed bookings make booking status obvious. Payment state and action buttons are placed directly where decisions happen.",
+    title: "Dashboard",
+    text: "On this page, golfers can see the list of golf pros and book any pro they want.",
     image: sendable4,
-    reverse: true,
-  },
-  {
-    title: "Account Settings",
-    text: "Profile editing and privacy policy details are structured for readability, reducing support dependency and making self-service updates straightforward.",
-    image: sendable6,
     reverse: false,
   },
   {
-    title: "Coach Home",
-    text: "The coach dashboard highlights workload, availability, and partner course activity so instructors can run daily operations without jumping across pages.",
-    image: sendable7,
+    title: "Bookings",
+    text: "On this page, the golfers can see the list of the Golf pros tey have booked and pay for bookings.",
+    image: sendable5,
     reverse: true,
   },
   {
-    title: "Service Management",
-    text: "Instructors can define session types, pricing, and course links in one table view, helping them control their service catalog and earnings flow.",
-    image: sendable8,
-    reverse: false,
-  },
-  {
-    title: "Booking Queue",
-    text: "Pending requests include quick accept/cancel controls and key details, improving turnaround time and reducing friction in the booking pipeline.",
-    image: sendable9,
-    reverse: true,
-  },
-  {
-    title: "Payment Management",
-    text: "Earnings summaries, payout history, and withdrawal entry points are centralized so coaches understand exactly what they earned and when they get paid.",
-    image: sendable10,
-    reverse: false,
-  },
-  {
-    title: "Payment State Variant",
-    text: "Additional payout-state handling was designed for consistency, preserving trust by showing familiar metrics and actions during repeated financial workflows.",
-    image: sendable11,
-    reverse: true,
-  },
-  {
-    title: "Golf Course Partnerships",
-    text: "Course discovery cards make partner selection easy, with quick actions to request partnerships or set availability based on each course relationship.",
-    image: sendable12,
-    reverse: false,
-  },
-  {
-    title: "Coach Messaging",
-    text: "In-app messaging supports real-time communication around sessions, reducing missed classes and helping users coordinate preparation before lessons.",
-    image: sendable13,
-    reverse: true,
-  },
-  {
-    title: "Course Directory State",
-    text: "A second course-grid state was created to support repeat navigation patterns and keep partner workflows familiar across different user journeys.",
+    title: "Message",
+    text: "On this page, the golfer can send message to their Golf pro.",
     image: sendable14,
     reverse: false,
   },
   {
-    title: "Settings Deep View",
-    text: "The expanded settings layout improves scannability for longer legal and account content while maintaining the same system hierarchy and spacing.",
-    image: sendable15,
+    title: "Settings",
+    text: "On this page, the golfers can see their profile details and terms and conditions of the platform.",
+    image: sendable6,
     reverse: true,
   },
   {
-    title: "Admin Dashboard",
-    text: "Admins can monitor partner request volume, split status, and recent activity from a central dashboard built for operational oversight.",
+    title: "Dashboard",
+    text: "On this page, golf pros can see their calendar, number of bookings, and golf course partners.s",
+    image: sendable7,
+    reverse: false,
+  },
+  {
+    title: "Booking",
+    text: "On this page, golf pros can see their bookings and accept or cancel bookings.",
+    image: sendable8,
+    reverse: true,
+  },
+  {
+    title: "Services",
+    text: "On this page, golf pros can see the number of sessions, number of services, and the golf pros they are affiliated with.",
+    image: sendable9,
+    reverse: false,
+  },
+  {
+    title: "Payment Management ",
+    text: "On this page, golf pros can see their total earnings, course earnings, number of students and their available balance. ",
+    image: sendable10,
+    reverse: true,
+  },
+  {
+    title: "Golf courses",
+    text: "On this page, golf pros can partner with golf courses and also set availability for partnered courses.",
+    image: sendable11,
+    reverse: false,
+  },
+  {
+    title: "Payment Management ",
+    text: "On this page, golf pros can see their total earnings, course earnings, number of students and their available balance. ",
+    image: sendable12,
+    reverse: true,
+  },
+  {
+    title: "Golf courses",
+    text: "On this page, golf pros can partner with golf courses and also set availability for partnered courses.",
+    image: sendable13,
+    reverse: false,
+  },
+  {
+    title: "Message",
+    text: "On this page, golf pros can respond to messages from golfers.",
+    image: sendable14,
+    reverse: true,
+  },
+  {
+    title: "Settings",
+    text: "On this page, golf pros can edit their profile details and also see the terms and privacy.",
+    image: sendable15,
+    reverse: false,
+  },
+  {
+    title: "Dashboard",
+    text: "On this page, course managers can see partnership request from golf pros.",
     image: sendable16,
     reverse: false,
   },
   {
-    title: "Order & Revenue Tracking",
-    text: "Revenue analytics and partner split tables were designed to support high-confidence decisions on payout operations and growth planning.",
+    title: "Order and Revenue tracking",
+    text: "On this page, golf course managers can see their total revenue, partners and active partners.",
     image: sendable17,
     reverse: true,
   },
   {
     title: "Course Management",
-    text: "A tab-based form architecture keeps course profile, imagery, and amenity details organized so updates remain fast and low error.",
+    text: "On this page, golf pros can fill in the information about their course, add pictures and amenities.",
     image: sendable18,
     reverse: false,
   },
   {
-    title: "Booking Operations",
-    text: "The admin booking board gives teams a complete view of volume, lesson type, and payment state for day-to-day scheduling control.",
+    title: "Booking",
+    text: "On this page, golf pros can respond to messages from golfers.",
     image: sendable19,
     reverse: true,
   },
   {
-    title: "Platform Overview",
-    text: "The broader dashboard consolidates user counts, role segmentation, and onboarding data for top-level platform health visibility.",
+    title: "Settings",
+    text: "On this page, golf pros can partner with golf courses and also set availability for partnered courses.",
     image: sendable20,
     reverse: false,
   },
   {
-    title: "Course Partner Variant",
-    text: "A repeat course-partner surface was included to validate consistency in layout behavior across different navigation and account contexts.",
+    title: "Dashboard",
+    text: "On this page, admins can manage golfers, golf pros, course managers.",
     image: sendable21,
-    reverse: true,
+    reverse: false,
   },
   {
     title: "User Management",
-    text: "Role-based tabs and searchable tables allow admin teams to quickly locate golfers, golf pros, and courses for support and moderation.",
+    text: "On this page, admins can see the list of golf admins, pros and course managers.",
     image: sendable22,
-    reverse: false,
+    reverse: true,
   },
   {
     title: "Transaction History",
-    text: "Transaction logs expose sender, recipient, amount, and status so finance teams can identify issues and resolve payment disputes quickly.",
+    text: "On this page, admins can see all the transaction history on the site.",
     image: sendable23,
-    reverse: true,
-  },
-  {
-    title: "Partnership & Revenue",
-    text: "Partnership revenue reporting ties courses to instructors and outcomes, giving leadership better visibility into monetization performance.",
-    image: sendable24,
     reverse: false,
   },
   {
-    title: "Marketing Landing Page",
-    text: "The landing page communicates product value, social proof, and clear CTA paths that drive instructor discovery and first booking conversion.",
-    image: sendable25,
+    title: "Partnership and Revenue",
+    text: "On this page, admins can see the total revenue, partners and active partners.",
+    image: sendable24,
     reverse: true,
+  },
+  {
+    title: "Landing page",
+    text: "On this page, golfers can see what the platform is about and also find a golf pro.",
+    image: sendable25,
+    reverse: false,
   },
 ];
 
@@ -416,14 +424,18 @@ export default function Sendable() {
             </article>
 
             <article className="pt-8 pb-5 lg:py-10 flex flex-col gap-6 lg:gap-10">
-              <article className="flex flex-col gap-4 lg:gap-6">
+              <article className="flex flex-col gap-6">
                 <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
                   Design Solution
                 </h2>
+
+                <div className="text-[32px] text-[#2F3434] tracking-[-0.32px] font-bold">
+                  <h3>Golfer Role</h3>
+                </div>
               </article>
 
               <div className="w-full">
-                {designBlocks.map((block, index) => (
+                {designBlocks.slice(0, 4).map((block, index) => (
                   <div
                     key={block.title + index}
                     className={clsx(
@@ -447,6 +459,126 @@ export default function Sendable() {
                   </div>
                 ))}
               </div>
+
+              <div className="mt-[176px] relative">
+                <h2 className="text-[32px] text-[#2F3434] font-bold tracking-[-0.32px]">
+                  Golf Pro Role
+                </h2>
+              </div>
+
+              {designBlocks.slice(4, 13).map((block, index) => (
+                <div
+                  key={block.title + index}
+                  className={clsx(
+                    index === 0 ? "mt-8" : "mt-[124px]",
+                    "max-w-[1200px]",
+                    "flex flex-col lg:flex-row gap-6 items-center justify-between",
+                    block.reverse && "lg:flex-row-reverse",
+                  )}
+                >
+                  <Image
+                    className="max-w-[594px] w-full h-auto"
+                    src={block.image}
+                    alt={block.title}
+                  />
+                  <div className="max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]">
+                    <h6 className="font-semibold">{block.title}</h6>
+                    <p className="mt-4 leading-[140%] tracking-[-0.24px]">
+                      {block.text}
+                    </p>
+                  </div>
+                </div>
+              ))}
+
+              <div className="mt-[176px] relative">
+                <h2 className="text-[32px] text-[#2F3434] font-bold tracking-[-0.32px]">
+                  Golf Course Role
+                </h2>
+              </div>
+
+              {designBlocks.slice(13, 18).map((block, index) => (
+                <div
+                  key={block.title + index}
+                  className={clsx(
+                    index === 0 ? "mt-8" : "mt-[124px]",
+                    "max-w-[1200px]",
+                    "flex flex-col lg:flex-row gap-6 items-center justify-between",
+                    block.reverse && "lg:flex-row-reverse",
+                  )}
+                >
+                  <Image
+                    className="max-w-[594px] w-full h-auto"
+                    src={block.image}
+                    alt={block.title}
+                  />
+                  <div className="max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]">
+                    <h6 className="font-semibold">{block.title}</h6>
+                    <p className="mt-4 leading-[140%] tracking-[-0.24px]">
+                      {block.text}
+                    </p>
+                  </div>
+                </div>
+              ))}
+
+              <div className="mt-[176px] relative">
+                <h2 className="text-[32px] text-[#2F3434] font-bold tracking-[-0.32px]">
+                  Admin Role
+                </h2>
+              </div>
+
+              {designBlocks.slice(18, 22).map((block, index) => (
+                <div
+                  key={block.title + index}
+                  className={clsx(
+                    index === 0 ? "mt-8" : "mt-[124px]",
+                    "max-w-[1200px]",
+                    "flex flex-col lg:flex-row gap-6 items-center justify-between",
+                    block.reverse && "lg:flex-row-reverse",
+                  )}
+                >
+                  <Image
+                    className="max-w-[594px] w-full h-auto"
+                    src={block.image}
+                    alt={block.title}
+                  />
+                  <div className="max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]">
+                    <h6 className="font-semibold">{block.title}</h6>
+                    <p className="mt-4 leading-[140%] tracking-[-0.24px]">
+                      {block.text}
+                    </p>
+                  </div>
+                </div>
+              ))}
+
+              <div className="mt-[176px] relative">
+                <h2 className="text-[32px] text-[#2F3434] font-bold tracking-[-0.32px]">
+                  Landing page
+                </h2>
+              </div>
+
+              {designBlocks.slice(22).map((block, index) => (
+                <div
+                  key={block.title + index}
+                  className={clsx(
+                    index === 0 ? "mt-8" : "mt-[124px]",
+                    "max-w-[1200px]",
+                    "flex flex-col lg:flex-row gap-6 items-center justify-between",
+                    block.reverse && "lg:flex-row-reverse",
+                  )}
+                >
+                  <Image
+                    className="max-w-[594px] w-full h-auto"
+                    src={block.image}
+                    alt={block.title}
+                  />
+                  <div className="max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]">
+                    <h6 className="font-semibold">{block.title}</h6>
+                    <p className="mt-4 leading-[140%] tracking-[-0.24px]">
+                      {block.text}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </article>
 
             <article className="pt-8 pb-5 lg:pt-10 lg:pb-0">
@@ -455,22 +587,21 @@ export default function Sendable() {
                   User Testing
                 </h2>
                 <p className="text-[14px] lg:text-[20px] leading-[140%] lg:leading-normal lg:tracking-[-0.20px]">
-                  Usability sessions were run with golfers, coaches, and
-                  operations users to validate learnability, speed, and trust
-                  across critical flows.
+                  The testing was conducted between Golfers, Golf pros and
+                  Course managers
                 </p>
               </article>
 
-              <article className="mt-4 mb-6 lg:mt-8 lg:mb-0 grid lg:grid-cols-2 gap-4 lg:gap-6">
+              <article className="mt-4 mb-6 lg:mt-8 lg:mb-0">
                 <Image
-                  className="w-full h-auto"
-                  src={sendable5}
-                  alt="Golfer app"
+                  className="hidden lg:block w-full h-auto"
+                  src={ut}
+                  alt=""
                 />
                 <Image
-                  className="w-full h-auto"
-                  src={sendable20}
-                  alt="Admin dashboard"
+                  className="block lg:hidden w-full h-auto"
+                  src={ut2}
+                  alt=""
                 />
               </article>
             </article>
@@ -481,18 +612,21 @@ export default function Sendable() {
               </h2>
               <div className="text-[14px] lg:text-[20px] leading-[140%] tracking-[-0.14px] lg:tracking-[0.20px]">
                 <ul className="list-disc ml-6 space-y-6">
-                  <li>Reduce time to complete first booking.</li>
                   <li>
-                    Verify payout and transaction states are self-explanatory.
+                    Verify clarity of course-partnering and service creation.
+                  </li>
+
+                  <li>
+                    Evaluate how easily users could find and book lessons.
                   </li>
                   <li>
-                    Measure admin efficiency when searching and resolving
-                    records.
+                    Observe if pros could update availability without conflicts.
                   </li>
                 </ul>
               </div>
             </article>
 
+            {/* Findings from Testing */}
             <article className="max-w-[807px] pt-16 pb-0 flex flex-col gap-4 lg:gap-6">
               <h2 className="cod-gray-800 text-[24px] lg:text-[32px] font-semibold">
                 Findings from Testing
@@ -500,48 +634,48 @@ export default function Sendable() {
               <div className="text-[14px] lg:text-[20px] leading-[140%] tracking-[-0.14px] lg:tracking-[0.20px]">
                 <ul className="list-disc ml-6 space-y-6">
                   <li>
-                    Participants completed key booking tasks with minimal
-                    assistance.
+                    90% of pros completed service setup without external
+                    guidance.
+                  </li>
+
+                  <li>
+                    Golfers completed bookings 30% faster after UI
+                    simplification.
                   </li>
                   <li>
-                    Status tags and action placement were consistently
-                    understood across payment and booking views.
-                  </li>
-                  <li>
-                    Admin users reported faster reconciliation using searchable
-                    tabular layouts.
+                    Course admins appreciated transparent revenue split
+                    configuration but requested clearer payout summaries
+                    (implemented in next iteration).
                   </li>
                 </ul>
               </div>
             </article>
 
+            {/* Results */}
             <article className="pt-20 pb-0 flex flex-col gap-4 lg:gap-6">
               <h2 className="cod-gray-800 text-[24px] lg:text-[40px] font-semibold">
                 Results
               </h2>
               <p className="text-[14px] lg:text-[20px] leading-[140%] tracking-[-0.14px] lg:tracking-[0.20px]">
-                Post-launch behavior indicated stronger workflow clarity and
-                operational control.
+                Post launch analytics and feedback showed:
               </p>
               <div className="text-[14px] lg:text-[20px] leading-[140%] tracking-[-0.14px] lg:tracking-[0.20px]">
                 <ul className="list-disc ml-6 space-y-6">
+                  <li>High adoption rate among pros due to ease of setup.</li>
                   <li>
-                    <span className="font-bold">Higher booking completion</span>{" "}
-                    across first-time users after discovery flow refinements.
+                    Improved golfer satisfaction because of real-time visibility
+                    and seamless checkout.
                   </li>
                   <li>
-                    <span className="font-bold">Improved payout trust</span>{" "}
-                    from transparent earnings and withdrawal states.
-                  </li>
-                  <li>
-                    <span className="font-bold">Lower support dependency</span>{" "}
-                    for transaction and partnership clarifications.
-                  </li>
-                  <li>
-                    <span className="font-bold">Better admin throughput</span>{" "}
-                    through structured search, filtering, and data views.
+                    Operational efficiency for course managers with automatic
+                    payout splits and conflict prevention.
                   </li>
                 </ul>
+                <p className="text-[14px] lg:text-[20px] leading-[140%] tracking-[-0.14px] lg:tracking-[0.20px]">
+                  The platform’s 7% commission model and automated course-by-pro
+                  revenue splits created a sustainable ecosystem, ensuring fair
+                  payouts and incentivizing continued engagement.
+                </p>
               </div>
             </article>
 
@@ -553,18 +687,16 @@ export default function Sendable() {
               <div className="text-[14px] lg:text-[20px] leading-[140%] tracking-[-0.14px] lg:tracking-[0.20px]">
                 <ul className="list-disc ml-6 space-y-6">
                   <li>
-                    <span className="font-medium">Role complexity:</span>{" "}
-                    Balancing golfer, coach, and admin mental models in one
-                    ecosystem.
+                    <span className="font-medium">
+                      Complex Partnership Logic:
+                    </span>{" "}
+                    Handling dynamic revenue splits per course-pro relationship
+                    required detailed backend mapping.
                   </li>
                   <li>
-                    <span className="font-medium">Data density:</span> Making
-                    analytics-heavy tables easy to scan while preserving depth.
-                  </li>
-                  <li>
-                    <span className="font-medium">Workflow consistency:</span>{" "}
-                    Keeping repeated modules coherent across different surfaces
-                    and account contexts.
+                    <span className="font-medium"> Conflict Detection:</span>{" "}
+                    Making Early testing revealed overlapping time blocks; this
+                    led to implementing a robust conflict warning system.
                   </li>
                 </ul>
               </div>
@@ -576,17 +708,21 @@ export default function Sendable() {
               </h2>
 
               <div className="text-[14px] lg:text-[20px] leading-[140%] tracking-[-0.14px] lg:tracking-[0.2px]">
-                Sendable unified instructor discovery, lesson operations, and
-                revenue oversight into a single product experience. The final
-                system improved decision clarity for golfers, operational speed
-                for coaches, and visibility for admin teams, creating a solid
-                foundation for scalable marketplace growth.
+                The Sendable Golf Booking Platform transformed a fragmented
+                process into a cohesive digital ecosystem that benefits every
+                stakeholder.
+                <br />
+                By emphasizing clarity, control, and connectivity, Sendable
+                empowered golf professionals to manage their schedules
+                efficiently, helped courses streamline partnerships, and
+                provided golfers with a delightful, transparent booking
+                experience.
               </div>
             </article>
           </Container>
         </section>
 
-        <SubFooter first={"Barista Buddy"} link={"/case-study/barista-buddy"} />
+        <SubFooter first={"Barista Buddy"} link={"/case-study/baristabuddy"} />
       </main>
 
       <Footer />

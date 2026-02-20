@@ -245,61 +245,55 @@ export default function Home() {
 
             {/* 3 CASE STUDIES */}
             <section className="w-full flex flex-col gap-5">
-              {/* OPPIA */}
-              <article className="relative rounded-[12px] bg-[#EFFEF3] pt-[42px] md:pt-[42px] pb-4 px-6 md:p-8 gap-12 lg:p-0 lg:px-14 grid lg:grid-cols-[1fr_auto] lg:gap-x-8">
+              {/* SENDABLE */}
+              <article className="relative rounded-[12px] bg-[#E8F6EE] gap-7 py-4 px-6 md:p-8 lg:p-0 lg:pl-14 lg:pr-7 grid lg:grid-cols-[1fr_auto] lg:gap-x-8">
                 {/* LEFT */}
-                <article className="flex flex-col gap-6 lg:gap-10 lg:pt-14 lg:pb-[156px]">
-                  <article className="flex flex-col gap-2 lg:gap-6">
-                    <h3 className="text-[#434747] text-[24px] lg:text-[40px] font-semibold">
-                      Oppia
-                    </h3>
-                    <p className="text-[14px] lg:text-[20px] leading-[140%]">
-                      Oppia Beta- I conducted market research and user testing
-                      to improve the user experience of the app, I also worked
-                      on the language translation feature which led to 30%
-                      increase in the number of users.
-                    </p>
+                <div className="flex flex-col gap-4">
+                  <div
+                    className={clsx(
+                      "lg:hidden flex items-center gap-3 flex-wrap",
+                    )}
+                  >
+                    <Badge text={"Shipped"} status={"shipped"} />
+                    <Badge text={"SAAS"} />
+                    <Badge text={"Website"} />
+                    <Badge text={"Dashboard"} />
+                    <Badge text={"Mobile"} />
+                  </div>
+
+                  <article className="flex flex-col gap-6 lg:gap-10 lg:pt-[56px] lg:pb-[128px]">
+                    <article className="flex flex-col gap-2 lg:gap-6">
+                      <h3 className="text-[#434747] text-[24px] lg:text-[40px] font-semibold">
+                        Sendable
+                      </h3>
+                      <p className="text-[14px] lg:text-[20px] leading-[140%] max-w-[513px]">
+                        Sendable is a platform that enables Golf Pros and
+                        Golfers interact with course-linked services and time
+                        slots. I designed the landing page, Golfer’s dashboard,
+                        Golf Pro’s dashboard, Golf Course dashboard and Admin
+                        dashboard.
+                      </p>
+                    </article>
+                    <article className="flex gap-4">
+                      <ButtonLarge
+                        text={"Read case study"}
+                        route={"/case-study/sendable"}
+                      />
+                      <ButtonSecondary
+                        text={"View live site"}
+                        route={"https://sendable.com.au/version-test"}
+                        target="_blank"
+                      />
+                    </article>
                   </article>
-                  <article className="flex gap-4 lg:gap-6">
-                    <ButtonLarge
-                      text={"Read case study"}
-                      route={"/case-study/oppia"}
-                    />
-                    <ButtonSecondary
-                      text={"View live app"}
-                      route={"/case-study/oppia"}
-                    />
-                  </article>
-                </article>
+                </div>
 
                 {/* RIGHT */}
-                <article className="flex justify-center lg:justify-normal w-full gap-4 lg:gap-x-6">
-                  {/* 234.358px */}
+                <article className="flex w-full items-center justify-center lg:justify-end">
                   <Image
-                    className="shrink-0 w-[234.358px] h-auto hidden lg:block self-start"
-                    src={oppia2}
-                    alt="Oppia Mobile App"
-                    placeholder="blur"
-                  />
-                  <Image
-                    className="w-[137.679px] h-auto block lg:hidden shrink-0 self-start"
-                    quality={100}
-                    src={moppia1}
-                    alt="Oppia Mobile App"
-                    placeholder="blur"
-                  />
-                  {/*  */}
-                  <Image
-                    className="shrink-0 w-[234.358px] h-auto hidden lg:block mt-[90px] lg:mt-0 self-end"
-                    src={oppia1}
-                    alt="Oppia Mobile App"
-                    placeholder="blur"
-                  />
-                  <Image
-                    className="w-[137.679px] h-auto block lg:hidden shrink-0 mt-[90px] lg:mt-0 self-end"
-                    quality={100}
-                    src={moppia2}
-                    alt="Oppia Mobile App"
+                    className="w-full max-w-[543px] h-auto"
+                    src={sendableCaseStudy}
+                    alt="Sendable case study"
                     placeholder="blur"
                   />
                 </article>
@@ -307,13 +301,275 @@ export default function Home() {
                 <div
                   className={clsx(
                     "absolute top-4 left-6 lg:top-[unset] lg:bottom-6 lg:left-[56px]",
-                    "flex justify-center items-center gap-3",
+                    "hidden lg:flex justify-center items-center gap-3 flex-wrap",
                   )}
                 >
                   <Badge text={"Shipped"} status={"shipped"} />
-                  <Badge text={"Edtech"} />
-                  <Badge text={"Mobile App "} />
+                  <Badge text={"SAAS"} />
+                  <Badge text={"Website"} />
+                  <Badge text={"Dashboard"} />
+                  <Badge text={"Mobile"} />
                 </div>
+              </article>
+
+              {/* BARISTA BUDDY */}
+              <article className="relative rounded-[12px] bg-[#FDF7E8] py-4 px-6 md:p-8 lg:p-0 lg:pl-7 lg:pr-14 gap-7 grid lg:grid-cols-[auto_1fr] lg:gap-x-12">
+                {/* LEFT */}
+                <article className="order-2 lg:order-1 flex w-full items-start justify-center lg:pt-[56px]">
+                  <Image
+                    className="w-full max-w-[543px] h-auto"
+                    src={baristaBuddyCaseStudy}
+                    alt="Barista Buddy case study"
+                    placeholder="blur"
+                  />
+                </article>
+
+                {/* RIGHT */}
+                <article className="w-full max-w-[563px] relative order-1 lg:order-2 flex flex-col gap-4 lg:gap-10 lg:pt-[56px] lg:pb-[89px]">
+                  <div
+                    className={clsx(
+                      "lg:hidden flex items-center gap-3 flex-wrap",
+                    )}
+                  >
+                    <Badge text={"Shipped"} status={"shipped"} />
+                    <Badge text={"SAAS"} />
+                    <Badge text={"Dashboard"} />
+                  </div>
+
+                  <article className="flex flex-col gap-2 lg:gap-6">
+                    <h3 className="text-[#434747] text-[24px] lg:text-[40px] font-semibold">
+                      Barista Buddy
+                    </h3>
+                    <p className="text-[14px] lg:text-[20px] leading-[140%]">
+                      Barista Buddy is an Australian-based company that provides
+                      flexible, no-contract coffee machine solutions for
+                      offices, hotels, and industrial workplaces. Their service
+                      model includes the machines, fresh beans, and maintenance
+                      on a pay-per-cup basis.
+                      <br />
+                      <br />I designed the User dashboard and Admin dashboard.
+                    </p>
+                  </article>
+
+                  <article className="flex gap-4">
+                    <ButtonLarge
+                      text={"Read case study"}
+                      route={"/case-study/baristabuddy"}
+                    />
+                    <ButtonSecondary
+                      text={"View live site"}
+                      route={"https://baristabuddy.au/"}
+                      target="_blank"
+                    />
+                  </article>
+
+                  <div
+                    className={clsx(
+                      "hidden lg:flex absolute bottom-6 left-0 items-center gap-y-1 gap-x-3 flex-wrap",
+                    )}
+                  >
+                    <Badge text={"Shipped"} status={"shipped"} />
+                    <Badge text={"SAAS"} />
+                    <Badge text={"Dashboard"} />
+                  </div>
+                </article>
+              </article>
+
+              {/* EASYSPEND */}
+              <article className="relative rounded-[12px] bg-[#F4ECFF] py-4 px-6 md:p-8 lg:p-0 lg:pl-7 lg:pr-14 gap-7 grid lg:grid-cols-[auto_1fr] lg:gap-x-12">
+                {/* LEFT */}
+                <article className="order-2 lg:order-1 flex w-full items-start justify-center lg:pt-[56px]">
+                  <Image
+                    className="w-full max-w-[543px] h-auto"
+                    src={easySpendCaseStudy}
+                    alt="EasySpend case study"
+                    placeholder="blur"
+                  />
+                </article>
+
+                {/* RIGHT */}
+                <article className="relative order-1 lg:order-2 flex flex-col gap-4 lg:gap-10 lg:pt-[56px] lg:pb-[161px]">
+                  <div
+                    className={clsx(
+                      "lg:hidden flex items-center gap-3 flex-wrap",
+                    )}
+                  >
+                    <Badge text={"Shipped"} status={"shipped"} />
+                    <Badge text={"Fintech"} />
+                    <Badge text={"Dashboard"} />
+                    <Badge text={"Mobile"} />
+                  </div>
+
+                  <article className="flex flex-col gap-2 lg:gap-6">
+                    <h3 className="text-[#434747] text-[24px] lg:text-[40px] font-semibold">
+                      EasySpend
+                    </h3>
+                    <p className="text-[14px] lg:text-[20px] leading-[140%]">
+                      EasySpend is enabling seamless digital payments, USD card
+                      issuance, and crypto-to-fiat conversions.
+                      <br />
+                      <br />I designed the User dashboard and Admin dashboard.
+                    </p>
+                  </article>
+
+                  <article className="flex gap-4">
+                    <ButtonLarge
+                      text={"Read case study"}
+                      route={"/case-study/easyspend"}
+                    />
+                    <ButtonSecondary
+                      text={"View live app"}
+                      route={
+                        "https://apps.apple.com/ng/app/easyspend/id6599855396"
+                      }
+                      target="_blank"
+                    />
+                  </article>
+
+                  <div
+                    className={clsx(
+                      "hidden lg:flex absolute bottom-6 left-0 items-center gap-y-1 gap-x-3 flex-wrap",
+                    )}
+                  >
+                    <Badge text={"Shipped"} status={"shipped"} />
+                    <Badge text={"Fintech"} />
+                    <Badge text={"Dashboard"} />
+                    <Badge text={"Mobile"} />
+                  </div>
+                </article>
+              </article>
+
+              {/* BUILDCO */}
+              <article className="relative rounded-[12px] bg-[#E8F6EE] gap-7 py-4 px-6 md:p-8 lg:p-0 lg:pl-14 lg:pr-7 grid lg:grid-cols-[1fr_auto] lg:gap-x-8">
+                {/* LEFT */}
+                <div className="flex flex-col gap-4">
+                  <div
+                    className={clsx(
+                      "lg:hidden flex items-center gap-3 flex-wrap",
+                    )}
+                  >
+                    <Badge text={"In Development"} status={"dev"} />
+                    <Badge text={"E-commerce"} />
+                    <Badge text={"B2B"} />
+                    <Badge text={"Website"} />
+                    <Badge text={"Dashboard"} />
+                    <Badge text={"Mobile App"} />
+                  </div>
+
+                  <article className="flex flex-col gap-6 lg:gap-10 lg:pt-[56px] lg:pb-[128px]">
+                    <article className="flex flex-col gap-2 lg:gap-6">
+                      <h3 className="text-[#434747] text-[24px] lg:text-[40px] font-semibold uppercase">
+                        Buildco
+                      </h3>
+                      <p className="text-[14px] lg:text-[20px] leading-[140%] max-w-[513px]">
+                        BUILDCO is a platform for the sales of power tools and
+                        accessories, construction materials, project management,
+                        furniture, home appliances and electrical materials. I
+                        designed the Website, Direct Ordering Platform, Mobile
+                        App and Admin dashboard.
+                      </p>
+                    </article>
+                    <article className="flex gap-4">
+                      <ButtonLarge
+                        text={"Read case study"}
+                        route={"/case-study/buildco"}
+                      />
+                      <ButtonSecondary
+                        text={"Under Development"}
+                        route={"https://tbcafrica.com"}
+                        target="_blank"
+                      />
+                    </article>
+                  </article>
+                </div>
+
+                {/* RIGHT */}
+                <article className="flex w-full items-center justify-center lg:justify-end">
+                  <Image
+                    className="w-full max-w-[543px] h-auto"
+                    src={buildcoCaseStudy}
+                    alt="Buildco case study"
+                    placeholder="blur"
+                  />
+                </article>
+
+                <div
+                  className={clsx(
+                    "absolute top-4 left-6 lg:top-[unset] lg:bottom-6 lg:left-[56px]",
+                    "hidden lg:flex justify-center items-center gap-3 flex-wrap",
+                  )}
+                >
+                  <Badge text={"In Development"} status={"dev"} />
+                  <Badge text={"E-commerce"} />
+                  <Badge text={"B2B"} />
+                  <Badge text={"Website"} />
+                  <Badge text={"Dashboard"} />
+                  <Badge text={"Mobile App"} />
+                </div>
+              </article>
+
+              {/* ALAIRE */}
+              <article className="relative rounded-[12px] bg-[#F4F6FF] py-4 px-6 md:p-8 lg:p-0 lg:pl-7 lg:pr-14 gap-7 grid lg:grid-cols-[auto_1fr] lg:gap-x-12">
+                {/* LEFT */}
+                <article className="order-2 lg:order-1 flex w-full justify-center items-start lg:pt-[56px]">
+                  <Image
+                    className="w-full max-w-[543px] h-auto"
+                    src={alaireCaseStudy}
+                    alt="Alaire case study"
+                    placeholder="blur"
+                  />
+                </article>
+
+                {/* RIGHT */}
+                <article className="relative order-1 lg:order-2 flex flex-col gap-4 lg:gap-10 lg:pt-[56px] lg:pb-[185px]">
+                  <div
+                    className={clsx(
+                      "lg:hidden flex items-center gap-3 flex-wrap",
+                    )}
+                  >
+                    <Badge text={"Shipped"} status={"shipped"} />
+                    <Badge text={"Fashion"} />
+                    <Badge text={"Website"} />
+                    <Badge text={"Dashboard"} />
+                    <Badge text={"Mobile"} />
+                  </div>
+
+                  <article className="flex flex-col gap-2 lg:gap-6">
+                    <h3 className="text-[#434747] text-[24px] lg:text-[40px] font-semibold uppercase">
+                      Alaire
+                    </h3>
+                    <p className="text-[14px] lg:text-[20px] leading-[140%]">
+                      The Alaire Personal Styling Platform centers on
+                      personalized styling. I designed the Website, Style
+                      Request/User dashboard, and Admin dashboard.
+                    </p>
+                  </article>
+
+                  <article className="flex gap-4">
+                    <ButtonLarge
+                      text={"Read case study"}
+                      route={"/case-study/alaire"}
+                    />
+                    <ButtonSecondary
+                      text={"View live site"}
+                      route={"http://alaire-style-atelier.lovable.app/"}
+                      target="_blank"
+                    />
+                  </article>
+
+                  <div
+                    className={clsx(
+                      "absolute bottom-6 left-0",
+                      "hidden lg:flex items-center gap-y-1 gap-x-3 flex-wrap",
+                    )}
+                  >
+                    <Badge text={"Shipped"} status={"shipped"} />
+                    <Badge text={"Fashion"} />
+                    <Badge text={"Website"} />
+                    <Badge text={"Dashboard"} />
+                    <Badge text={"Mobile"} />
+                  </div>
+                </article>
               </article>
 
               {/* Jogovest */}
@@ -456,234 +712,62 @@ export default function Home() {
                 </div>
               </article>
 
-              {/* ALAIRE */}
-              <article className="relative rounded-[12px] bg-[#F4F6FF] py-4 px-6 md:p-8 lg:p-0 lg:pl-7 lg:pr-14 gap-7 grid lg:grid-cols-[auto_1fr] lg:gap-x-12">
+              {/* OPPIA */}
+              <article className="relative rounded-[12px] bg-[#EFFEF3] pt-[42px] md:pt-[42px] pb-4 px-6 md:p-8 gap-12 lg:p-0 lg:px-14 grid lg:grid-cols-[1fr_auto] lg:gap-x-8">
                 {/* LEFT */}
-                <article className="order-2 lg:order-1 flex w-full justify-center items-start lg:pt-[56px]">
-                  <Image
-                    className="w-full max-w-[543px] h-auto"
-                    src={alaireCaseStudy}
-                    alt="Alaire case study"
-                    placeholder="blur"
-                  />
-                </article>
-
-                {/* RIGHT */}
-                <article className="relative order-1 lg:order-2 flex flex-col gap-4 lg:gap-10 lg:pt-[56px] lg:pb-[185px]">
-                  <div
-                    className={clsx(
-                      "lg:hidden flex items-center gap-3 flex-wrap",
-                    )}
-                  >
-                    <Badge text={"Shipped"} status={"shipped"} />
-                    <Badge text={"Fashion"} />
-                    <Badge text={"Website"} />
-                    <Badge text={"Dashboard"} />
-                    <Badge text={"Mobile"} />
-                  </div>
-
-                  <article className="flex flex-col gap-2 lg:gap-6">
-                    <h3 className="text-[#434747] text-[24px] lg:text-[40px] font-semibold uppercase">
-                      Alaire
-                    </h3>
-                    <p className="text-[14px] lg:text-[20px] leading-[140%]">
-                      The Alaire Personal Styling Platform centers on
-                      personalized styling. I designed the Website, Style
-                      Request/User dashboard, and Admin dashboard.
-                    </p>
-                  </article>
-
-                  <article className="flex gap-4">
-                    <ButtonLarge
-                      text={"Read case study"}
-                      route={"/case-study/alaire"}
-                    />
-                    <ButtonSecondary text={"View live site"} route={"#"} />
-                  </article>
-
-                  <div
-                    className={clsx(
-                      "absolute bottom-6 left-0",
-                      "hidden lg:flex items-center gap-y-1 gap-x-3 flex-wrap",
-                    )}
-                  >
-                    <Badge text={"Shipped"} status={"shipped"} />
-                    <Badge text={"Fashion"} />
-                    <Badge text={"Website"} />
-                    <Badge text={"Dashboard"} />
-                    <Badge text={"Mobile"} />
-                  </div>
-                </article>
-              </article>
-
-              {/* BUILDCO */}
-              <article className="relative rounded-[12px] bg-[#E8F6EE] gap-7 py-4 px-6 md:p-8 lg:p-0 lg:pl-14 lg:pr-7 grid lg:grid-cols-[1fr_auto] lg:gap-x-8">
-                {/* LEFT */}
-                <div className="flex flex-col gap-4">
-                  <div
-                    className={clsx(
-                      "lg:hidden flex items-center gap-3 flex-wrap",
-                    )}
-                  >
-                    <Badge text={"In Development"} status={"dev"} />
-                    <Badge text={"E-commerce"} />
-                    <Badge text={"B2B"} />
-                    <Badge text={"Website"} />
-                    <Badge text={"Dashboard"} />
-                    <Badge text={"Mobile App"} />
-                  </div>
-
-                  <article className="flex flex-col gap-6 lg:gap-10 lg:pt-[56px] lg:pb-[128px]">
-                    <article className="flex flex-col gap-2 lg:gap-6">
-                      <h3 className="text-[#434747] text-[24px] lg:text-[40px] font-semibold uppercase">
-                        Buildco
-                      </h3>
-                      <p className="text-[14px] lg:text-[20px] leading-[140%] max-w-[513px]">
-                        BUILDCO is a platform for the sales of power tools and
-                        accessories, construction materials, project management,
-                        furniture, home appliances and electrical materials. I
-                        designed the Website, Direct Ordering Platform, Mobile
-                        App and Admin dashboard.
-                      </p>
-                    </article>
-                    <article className="flex gap-4">
-                      <ButtonLarge
-                        text={"Read case study"}
-                        route={"/case-study/buildco"}
-                      />
-                      <ButtonSecondary text={"Under Development"} route={"#"} />
-                    </article>
-                  </article>
-                </div>
-
-                {/* RIGHT */}
-                <article className="flex w-full items-center justify-center lg:justify-end">
-                  <Image
-                    className="w-full max-w-[543px] h-auto"
-                    src={buildcoCaseStudy}
-                    alt="Buildco case study"
-                    placeholder="blur"
-                  />
-                </article>
-
-                <div
-                  className={clsx(
-                    "absolute top-4 left-6 lg:top-[unset] lg:bottom-6 lg:left-[56px]",
-                    "hidden lg:flex justify-center items-center gap-3 flex-wrap",
-                  )}
-                >
-                  <Badge text={"In Development"} status={"dev"} />
-                  <Badge text={"E-commerce"} />
-                  <Badge text={"B2B"} />
-                  <Badge text={"Website"} />
-                  <Badge text={"Dashboard"} />
-                  <Badge text={"Mobile App"} />
-                </div>
-              </article>
-
-              {/* EASYSPEND */}
-              <article className="relative rounded-[12px] bg-[#F4ECFF] py-4 px-6 md:p-8 lg:p-0 lg:pl-7 lg:pr-14 gap-7 grid lg:grid-cols-[auto_1fr] lg:gap-x-12">
-                {/* LEFT */}
-                <article className="order-2 lg:order-1 flex w-full items-start justify-center lg:pt-[56px]">
-                  <Image
-                    className="w-full max-w-[543px] h-auto"
-                    src={easySpendCaseStudy}
-                    alt="EasySpend case study"
-                    placeholder="blur"
-                  />
-                </article>
-
-                {/* RIGHT */}
-                <article className="relative order-1 lg:order-2 flex flex-col gap-4 lg:gap-10 lg:pt-[56px] lg:pb-[161px]">
-                  <div
-                    className={clsx(
-                      "lg:hidden flex items-center gap-3 flex-wrap",
-                    )}
-                  >
-                    <Badge text={"Shipped"} status={"shipped"} />
-                    <Badge text={"Fintech"} />
-                    <Badge text={"Dashboard"} />
-                    <Badge text={"Mobile"} />
-                  </div>
-
+                <article className="flex flex-col gap-6 lg:gap-10 lg:pt-14 lg:pb-[156px]">
                   <article className="flex flex-col gap-2 lg:gap-6">
                     <h3 className="text-[#434747] text-[24px] lg:text-[40px] font-semibold">
-                      EasySpend
+                      Oppia
                     </h3>
                     <p className="text-[14px] lg:text-[20px] leading-[140%]">
-                      EasySpend is enabling seamless digital payments, USD card
-                      issuance, and crypto-to-fiat conversions.
-                      <br />
-                      <br />I designed the User dashboard and Admin dashboard.
+                      Oppia Beta- I conducted market research and user testing
+                      to improve the user experience of the app, I also worked
+                      on the language translation feature which led to 30%
+                      increase in the number of users.
                     </p>
                   </article>
-
-                  <article className="flex gap-4">
+                  <article className="flex gap-4 lg:gap-6">
                     <ButtonLarge
                       text={"Read case study"}
-                      route={"/case-study/easyspend"}
+                      route={"/case-study/oppia"}
                     />
-                    <ButtonSecondary text={"View live app"} route={"#"} />
+                    <ButtonSecondary
+                      text={"View live app"}
+                      route={"https://oppia.org"}
+                      target="_blank"
+                    />
                   </article>
-
-                  <div
-                    className={clsx(
-                      "hidden lg:flex absolute bottom-6 left-0 items-center gap-y-1 gap-x-3 flex-wrap",
-                    )}
-                  >
-                    <Badge text={"Shipped"} status={"shipped"} />
-                    <Badge text={"Fintech"} />
-                    <Badge text={"Dashboard"} />
-                    <Badge text={"Mobile"} />
-                  </div>
                 </article>
-              </article>
-
-              {/* SENDABLE */}
-              <article className="relative rounded-[12px] bg-[#E8F6EE] gap-7 py-4 px-6 md:p-8 lg:p-0 lg:pl-14 lg:pr-7 grid lg:grid-cols-[1fr_auto] lg:gap-x-8">
-                {/* LEFT */}
-                <div className="flex flex-col gap-4">
-                  <div
-                    className={clsx(
-                      "lg:hidden flex items-center gap-3 flex-wrap",
-                    )}
-                  >
-                    <Badge text={"Shipped"} status={"shipped"} />
-                    <Badge text={"SAAS"} />
-                    <Badge text={"Website"} />
-                    <Badge text={"Dashboard"} />
-                    <Badge text={"Mobile"} />
-                  </div>
-
-                  <article className="flex flex-col gap-6 lg:gap-10 lg:pt-[56px] lg:pb-[128px]">
-                    <article className="flex flex-col gap-2 lg:gap-6">
-                      <h3 className="text-[#434747] text-[24px] lg:text-[40px] font-semibold">
-                        Sendable
-                      </h3>
-                      <p className="text-[14px] lg:text-[20px] leading-[140%] max-w-[513px]">
-                        Sendable is a platform that enables Golf Pros and
-                        Golfers interact with course-linked services and time
-                        slots. I designed the landing page, Golfer’s dashboard,
-                        Golf Pro’s dashboard, Golf Course dashboard and Admin
-                        dashboard.
-                      </p>
-                    </article>
-                    <article className="flex gap-4">
-                      <ButtonLarge
-                        text={"Read case study"}
-                        route={"/case-study/sendable"}
-                      />
-                      <ButtonSecondary text={"View live site"} route={"#"} />
-                    </article>
-                  </article>
-                </div>
 
                 {/* RIGHT */}
-                <article className="flex w-full items-center justify-center lg:justify-end">
+                <article className="flex justify-center lg:justify-normal w-full gap-4 lg:gap-x-6">
+                  {/* 234.358px */}
                   <Image
-                    className="w-full max-w-[543px] h-auto"
-                    src={sendableCaseStudy}
-                    alt="Sendable case study"
+                    className="shrink-0 w-[234.358px] h-auto hidden lg:block self-start"
+                    src={oppia2}
+                    alt="Oppia Mobile App"
+                    placeholder="blur"
+                  />
+                  <Image
+                    className="w-[137.679px] h-auto block lg:hidden shrink-0 self-start"
+                    quality={100}
+                    src={moppia1}
+                    alt="Oppia Mobile App"
+                    placeholder="blur"
+                  />
+                  {/*  */}
+                  <Image
+                    className="shrink-0 w-[234.358px] h-auto hidden lg:block mt-[90px] lg:mt-0 self-end"
+                    src={oppia1}
+                    alt="Oppia Mobile App"
+                    placeholder="blur"
+                  />
+                  <Image
+                    className="w-[137.679px] h-auto block lg:hidden shrink-0 mt-[90px] lg:mt-0 self-end"
+                    quality={100}
+                    src={moppia2}
+                    alt="Oppia Mobile App"
                     placeholder="blur"
                   />
                 </article>
@@ -691,74 +775,13 @@ export default function Home() {
                 <div
                   className={clsx(
                     "absolute top-4 left-6 lg:top-[unset] lg:bottom-6 lg:left-[56px]",
-                    "hidden lg:flex justify-center items-center gap-3 flex-wrap",
+                    "flex justify-center items-center gap-3",
                   )}
                 >
                   <Badge text={"Shipped"} status={"shipped"} />
-                  <Badge text={"SAAS"} />
-                  <Badge text={"Website"} />
-                  <Badge text={"Dashboard"} />
-                  <Badge text={"Mobile"} />
+                  <Badge text={"Edtech"} />
+                  <Badge text={"Mobile App "} />
                 </div>
-              </article>
-
-              {/* BARISTA BUDDY */}
-              <article className="relative rounded-[12px] bg-[#FDF7E8] py-4 px-6 md:p-8 lg:p-0 lg:pl-7 lg:pr-14 gap-7 grid lg:grid-cols-[auto_1fr] lg:gap-x-12">
-                {/* LEFT */}
-                <article className="order-2 lg:order-1 flex w-full items-start justify-center lg:pt-[56px]">
-                  <Image
-                    className="w-full max-w-[543px] h-auto"
-                    src={baristaBuddyCaseStudy}
-                    alt="Barista Buddy case study"
-                    placeholder="blur"
-                  />
-                </article>
-
-                {/* RIGHT */}
-                <article className="w-full max-w-[563px] relative order-1 lg:order-2 flex flex-col gap-4 lg:gap-10 lg:pt-[56px] lg:pb-[89px]">
-                  <div
-                    className={clsx(
-                      "lg:hidden flex items-center gap-3 flex-wrap",
-                    )}
-                  >
-                    <Badge text={"Shipped"} status={"shipped"} />
-                    <Badge text={"SAAS"} />
-                    <Badge text={"Dashboard"} />
-                  </div>
-
-                  <article className="flex flex-col gap-2 lg:gap-6">
-                    <h3 className="text-[#434747] text-[24px] lg:text-[40px] font-semibold">
-                      Barista Buddy
-                    </h3>
-                    <p className="text-[14px] lg:text-[20px] leading-[140%]">
-                      Barista Buddy is an Australian-based company that provides
-                      flexible, no-contract coffee machine solutions for
-                      offices, hotels, and industrial workplaces. Their service
-                      model includes the machines, fresh beans, and maintenance
-                      on a pay-per-cup basis.
-                      <br />
-                      <br />I designed the User dashboard and Admin dashboard.
-                    </p>
-                  </article>
-
-                  <article className="flex gap-4">
-                    <ButtonLarge
-                      text={"Read case study"}
-                      route={"/case-study/barista-buddy"}
-                    />
-                    <ButtonSecondary text={"View live site"} route={"#"} />
-                  </article>
-
-                  <div
-                    className={clsx(
-                      "hidden lg:flex absolute bottom-6 left-0 items-center gap-y-1 gap-x-3 flex-wrap",
-                    )}
-                  >
-                    <Badge text={"Shipped"} status={"shipped"} />
-                    <Badge text={"SAAS"} />
-                    <Badge text={"Dashboard"} />
-                  </div>
-                </article>
               </article>
             </section>
           </section>

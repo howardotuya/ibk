@@ -354,7 +354,7 @@ export default function TAY() {
         </section>
 
         {/* NEXT PROJECT */}
-        <SubFooter first={"Peerless"} link={"/case-study/peerless"} />
+        <SubFooter first={"Oppia"} link={"/case-study/oppia"} />
       </main>
 
       {/* FOOTER */}

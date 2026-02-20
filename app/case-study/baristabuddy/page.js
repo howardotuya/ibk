@@ -289,7 +289,9 @@ export default function BaristaBuddy() {
                     assignment-to-completion duration.
                   </li>
                   <li>
-                    <span className="font-medium">Service Log Completion -</span>{" "}
+                    <span className="font-medium">
+                      Service Log Completion -
+                    </span>{" "}
                     percentage of tasks documented correctly.
                   </li>
                   <li>
@@ -320,7 +322,9 @@ export default function BaristaBuddy() {
                     Defined admin and technician responsibilities end-to-end.
                   </li>
                   <li>
-                    <span className="font-medium">Information Architecture:</span>{" "}
+                    <span className="font-medium">
+                      Information Architecture:
+                    </span>{" "}
                     Structured modules around clients, assets, scheduling, and
                     field activity.
                   </li>
@@ -464,11 +468,15 @@ export default function BaristaBuddy() {
                     from centralized fleet and service history tracking.
                   </li>
                   <li>
-                    <span className="font-bold">Higher inventory reliability</span>{" "}
+                    <span className="font-bold">
+                      Higher inventory reliability
+                    </span>{" "}
                     through integrated usage updates by field teams.
                   </li>
                   <li>
-                    <span className="font-bold">Better service consistency</span>{" "}
+                    <span className="font-bold">
+                      Better service consistency
+                    </span>{" "}
                     from standardized work order and logging workflows.
                   </li>
                 </ul>
