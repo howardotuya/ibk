@@ -72,7 +72,7 @@ const designBlocks = [
   },
   {
     title: "Dashboard",
-    text: "On this page, golf pros can see their calendar, number of bookings, and golf course partners.s",
+    text: "On this page, golf pros can see their calendar, number of bookings, and golf course partners.",
     image: sendable7,
     reverse: false,
   },
