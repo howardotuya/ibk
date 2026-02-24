@@ -1,3 +1,5 @@
+"use client";
+
 import Container from "@/components/container/container";
 import Navbar from "@/components/navbar/Navbar";
 import Image from "next/image";
@@ -41,16 +43,17 @@ import siteWorkerIcon from "@/public/images/case-study/buildco/site-worker/site-
 import Footer from "@/components/footer/footer";
 import SubFooter from "@/components/footer/subFooter";
 import clsx from "clsx";
+import { CldVideoPlayer } from "next-cloudinary";
 
 // METADATA
-export const metadata = {
-  title: "BuildCO",
-  description:
-    "BuildCO is an e-commerce platform for furniture, home fittings, power tools, machinery rental, and artisan hire, including a B2B direct-ordering system with credit and site management workflows.",
-  alternates: {
-    canonical: process.env.NEXT_PUBLIC_BASE_URL + "/case-study/buildco",
-  },
-};
+// export const metadata = {
+//   title: "BuildCO",
+//   description:
+//     "BuildCO is an e-commerce platform for furniture, home fittings, power tools, machinery rental, and artisan hire, including a B2B direct-ordering system with credit and site management workflows.",
+//   alternates: {
+//     canonical: process.env.NEXT_PUBLIC_BASE_URL + "/case-study/buildco",
+//   },
+// };
 
 export default function Oppia() {
   return (
@@ -934,7 +937,54 @@ export default function Oppia() {
               </div>
             </article>
 
-            {/* --- */}
+            {/* PROTOTYPE */}
+            <div className="w-full space-y-6 py-10">
+              <h2 className="text-[#434747] text-[40px] font-semibold">
+                Prototype
+              </h2>
+
+              <div className="w-full space-y-[120px]">
+                <div className="flex justify-between w-full">
+                  <div className="w-full flex flex-col gap-8">
+                    <h6 className="text-[24px] font-semibold text-[#2F3434]">
+                      Website
+                    </h6>
+                    <div className="w-full max-w-[848px]">
+                      <CldVideoPlayer src="buildco-website_cfqcye" />
+                    </div>
+                  </div>
+
+                  <div className="w-auto flex flex-col gap-8">
+                    <h6 className="text-[24px] font-semibold text-[#2F3434]">
+                      Mobile
+                    </h6>
+                    <div className="w-[228px]">
+                      <CldVideoPlayer src="buildco-mobile_qhwzcz" />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex justify-between w-full">
+                  <div className="w-full flex flex-col gap-8">
+                    <h6 className="text-[24px] font-semibold text-[#2F3434]">
+                      Direct Ordering platform (Admin)
+                    </h6>
+                    <div className="w-full max-w-[590px]">
+                      <CldVideoPlayer src="buildco-admin_dfpu2l" />
+                    </div>
+                  </div>
+
+                  <div className="w-auto flex flex-col gap-8">
+                    <h6 className="text-[24px] font-semibold text-[#2F3434] w-full lg:whitespace-nowrap">
+                      Direct Ordering platform (Site worker)
+                    </h6>
+                    <div className="w-[336.5px]">
+                      <CldVideoPlayer src="buildco-siteworker_xexscq" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             {/* USER TESTING */}
             <article className="pt-8 pb-5 lg:pt-10 lg:pb-0">

@@ -37,8 +37,8 @@ import sendable from "@/public/images/home/sendable.svg";
 import phbSmall from "@/public/images/home/pbh.svg";
 import ButtonLarge from "@/components/button/button-large";
 import ButtonSecondary from "@/components/button/button-secondary";
-import Badge from "@/components/badge/badge";
 import clsx from "clsx";
+import Badge from "@/components/badge";
 
 export default function Home() {
   return (
@@ -474,11 +474,7 @@ export default function Home() {
                         text={"Read case study"}
                         route={"/case-study/buildco"}
                       />
-                      <ButtonSecondary
-                        text={"Under Development"}
-                        route={"https://tbcafrica.com"}
-                        target="_blank"
-                      />
+                      <ButtonSecondary text={"Under Development"} />
                     </article>
                   </article>
                 </div>
@@ -633,7 +629,7 @@ export default function Home() {
                       text={"Read case study"}
                       route={"/case-study/jogovest"}
                     />
-                    <ButtonSecondary text={"Under Development"} route={"#"} />
+                    <ButtonSecondary text={"Under Development"} />
                   </article>
 
                   <div
@@ -683,7 +679,7 @@ export default function Home() {
                         text={"Read case study"}
                         route={"/case-study/pbh-credit-solutions"}
                       />
-                      <ButtonSecondary text={"Under Development"} route={"#"} />
+                      <ButtonSecondary text={"Under Development"} />
                     </article>
                   </article>
                 </div>

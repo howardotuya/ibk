@@ -1,3 +1,5 @@
+"use client";
+
 import Container from "@/components/container/container";
 import Navbar from "@/components/navbar/Navbar";
 import Image from "next/image";
@@ -14,15 +16,16 @@ import alaire4 from "@/public/images/case-study/alaire/4.png";
 import alaire5 from "@/public/images/case-study/alaire/5.png";
 import alaire6 from "@/public/images/case-study/alaire/6.png";
 import alaire7 from "@/public/images/case-study/alaire/7.png";
+import { CldVideoPlayer } from "next-cloudinary";
 
-export const metadata = {
-  title: "Alaire",
-  description:
-    "Alaire is a personalized styling platform that uses a service quiz, moodboards, and admin request management to deliver tailored fashion experiences.",
-  alternates: {
-    canonical: process.env.NEXT_PUBLIC_BASE_URL + "/case-study/alaire",
-  },
-};
+// export const metadata = {
+//   title: "Alaire",
+//   description:
+//     "Alaire is a personalized styling platform that uses a service quiz, moodboards, and admin request management to deliver tailored fashion experiences.",
+//   alternates: {
+//     canonical: process.env.NEXT_PUBLIC_BASE_URL + "/case-study/alaire",
+//   },
+// };
 
 const designBlocks = [
   {
@@ -360,6 +363,43 @@ export default function Alaire() {
                 ))}
               </div>
             </article>
+
+            <div className="w-full space-y-6 py-10">
+              <h2 className="text-[#434747] text-[40px] font-semibold">
+                Prototype
+              </h2>
+
+              <div className="w-full space-y-[120px]">
+                <div className="w-auto flex flex-col gap-8">
+                  <h6 className="text-[24px] font-semibold text-[#2F3434]">
+                    Website
+                  </h6>
+                  <div className="w-[565px]">
+                    <CldVideoPlayer src="prototype_2_nhpk9q" />
+                  </div>
+                </div>
+
+                <div className="flex gap-14 w-full">
+                  <div className="w-auto flex flex-col gap-8">
+                    <h6 className="text-[24px] font-semibold text-[#2F3434]">
+                      Admin Dashboard
+                    </h6>
+                    <div className="w-[742px]">
+                      <CldVideoPlayer src="Recording_2026-02-19_192615_u8ahhe" />
+                    </div>
+                  </div>
+
+                  <div className="w-auto flex flex-col gap-8">
+                    <h6 className="text-[24px] font-semibold text-[#2F3434]">
+                      Admin Dashboard (Mobile)
+                    </h6>
+                    <div className="w-[218px]">
+                      <CldVideoPlayer src="mobile_ku5onf" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <article className="pt-8 pb-5 lg:pt-10 lg:pb-0">
               <article className="flex flex-col gap-4 lg:gap-6">

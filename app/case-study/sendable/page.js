@@ -1,3 +1,5 @@
+"use client";
+
 import Container from "@/components/container/container";
 import Navbar from "@/components/navbar/Navbar";
 import Image from "next/image";
@@ -32,15 +34,16 @@ import sendable22 from "@/public/images/case-study/sendable/22.png";
 import sendable23 from "@/public/images/case-study/sendable/23.png";
 import sendable24 from "@/public/images/case-study/sendable/24.png";
 import sendable25 from "@/public/images/case-study/sendable/25.png";
+import { CldVideoPlayer } from "next-cloudinary";
 
-export const metadata = {
-  title: "Sendable",
-  description:
-    "Sendable is a golf coaching platform that connects golfers with instructors, manages bookings and payouts, and provides admin tools for growth and revenue operations.",
-  alternates: {
-    canonical: process.env.NEXT_PUBLIC_BASE_URL + "/case-study/sendable",
-  },
-};
+// export const metadata = {
+//   title: "Sendable",
+//   description:
+//     "Sendable is a golf coaching platform that connects golfers with instructors, manages bookings and payouts, and provides admin tools for growth and revenue operations.",
+//   alternates: {
+//     canonical: process.env.NEXT_PUBLIC_BASE_URL + "/case-study/sendable",
+//   },
+// };
 
 const designBlocks = [
   {
@@ -580,6 +583,55 @@ export default function Sendable() {
                 </div>
               ))}
             </article>
+
+            {/* PROTOTYPE */}
+            <div className="w-full space-y-6 py-10">
+              <h2 className="text-[#434747] text-[40px] font-semibold">
+                Prototype
+              </h2>
+
+              <div className="w-full space-y-[120px]">
+                <div className="flex justify-between w-full">
+                  <div className="w-auto flex flex-col gap-8">
+                    <h6 className="text-[24px] font-semibold text-[#2F3434]">
+                      Golfer
+                    </h6>
+                    <div className="w-[565px]">
+                      <CldVideoPlayer src="Recording_2026-02-19_231734_stizte" />
+                    </div>
+                  </div>
+
+                  <div className="w-auto flex flex-col gap-8">
+                    <h6 className="text-[24px] font-semibold text-[#2F3434]">
+                      Golf Pro
+                    </h6>
+                    <div className="w-[565px]">
+                      <CldVideoPlayer src="Recording_2026-02-19_232803_oovtce" />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex justify-between w-full">
+                  <div className="w-auto flex flex-col gap-8">
+                    <h6 className="text-[24px] font-semibold text-[#2F3434]">
+                      Course Manager
+                    </h6>
+                    <div className="w-[565px]">
+                      <CldVideoPlayer src="Recording_2026-02-19_233936_pjkzl0" />
+                    </div>
+                  </div>
+
+                  <div className="w-auto flex flex-col gap-8">
+                    <h6 className="text-[24px] font-semibold text-[#2F3434]">
+                      Admin
+                    </h6>
+                    <div className="w-[565px]">
+                      <CldVideoPlayer src="Recording_2026-02-19_233521_neizmv" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <article className="pt-8 pb-5 lg:pt-10 lg:pb-0">
               <article className="flex flex-col gap-4 lg:gap-6">

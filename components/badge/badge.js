@@ -2,10 +2,6 @@ import clsx from "clsx";
 import Link from "next/link";
 import React from "react";
 
-// green #019489
-// lightOrange #FEEBDE
-// yellow #FCE535
-
 export default function Badge({ text, status }) {
   return (
     <div

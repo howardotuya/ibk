@@ -5,6 +5,7 @@ import "./globals.css";
 import { Suspense } from "react";
 import Loading from "./loading";
 import Script from "next/script";
+import "next-cloudinary/dist/cld-video-player.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

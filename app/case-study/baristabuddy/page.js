@@ -1,3 +1,5 @@
+"use client";
+
 import Container from "@/components/container/container";
 import Navbar from "@/components/navbar/Navbar";
 import Image from "next/image";
@@ -24,15 +26,16 @@ import baristabuddy14 from "@/public/images/case-study/baristabuddy/14.png";
 import baristabuddy15 from "@/public/images/case-study/baristabuddy/15.png";
 import baristabuddy16 from "@/public/images/case-study/baristabuddy/16.png";
 import baristabuddy17 from "@/public/images/case-study/baristabuddy/17.png";
+import { CldVideoPlayer } from "next-cloudinary";
 
-export const metadata = {
-  title: "BaristaBuddy",
-  description:
-    "BaristaBuddy is a coffee machine management platform for service operations, asset tracking, work orders, inventory, and technician workflows.",
-  alternates: {
-    canonical: process.env.NEXT_PUBLIC_BASE_URL + "/case-study/baristabuddy",
-  },
-};
+// export const metadata = {
+//   title: "BaristaBuddy",
+//   description:
+//     "BaristaBuddy is a coffee machine management platform for service operations, asset tracking, work orders, inventory, and technician workflows.",
+//   alternates: {
+//     canonical: process.env.NEXT_PUBLIC_BASE_URL + "/case-study/baristabuddy",
+//   },
+// };
 
 const designBlocks = [
   {
@@ -513,6 +516,35 @@ export default function BaristaBuddy() {
                 </div>
               ))}
             </article>
+
+            {/* PROTOTYPE */}
+            <div className="w-full space-y-6 py-10">
+              <h2 className="text-[#434747] text-[40px] font-semibold">
+                Prototype
+              </h2>
+
+              <div className="w-full space-y-[120px]">
+                <div className="flex justify-between w-full">
+                  <div className="w-auto flex flex-col gap-8">
+                    <h6 className="text-[24px] font-semibold text-[#2F3434]">
+                      Admin role
+                    </h6>
+                    <div className="w-[567px]">
+                      <CldVideoPlayer src="Recording_2026-02-19_214111_m8epf7" />
+                    </div>
+                  </div>
+
+                  <div className="w-auto flex flex-col gap-8">
+                    <h6 className="text-[24px] font-semibold text-[#2F3434]">
+                      Technician Role
+                    </h6>
+                    <div className="w-[567px]">
+                      <CldVideoPlayer src="Recording_2026-02-19_220411_lig5ro" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <article className="pt-8 pb-5 lg:pt-10 lg:pb-0">
               <article className="flex flex-col gap-4 lg:gap-6">
