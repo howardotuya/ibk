@@ -19,7 +19,7 @@ export default function ButtonSecondary({
     "h-12 md:h-16 px-4 md:px-6",
     "flex items-center justify-center text-[#2F3434] rounded-full",
     "border",
-    text === "Under development"
+    text === "Under Development"
       ? "cursor-not-allowed border-[#AFB0AB]"
       : "border-[#DC511A]",
     additionalStyle,
