@@ -40,6 +40,30 @@ import siteWorkerProduct from "@/public/images/case-study/buildco/site-worker/pr
 import siteWorkerServices from "@/public/images/case-study/buildco/site-worker/services.png";
 import siteWorkerIcon from "@/public/images/case-study/buildco/site-worker/site-worker.svg";
 
+// ARROWS
+import buildcoArrowLandingPage from "@/public/images/case-study/buildco/arrows/landing-page.svg";
+import buildcoArrowShop2 from "@/public/images/case-study/buildco/arrows/shop2.svg";
+import buildcoArrowSiteManagement from "@/public/images/case-study/buildco/arrows/site-management.svg";
+import buildcoArrowCartAndCheckout from "@/public/images/case-study/buildco/arrows/cart-and-checkout.svg";
+import buildcoArrowProfile from "@/public/images/case-study/buildco/arrows/profile.svg";
+import buildcoArrowProduct2 from "@/public/images/case-study/buildco/arrows/product2.svg";
+import buildcoArrowCreditHistory2 from "@/public/images/case-study/buildco/arrows/credit-history2.svg";
+import buildcoArrowCreditHistory from "@/public/images/case-study/buildco/arrows/credit-history.svg";
+import buildcoArrowProduct3 from "@/public/images/case-study/buildco/arrows/product3.svg";
+import buildcoArrowHomepage2 from "@/public/images/case-study/buildco/arrows/homepage2.svg";
+import buildcoArrowHomepage from "@/public/images/case-study/buildco/arrows/homepage.svg";
+import buildcoArrowCartAndCheckout2 from "@/public/images/case-study/buildco/arrows/cart-and-checkout2.svg";
+import buildcoArrowProduct4 from "@/public/images/case-study/buildco/arrows/product4.svg";
+import buildcoArrowReport from "@/public/images/case-study/buildco/arrows/report.svg";
+import buildcoArrowOrders from "@/public/images/case-study/buildco/arrows/orders.svg";
+import buildcoArrowWishlist from "@/public/images/case-study/buildco/arrows/wishlist.svg";
+import buildcoArrowDashboard from "@/public/images/case-study/buildco/arrows/dashboard.svg";
+import buildcoArrowServices2 from "@/public/images/case-study/buildco/arrows/services2.svg";
+import buildcoArrowProduct from "@/public/images/case-study/buildco/arrows/product.svg";
+import buildcoArrowServices from "@/public/images/case-study/buildco/arrows/services.svg";
+import buildcoArrowShop from "@/public/images/case-study/buildco/arrows/shop.svg";
+import buildcoArrowConfirmation from "@/public/images/case-study/buildco/arrows/confirmation.svg";
+
 import Footer from "@/components/footer/footer";
 import SubFooter from "@/components/footer/subFooter";
 import clsx from "clsx";
@@ -366,16 +390,19 @@ export default function Oppia() {
                 <div
                   className={clsx(
                     "mt-8",
-                    "max-w-[1175px]",
-                    "flex gap-6 items-center justify-between",
+                    "max-w-[1180px]",
+                    "flex gap-6 items-start justify-between",
                   )}
                 >
-                  <Image
-                    className="max-w-[704px] w-full h-auto"
-                    src={desktopHome}
-                    alt=""
-                  />
-                  <div className="max-w-[361px] text-[24px] text-[#262C2C]">
+                  <div className="max-w-[704px] w-full relative">
+                    <Image className="w-full h-auto" src={desktopHome} alt="" />
+                    <Image
+                      className="absolute left-[calc(100%-4px)] top-[178px]"
+                      src={buildcoArrowHomepage}
+                      alt=""
+                    />
+                  </div>
+                  <div className="relative pt-[94px] z-2 max-w-[361px] text-[24px] text-[#262C2C]">
                     <h6 className="font-semibold">Home Page</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       I implemented the{" "}
@@ -392,7 +419,7 @@ export default function Oppia() {
                   className={clsx(
                     "mt-[200px]",
                     "max-w-[1200px]",
-                    "flex gap-6 items-center justify-between",
+                    "flex gap-6 items-start justify-between",
                   )}
                 >
                   <div className="max-w-[361px] text-[24px] text-[#262C2C]">
@@ -402,11 +429,15 @@ export default function Oppia() {
                       discounts.
                     </p>
                   </div>
-                  <Image
-                    className="max-w-[704px] w-full h-auto"
-                    src={desktopShop}
-                    alt=""
-                  />
+
+                  <div className="max-w-[704px] w-full relative">
+                    <Image className="w-full h-auto" src={desktopShop} alt="" />
+                    <Image
+                      className="absolute right-[100%] top-[108px]"
+                      src={buildcoArrowShop}
+                      alt=""
+                    />
+                  </div>
                 </div>
 
                 {/* DESKTOP Product Page */}
@@ -417,11 +448,18 @@ export default function Oppia() {
                     "flex gap-6 items-center justify-between",
                   )}
                 >
-                  <Image
-                    className="max-w-[704px] w-full h-auto"
-                    src={desktopProduct}
-                    alt=""
-                  />{" "}
+                  <div className="max-w-[704px] w-full relative">
+                    <Image
+                      className="w-full h-auto"
+                      src={desktopProduct}
+                      alt=""
+                    />
+                    <Image
+                      className="absolute left-[calc(100%-24px)] top-[212px]"
+                      src={buildcoArrowProduct}
+                      alt=""
+                    />
+                  </div>
                   <div className="max-w-[361px] text-[24px] text-[#262C2C]">
                     <h6 className="font-semibold">Product Page</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
@@ -436,10 +474,10 @@ export default function Oppia() {
                   className={clsx(
                     "mt-[200px]",
                     "max-w-[1219px]",
-                    "flex gap-6 items-center justify-between",
+                    "flex gap-6 items-start justify-between",
                   )}
                 >
-                  <div className="max-w-[393px] text-[24px] text-[#262C2C]">
+                  <div className="max-w-[393px] mt-[90px] text-[24px] text-[#262C2C]">
                     <h6 className="font-semibold">Cart and Checkout</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       I streamlined the flow with coupon support and delivery
@@ -447,11 +485,15 @@ export default function Oppia() {
                       existing and new customers.
                     </p>
                   </div>
-                  <Image
-                    className="max-w-[704px] w-full h-auto"
-                    src={desktopCart}
-                    alt=""
-                  />
+
+                  <div className="max-w-[704px] w-full relative">
+                    <Image className="w-full h-auto" src={desktopCart} alt="" />
+                    <Image
+                      className="absolute right-[calc(100%)] top-[148px]"
+                      src={buildcoArrowCartAndCheckout}
+                      alt=""
+                    />
+                  </div>
                 </div>
 
                 {/* DESKTOP Wishlist & Order History */}
@@ -459,15 +501,23 @@ export default function Oppia() {
                   className={clsx(
                     "mt-[200px]",
                     "max-w-[1219px]",
-                    "flex gap-6 items-center justify-between",
+                    "flex gap-6 items-start justify-between",
                   )}
                 >
-                  <Image
-                    className="max-w-[704px] w-full h-auto"
-                    src={desktopWishlistAndOrderHistory}
-                    alt=""
-                  />
-                  <div className="max-w-[356px] text-[24px] text-[#262C2C]">
+                  <div className="max-w-[704px] w-full relative">
+                    <Image
+                      className="w-full h-auto"
+                      src={desktopWishlistAndOrderHistory}
+                      alt=""
+                    />
+                    <Image
+                      className="absolute left-[calc(100%-24px)] top-[212px]"
+                      src={buildcoArrowWishlist}
+                      alt=""
+                    />
+                  </div>
+
+                  <div className="max-w-[356px] mt-[138px] text-[24px] text-[#262C2C]">
                     <h6 className="font-semibold">Wishlist & Order History</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       I implemented the Wishlist and Order history based on
@@ -481,6 +531,7 @@ export default function Oppia() {
                   <h2 className="text-[32px] text-[#2F3434] font-bold tracking-[-0.32px]">
                     Mobile App
                   </h2>
+
                   <Image
                     className="absolute -bottom-0.5 left-0"
                     src={mobileMobileApp}
@@ -493,15 +544,19 @@ export default function Oppia() {
                   className={clsx(
                     "mt-8",
                     "max-w-[1221px]",
-                    "flex gap-6 items-center justify-between",
+                    "flex gap-6 items-start justify-between",
                   )}
                 >
-                  <Image
-                    className="max-w-[357px] w-full h-auto"
-                    src={mobileHome}
-                    alt=""
-                  />
-                  <div className="max-w-[361px] text-[24px] text-[#262C2C]">
+                  <div className="max-w-[357px] w-full relative">
+                    <Image className="w-full h-auto" src={mobileHome} alt="" />
+                    <Image
+                      className="absolute min-w-[467px] left-[calc(100%)] top-[212px]"
+                      src={buildcoArrowHomepage2}
+                      alt=""
+                    />
+                  </div>
+
+                  <div className="max-w-[361px] mt-[178px] text-[24px] text-[#262C2C]">
                     <h6 className="font-semibold">Home Page</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       I implemented the{" "}
@@ -518,21 +573,25 @@ export default function Oppia() {
                   className={clsx(
                     "mt-[124px]",
                     "max-w-[1188px]",
-                    "flex gap-6 items-center justify-between",
+                    "flex gap-6 items-start justify-between",
                   )}
                 >
-                  <div className="max-w-[361px] text-[24px] text-[#262C2C]">
+                  <div className="max-w-[361px] mt-[67px] text-[24px] text-[#262C2C]">
                     <h6 className="font-semibold">Shop Page</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       I implemented the grid layout with filters, sorting, and
                       discounts.
                     </p>
                   </div>
-                  <Image
-                    className="max-w-[367px] w-full h-auto"
-                    src={mobileShop}
-                    alt=""
-                  />
+
+                  <div className="max-w-[367px] w-full relative">
+                    <Image className="w-full h-auto" src={mobileShop} alt="" />
+                    <Image
+                      className="absolute min-w-[470px] right-[calc(100%)] top-[170px]"
+                      src={buildcoArrowShop2}
+                      alt=""
+                    />
+                  </div>
                 </div>
 
                 {/* MOBILE Product Page */}
@@ -540,15 +599,22 @@ export default function Oppia() {
                   className={clsx(
                     "mt-[124px]",
                     "max-w-[1210px]",
-                    "flex gap-6 items-center justify-between",
+                    "flex gap-6 items-start justify-between",
                   )}
                 >
-                  <Image
-                    className="max-w-[351px] w-full h-auto"
-                    src={mobileProduct}
-                    alt=""
-                  />
-                  <div className="max-w-[371px] text-[24px] text-[#262C2C]">
+                  <div className="max-w-[351px] w-full relative">
+                    <Image
+                      className="w-full h-auto"
+                      src={mobileProduct}
+                      alt=""
+                    />
+                    <Image
+                      className="absolute min-w-[467px] left-[calc(100%)] top-[207px]"
+                      src={buildcoArrowProduct2}
+                      alt=""
+                    />
+                  </div>
+                  <div className="max-w-[371px] mt-[175px] text-[24px] text-[#262C2C]">
                     <h6 className="font-semibold">Product Page</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       I included detailed specifications, customization options,
@@ -562,10 +628,10 @@ export default function Oppia() {
                   className={clsx(
                     "mt-[124px]",
                     "max-w-[1188px]",
-                    "flex gap-6 items-center justify-between",
+                    "flex gap-6 items-start justify-between",
                   )}
                 >
-                  <div className="max-w-[361px] text-[24px] text-[#262C2C]">
+                  <div className="max-w-[361px] mt-[67px] text-[24px] text-[#262C2C]">
                     <h6 className="font-semibold">Cart and Checkout</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       I streamlined the flow with coupon support and delivery
@@ -573,11 +639,15 @@ export default function Oppia() {
                       existing and new customers.
                     </p>
                   </div>
-                  <Image
-                    className="max-w-[357px] w-full h-auto"
-                    src={mobileCart}
-                    alt=""
-                  />
+
+                  <div className="max-w-[357px] w-full relative">
+                    <Image className="w-full h-auto" src={mobileCart} alt="" />
+                    <Image
+                      className="absolute min-w-[422px] right-[calc(100%)] top-[170px]"
+                      src={buildcoArrowCartAndCheckout2}
+                      alt=""
+                    />
+                  </div>
                 </div>
 
                 {/* MOBILE Confirmation page */}
@@ -585,15 +655,23 @@ export default function Oppia() {
                   className={clsx(
                     "mt-[124px]",
                     "max-w-[1221px]",
-                    "flex gap-6 items-center justify-between",
+                    "flex gap-6 items-start justify-between",
                   )}
                 >
-                  <Image
-                    className="max-w-[357px] w-full h-auto"
-                    src={mobileConfirmation}
-                    alt=""
-                  />
-                  <div className="max-w-[361px] text-[24px] text-[#262C2C]">
+                  <div className="max-w-[357px] w-full relative">
+                    <Image
+                      className="w-full h-auto"
+                      src={mobileConfirmation}
+                      alt=""
+                    />
+                    <Image
+                      className="absolute min-w-[467px] left-[calc(100%)] top-[207px]"
+                      src={buildcoArrowConfirmation}
+                      alt=""
+                    />
+                  </div>
+
+                  <div className="max-w-[361px] mt-[175px] text-[24px] text-[#262C2C]">
                     <h6 className="font-semibold">Confirmation page</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       This page is the order confirmation page where users get
@@ -620,15 +698,23 @@ export default function Oppia() {
                   className={clsx(
                     "mt-8",
                     "max-w-[1205px]",
-                    "flex gap-6 items-center justify-between",
+                    "flex gap-6 items-start justify-between",
                   )}
                 >
-                  <Image
-                    className="max-w-[588px] w-full h-auto"
-                    src={siteManagingLanding}
-                    alt=""
-                  />
-                  <div className="max-w-[464px] text-[24px] text-[#262C2C]">
+                  <div className="max-w-[588px] w-full relative">
+                    <Image
+                      className="w-full h-auto"
+                      src={siteManagingLanding}
+                      alt=""
+                    />
+                    <Image
+                      className="absolute left-[calc(100%)] top-[179px]"
+                      src={buildcoArrowLandingPage}
+                      alt=""
+                    />
+                  </div>
+
+                  <div className="max-w-[464px] mt-[95px] text-[24px] text-[#262C2C]">
                     <h6 className="font-semibold">Landing Page</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       I designed a landing page where site managers can order
@@ -642,7 +728,7 @@ export default function Oppia() {
                   className={clsx(
                     "mt-[180px]",
                     "max-w-[1200px]",
-                    "flex gap-6 items-center justify-between",
+                    "flex gap-6 items-start justify-between",
                   )}
                 >
                   <div className="max-w-[393px] text-[24px] text-[#262C2C]">
@@ -653,11 +739,19 @@ export default function Oppia() {
                       history, credit usage and recently delivered orders.
                     </p>
                   </div>
-                  <Image
-                    className="max-w-[593px] w-full h-auto"
-                    src={siteManagingDashboard}
-                    alt=""
-                  />
+
+                  <div className="max-w-[588px] w-full relative">
+                    <Image
+                      className="w-full h-auto"
+                      src={siteManagingDashboard}
+                      alt=""
+                    />
+                    <Image
+                      className="absolute right-[calc(100%)] top-[175px]"
+                      src={buildcoArrowDashboard}
+                      alt=""
+                    />
+                  </div>
                 </div>
 
                 {/* (Site manager view Site management page */}
@@ -665,15 +759,23 @@ export default function Oppia() {
                   className={clsx(
                     "mt-[180px]",
                     "max-w-[1205px]",
-                    "flex gap-6 items-center justify-between",
+                    "flex gap-6 items-start justify-between",
                   )}
                 >
-                  <Image
-                    className="max-w-[597px] w-full h-auto"
-                    src={siteManagingSiteManagement}
-                    alt=""
-                  />
-                  <div className="max-w-[356px] text-[24px] text-[#262C2C]">
+                  <div className="max-w-[588px] w-full relative">
+                    <Image
+                      className="max-w-[597px] w-full h-auto"
+                      src={siteManagingSiteManagement}
+                      alt=""
+                    />
+                    <Image
+                      className="absolute left-[calc(100%)] top-[205px]"
+                      src={buildcoArrowSiteManagement}
+                      alt=""
+                    />
+                  </div>
+
+                  <div className="max-w-[356px] mt-[138px] text-[24px] text-[#262C2C]">
                     <h6 className="font-semibold">Site management page</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       The site management page is the page where managers can
@@ -688,37 +790,51 @@ export default function Oppia() {
                   className={clsx(
                     "mt-[180px]",
                     "max-w-[1200px]",
-                    "flex gap-6 items-center justify-between",
+                    "flex gap-6 items-start justify-between",
                   )}
                 >
-                  <div className="max-w-[393px] text-[24px] text-[#262C2C]">
+                  <div className="max-w-[393px] mt-[90px] text-[24px] text-[#262C2C]">
                     <h6 className="font-semibold">Product Page</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       The product page consist of different category of power
                       tools.
                     </p>
                   </div>
-                  <Image
-                    className="max-w-[585px] w-full h-auto"
-                    src={siteManagingProduct}
-                    alt=""
-                  />
+                  <div className="max-w-[588px] w-full relative">
+                    <Image
+                      className="w-full h-auto"
+                      src={siteManagingProduct}
+                      alt=""
+                    />
+                    <Image
+                      className="absolute right-[calc(100%)] top-[119px]"
+                      src={buildcoArrowProduct3}
+                      alt=""
+                    />
+                  </div>
                 </div>
 
                 {/* (Site manager view Services page */}
                 <div
                   className={clsx(
                     "mt-[180px]",
-                    "max-w-[1205px]",
-                    "flex gap-6 items-center justify-between",
+                    "max-w-[1216px]",
+                    "flex gap-6 items-start justify-between",
                   )}
                 >
-                  <Image
-                    className="max-w-[594px] w-full h-auto"
-                    src={siteManagingServices}
-                    alt=""
-                  />
-                  <div className="max-w-[353px] text-[24px] text-[#262C2C]">
+                  <div className="max-w-[594px] w-full relative">
+                    <Image
+                      className="w-full h-auto"
+                      src={siteManagingServices}
+                      alt=""
+                    />
+                    <Image
+                      className="absolute left-[calc(100%)] top-[173px]"
+                      src={buildcoArrowServices}
+                      alt=""
+                    />
+                  </div>
+                  <div className="max-w-[353px] mt-[138px] text-[24px] text-[#262C2C]">
                     <h6 className="font-semibold">Services page</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       The service page consist of all types of installation
@@ -733,10 +849,10 @@ export default function Oppia() {
                   className={clsx(
                     "mt-[180px]",
                     "max-w-[1200px]",
-                    "flex gap-6 items-center justify-between",
+                    "flex gap-6 items-start justify-between",
                   )}
                 >
-                  <div className="max-w-[393px] text-[24px] text-[#262C2C]">
+                  <div className="max-w-[393px] mt-[90px] text-[24px] text-[#262C2C]">
                     <h6 className="font-semibold">Profile management</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       The profile page contains all the site workers
@@ -744,11 +860,19 @@ export default function Oppia() {
                       this page.
                     </p>
                   </div>
-                  <Image
-                    className="max-w-[597px] w-full h-auto"
-                    src={siteManagingProfileManagement}
-                    alt=""
-                  />
+
+                  <div className="max-w-[594px] w-full relative">
+                    <Image
+                      className="w-full h-auto"
+                      src={siteManagingProfileManagement}
+                      alt=""
+                    />
+                    <Image
+                      className="absolute right-[calc(100%)] top-[169px]"
+                      src={buildcoArrowProfile}
+                      alt=""
+                    />
+                  </div>
                 </div>
 
                 {/* (Site manager view Orders */}
@@ -756,15 +880,23 @@ export default function Oppia() {
                   className={clsx(
                     "mt-[180px]",
                     "max-w-[1216px]",
-                    "flex gap-6 items-center justify-between",
+                    "flex gap-6 items-start justify-between",
                   )}
                 >
-                  <Image
-                    className="max-w-[594px] w-full h-auto"
-                    src={siteManagingOrders}
-                    alt=""
-                  />
-                  <div className="max-w-[353px] text-[24px] text-[#262C2C]">
+                  <div className="max-w-[594px] w-full relative">
+                    <Image
+                      className="w-full h-auto"
+                      src={siteManagingOrders}
+                      alt=""
+                    />
+                    <Image
+                      className="absolute left-[calc(100%)] top-[180px]"
+                      src={buildcoArrowOrders}
+                      alt=""
+                    />
+                  </div>
+
+                  <div className="max-w-[353px] mt-[138px] text-[24px] text-[#262C2C]">
                     <h6 className="font-semibold">Orders</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       The order page contains the history of orders for each
@@ -778,10 +910,10 @@ export default function Oppia() {
                   className={clsx(
                     "mt-[180px]",
                     "max-w-[1200px]",
-                    "flex gap-6 items-center justify-between",
+                    "flex gap-6 items-start justify-between",
                   )}
                 >
-                  <div className="max-w-[393px] text-[24px] text-[#262C2C]">
+                  <div className="max-w-[393px] mt-[90px] text-[24px] text-[#262C2C]">
                     <h6 className="font-semibold">Credit History</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       This page contains the history of credit allocated to all
@@ -789,27 +921,43 @@ export default function Oppia() {
                       the credit history by months or status.
                     </p>
                   </div>
-                  <Image
-                    className="max-w-[597px] w-full h-auto"
-                    src={siteManagingCreditHistory}
-                    alt=""
-                  />
+
+                  <div className="max-w-[594px] w-full relative">
+                    <Image
+                      className="w-full h-auto"
+                      src={siteManagingCreditHistory}
+                      alt=""
+                    />
+                    <Image
+                      className="absolute right-[calc(100%)] top-[180px]"
+                      src={buildcoArrowCreditHistory}
+                      alt=""
+                    />
+                  </div>
                 </div>
 
                 {/* (Site manager view Reporte */}
                 <div
                   className={clsx(
                     "mt-[180px]",
-                    "max-w-[1205px]",
-                    "flex gap-6 items-center justify-between",
+                    "max-w-[1216px]",
+                    "flex gap-6 items-start justify-between",
                   )}
                 >
-                  <Image
-                    className="max-w-[594px] w-full h-auto"
-                    src={siteManagingReport}
-                    alt=""
-                  />
-                  <div className="max-w-[353px] text-[24px] text-[#262C2C]">
+                  <div className="max-w-[594px] w-full relative">
+                    <Image
+                      className="w-full h-auto"
+                      src={siteManagingReport}
+                      alt=""
+                    />
+                    <Image
+                      className="absolute left-[calc(100%)] top-[180px]"
+                      src={buildcoArrowReport}
+                      alt=""
+                    />
+                  </div>
+
+                  <div className="max-w-[353px] mt-[138px] text-[24px] text-[#262C2C]">
                     <h6 className="font-semibold">Report</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       The site report page contains the general overview, credit
@@ -869,21 +1017,29 @@ export default function Oppia() {
                   className={clsx(
                     "mt-[180px]",
                     "max-w-[1200px]",
-                    "flex gap-6 items-center justify-between",
+                    "flex gap-6 items-start justify-between",
                   )}
                 >
-                  <div className="max-w-[393px] text-[24px] text-[#262C2C]">
+                  <div className="max-w-[393px] mt-[90px] text-[24px] text-[#262C2C]">
                     <h6 className="font-semibold">Product page</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       The site workers can also purchase products from the site
                       directly.
                     </p>
                   </div>
-                  <Image
-                    className="max-w-[339px] w-full h-auto"
-                    src={siteWorkerProduct}
-                    alt=""
-                  />
+
+                  <div className="max-w-[339px] w-full relative">
+                    <Image
+                      className="w-full h-auto"
+                      src={siteWorkerProduct}
+                      alt=""
+                    />
+                    <Image
+                      className="absolute min-w-[467px] right-[calc(100%)] top-[154px]"
+                      src={buildcoArrowProduct4}
+                      alt=""
+                    />
+                  </div>
                 </div>
 
                 {/* (Site worker view Credit History */}
@@ -891,15 +1047,23 @@ export default function Oppia() {
                   className={clsx(
                     "mt-[180px]",
                     "max-w-[1200px]",
-                    "flex gap-6 items-center justify-between",
+                    "flex gap-6 items-start justify-between",
                   )}
                 >
-                  <Image
-                    className="max-w-[331px] w-full h-auto"
-                    src={siteWorkerCreditHistory}
-                    alt=""
-                  />
-                  <div className="max-w-[464px] text-[24px] text-[#262C2C]">
+                  <div className="max-w-[331px] w-full relative">
+                    <Image
+                      className="w-full h-auto"
+                      src={siteWorkerCreditHistory}
+                      alt=""
+                    />
+                    <Image
+                      className="absolute min-w-[406px] left-[calc(100%)] top-[167px]"
+                      src={buildcoArrowCreditHistory2}
+                      alt=""
+                    />
+                  </div>
+
+                  <div className="max-w-[464px] mt-[93px] text-[24px] text-[#262C2C]">
                     <h6 className="font-semibold">Credit History</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       On this page, the site workers can see credit allocated,
@@ -915,10 +1079,10 @@ export default function Oppia() {
                   className={clsx(
                     "mt-[180px]",
                     "max-w-[1200px]",
-                    "flex gap-6 items-center justify-between",
+                    "flex gap-6 items-start justify-between",
                   )}
                 >
-                  <div className="max-w-[393px] text-[24px] text-[#262C2C]">
+                  <div className="max-w-[393px] mt-[90px] text-[24px] text-[#262C2C]">
                     <h6 className="font-semibold">Services page</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       On this page, site workers can directly hire artisans to
@@ -926,11 +1090,19 @@ export default function Oppia() {
                       they need on the site.
                     </p>
                   </div>
-                  <Image
-                    className="max-w-[339px] w-full h-auto"
-                    src={siteWorkerServices}
-                    alt=""
-                  />
+
+                  <div className="max-w-[339px] w-full relative">
+                    <Image
+                      className="w-full h-auto"
+                      src={siteWorkerServices}
+                      alt=""
+                    />
+                    <Image
+                      className="absolute min-w-[467px] right-[calc(100%)] top-[183px]"
+                      src={buildcoArrowServices2}
+                      alt=""
+                    />
+                  </div>
                 </div>
 
                 {/* END */}
