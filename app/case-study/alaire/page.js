@@ -12,7 +12,6 @@ import ut2 from "@/public/images/PNG/oppia/ut2.png";
 import alaire1 from "@/public/images/case-study/alaire/1.png";
 import alaire2 from "@/public/images/case-study/alaire/2.png";
 import alaire3 from "@/public/images/case-study/alaire/3.png";
-import alaire4 from "@/public/images/case-study/alaire/4.png";
 import alaire5 from "@/public/images/case-study/alaire/5.png";
 import alaire6 from "@/public/images/case-study/alaire/6.png";
 import alaire7 from "@/public/images/case-study/alaire/7.png";
@@ -31,7 +30,7 @@ const designBlocks = [
   {
     title: "Style Quiz page",
     text: "I implemented the Anonymous quiz initiation to lower sign-up friction",
-    image: alaire4,
+    videoSrc: "alaire-style-quiz-page_abcceu",
     reverse: false,
   },
   {
@@ -348,11 +347,17 @@ export default function Alaire() {
                       block.reverse && "lg:flex-row-reverse",
                     )}
                   >
-                    <Image
-                      className="max-w-[594px] w-full h-auto"
-                      src={block.image}
-                      alt={block.title}
-                    />
+                    {block.videoSrc ? (
+                      <div className="max-w-[594px] w-full h-auto">
+                        <CldVideoPlayer src={block.videoSrc} />
+                      </div>
+                    ) : (
+                      <Image
+                        className="max-w-[594px] w-full h-auto"
+                        src={block.image}
+                        alt={block.title}
+                      />
+                    )}
                     <div className="max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]">
                       <h6 className="font-semibold">{block.title}</h6>
                       <p className="mt-4 leading-[140%] tracking-[-0.24px]">

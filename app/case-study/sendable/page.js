@@ -33,7 +33,6 @@ import sendable21 from "@/public/images/case-study/sendable/21.png";
 import sendable22 from "@/public/images/case-study/sendable/22.png";
 import sendable23 from "@/public/images/case-study/sendable/23.png";
 import sendable24 from "@/public/images/case-study/sendable/24.png";
-import sendable25 from "@/public/images/case-study/sendable/25.png";
 import { CldVideoPlayer } from "next-cloudinary";
 
 // export const metadata = {
@@ -181,7 +180,7 @@ const designBlocks = [
   {
     title: "Landing page",
     text: "On this page, golfers can see what the platform is about and also find a golf pro.",
-    image: sendable25,
+    videoSrc: "sendable-landing-page_zqluxx",
     reverse: false,
   },
 ];
@@ -569,11 +568,17 @@ export default function Sendable() {
                     block.reverse && "lg:flex-row-reverse",
                   )}
                 >
-                  <Image
-                    className="max-w-[594px] w-full h-auto"
-                    src={block.image}
-                    alt={block.title}
-                  />
+                  {block.videoSrc ? (
+                    <div className="max-w-[594px] w-full h-auto">
+                      <CldVideoPlayer src={block.videoSrc} />
+                    </div>
+                  ) : (
+                    <Image
+                      className="max-w-[594px] w-full h-auto"
+                      src={block.image}
+                      alt={block.title}
+                    />
+                  )}
                   <div className="max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]">
                     <h6 className="font-semibold">{block.title}</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
