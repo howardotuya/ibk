@@ -33,6 +33,34 @@ import sendable21 from "@/public/images/case-study/sendable/21.png";
 import sendable22 from "@/public/images/case-study/sendable/22.png";
 import sendable23 from "@/public/images/case-study/sendable/23.png";
 import sendable24 from "@/public/images/case-study/sendable/24.png";
+
+// Import for arrows
+import sendableArrowCourseManagement from "@/public/images/case-study/sendable/arrows/course-management.svg";
+import sendableArrowTransactionHistory from "@/public/images/case-study/sendable/arrows/transaction-history.svg";
+import sendableArrowBookings3 from "@/public/images/case-study/sendable/arrows/bookings3.svg";
+import sendableArrowBookings2 from "@/public/images/case-study/sendable/arrows/bookings2.svg";
+import sendableArrowSettings2 from "@/public/images/case-study/sendable/arrows/settings2.svg";
+import sendableArrowSettings3 from "@/public/images/case-study/sendable/arrows/settings3.svg";
+import sendableArrowSettings from "@/public/images/case-study/sendable/arrows/settings.svg";
+import sendableArrowServices2 from "@/public/images/case-study/sendable/arrows/services2.svg";
+import sendableArrowDashboard from "@/public/images/case-study/sendable/arrows/dashboard.svg";
+import sendableArrowPartnership from "@/public/images/case-study/sendable/arrows/partnership.svg";
+import sendableArrowOrderAndRevenueTracking from "@/public/images/case-study/sendable/arrows/order-and-revenue-tracking.svg";
+import sendableArrowGolfCourses from "@/public/images/case-study/sendable/arrows/golf-courses.svg";
+import sendableArrowMessage from "@/public/images/case-study/sendable/arrows/message.svg";
+import sendableArrowMessage2 from "@/public/images/case-study/sendable/arrows/message2.svg";
+import sendableArrowGolfCourses2 from "@/public/images/case-study/sendable/arrows/golf-courses2.svg";
+import sendableArrowPaymentManagement2 from "@/public/images/case-study/sendable/arrows/payment-management2.svg";
+import sendableArrowDashboard4 from "@/public/images/case-study/sendable/arrows/dashboard4.svg";
+import sendableArrowBookings from "@/public/images/case-study/sendable/arrows/bookings.svg";
+import sendableArrowDashboard2 from "@/public/images/case-study/sendable/arrows/dashboard2.svg";
+import sendableArrowUserManagement from "@/public/images/case-study/sendable/arrows/user-management.svg";
+import sendableArrowDashboard3 from "@/public/images/case-study/sendable/arrows/dashboard3.svg";
+import sendableArrowPaymentManagement from "@/public/images/case-study/sendable/arrows/payment-management.svg";
+import sendableArrowLandingPage from "@/public/images/case-study/sendable/arrows/landing-page.svg";
+import sendableLineUnderGolfProRole from "@/public/images/case-study/sendable/line-under-text/golf-pro-role.svg";
+import sendableLineUnderGolfCourseRole from "@/public/images/case-study/sendable/line-under-text/golf-course-role.svg";
+import sendableLineUnderLandingPage from "@/public/images/case-study/sendable/line-under-text/landing-page.svg";
 import { CldVideoPlayer } from "next-cloudinary";
 
 // export const metadata = {
@@ -49,138 +77,230 @@ const designBlocks = [
     title: "Dashboard",
     text: "On this page, golfers can see the list of golf pros and book any pro they want.",
     image: sendable4,
+    arrow: sendableArrowDashboard,
+    styling: "absolute left-[calc(100%+39px)] top-[124px] max-w-[241px]",
+    textStyling: "lg:pt-[63px]",
+    imageStyling: "max-w-[565.183px]",
     reverse: false,
   },
   {
     title: "Bookings",
     text: "On this page, the golfers can see the list of the Golf pros tey have booked and pay for bookings.",
     image: sendable5,
+    arrow: sendableArrowBookings,
+    styling: "absolute right-[calc(100%+28px)] top-[192px] max-w-[251px]",
+    textStyling: "lg:pt-[163px]",
+    imageStyling: "max-w-[566.077px]",
     reverse: true,
   },
   {
     title: "Message",
     text: "On this page, the golfer can send message to their Golf pro.",
     image: sendable14,
+    arrow: sendableArrowMessage,
+    styling: "absolute left-[calc(100%+1px)] top-[138px] max-w-[275.5px]",
+    textStyling: "lg:pt-[74px]",
+    imageStyling: "max-w-[567.394px]",
     reverse: false,
   },
   {
     title: "Settings",
     text: "On this page, the golfers can see their profile details and terms and conditions of the platform.",
     image: sendable6,
+    arrow: sendableArrowSettings,
+    styling: "absolute right-[calc(100%+28px)] top-[192px] max-w-[251px]",
+    textStyling: "lg:pt-[163px]",
+    imageStyling: "max-w-[565.466px]",
     reverse: true,
   },
   {
     title: "Dashboard",
     text: "On this page, golf pros can see their calendar, number of bookings, and golf course partners.",
     image: sendable7,
+    arrow: sendableArrowDashboard2,
+    styling: "absolute left-[calc(100%)] top-[143px] max-w-[275.5px]",
+    textStyling: "lg:pt-[78px]",
+    imageStyling: "max-w-[565.946px]",
     reverse: false,
   },
   {
     title: "Booking",
     text: "On this page, golf pros can see their bookings and accept or cancel bookings.",
     image: sendable8,
+    arrow: sendableArrowBookings2,
+    styling: "absolute right-[calc(100%)] top-[186px] max-w-[294px]",
+    textStyling: "lg:pt-[157px]",
+    imageStyling: "max-w-[566.348px]",
     reverse: true,
   },
   {
     title: "Services",
     text: "On this page, golf pros can see the number of sessions, number of services, and the golf pros they are affiliated with.",
     image: sendable9,
+    arrow: sendableArrowServices2,
+    styling: "absolute left-[calc(100%-1px)] top-[143px] max-w-[275.5px]",
+    textStyling: "lg:pt-[78px]",
+    imageStyling: "max-w-[566.825px]",
     reverse: false,
   },
   {
     title: "Payment Management ",
     text: "On this page, golf pros can see their total earnings, course earnings, number of students and their available balance. ",
     image: sendable10,
+    arrow: sendableArrowPaymentManagement,
+    styling: "absolute right-[calc(100%)] top-[186px] max-w-[294px]",
+    textStyling: "lg:pt-[157px]",
+    imageStyling: "max-w-[564.531px]",
     reverse: true,
   },
   {
     title: "Golf courses",
     text: "On this page, golf pros can partner with golf courses and also set availability for partnered courses.",
     image: sendable11,
+    arrow: sendableArrowGolfCourses,
+    styling: "absolute left-[calc(100%-1px)] top-[143px] max-w-[275.5px]",
+    textStyling: "lg:pt-[78px]",
+    imageStyling: "max-w-[567.161px]",
     reverse: false,
   },
   {
     title: "Payment Management ",
     text: "On this page, golf pros can see their total earnings, course earnings, number of students and their available balance. ",
     image: sendable12,
+    arrow: sendableArrowPaymentManagement2,
+    styling: "absolute right-[calc(100%)] top-[186px] max-w-[294px]",
+    textStyling: "lg:pt-[157px]",
+    imageStyling: "max-w-[564.531px]",
     reverse: true,
   },
   {
     title: "Golf courses",
     text: "On this page, golf pros can partner with golf courses and also set availability for partnered courses.",
     image: sendable13,
+    arrow: sendableArrowGolfCourses2,
+    styling: "absolute left-[calc(100%-1px)] top-[143px] max-w-[275.5px]",
+    textStyling: "lg:pt-[78px]",
+    imageStyling: "max-w-[567.161px]",
     reverse: false,
   },
   {
     title: "Message",
     text: "On this page, golf pros can respond to messages from golfers.",
     image: sendable14,
+    arrow: sendableArrowMessage2,
+    styling: "absolute right-[calc(100%)] top-[186px] max-w-[294px]",
+    textStyling: "lg:pt-[157px]",
+    imageStyling: "max-w-[568px]",
     reverse: true,
   },
   {
     title: "Settings",
     text: "On this page, golf pros can edit their profile details and also see the terms and privacy.",
     image: sendable15,
+    arrow: sendableArrowSettings2,
+    styling: "absolute left-[calc(100%-1px)] top-[143px] max-w-[275.5px]",
+    textStyling: "lg:pt-[78px]",
+    imageStyling: "max-w-[566.721px]",
     reverse: false,
   },
   {
     title: "Dashboard",
     text: "On this page, course managers can see partnership request from golf pros.",
     image: sendable16,
+    arrow: sendableArrowDashboard3,
+    styling: "absolute left-[calc(100%)] top-[118px] max-w-[280px]",
+    textStyling: "lg:pt-[57px]",
+    imageStyling: "max-w-[565.03px]",
     reverse: false,
   },
   {
     title: "Order and Revenue tracking",
     text: "On this page, golf course managers can see their total revenue, partners and active partners.",
     image: sendable17,
+    arrow: sendableArrowOrderAndRevenueTracking,
+    styling: "absolute right-[calc(100%)] top-[186px] max-w-[294px]",
+    textStyling: "lg:pt-[157px]",
+    imageStyling: "max-w-[566px]",
     reverse: true,
   },
   {
     title: "Course Management",
     text: "On this page, golf pros can fill in the information about their course, add pictures and amenities.",
     image: sendable18,
+    arrow: sendableArrowCourseManagement,
+    styling: "absolute left-[calc(100%)] top-[143px] max-w-[275.5px]",
+    textStyling: "lg:pt-[78px]",
+    imageStyling: "max-w-[566px]",
     reverse: false,
   },
   {
     title: "Booking",
     text: "On this page, golf pros can respond to messages from golfers.",
     image: sendable19,
+    arrow: sendableArrowBookings3,
+    styling: "absolute right-[calc(100%)] top-[186px] max-w-[294px]",
+    textStyling: "lg:pt-[157px]",
+    imageStyling: "max-w-[564px]",
     reverse: true,
   },
   {
     title: "Settings",
     text: "On this page, golf pros can partner with golf courses and also set availability for partnered courses.",
     image: sendable20,
+    arrow: sendableArrowSettings3,
+    styling: "absolute left-[calc(100%-1px)] top-[143px] max-w-[275.5px]",
+    textStyling: "lg:pt-[78px]",
+    imageStyling: "max-w-[567.161px]",
     reverse: false,
   },
   {
     title: "Dashboard",
     text: "On this page, admins can manage golfers, golf pros, course managers.",
     image: sendable21,
+    arrow: sendableArrowDashboard4,
+    styling: "absolute left-[calc(100%)] top-[151px] max-w-[275.5px]",
+    textStyling: "lg:pt-[86px]",
+    imageStyling: "max-w-[568.125px]",
     reverse: false,
   },
   {
     title: "User Management",
     text: "On this page, admins can see the list of golf admins, pros and course managers.",
     image: sendable22,
+    arrow: sendableArrowUserManagement,
+    styling: "absolute right-[calc(100%)] top-[186px] max-w-[294px]",
+    textStyling: "lg:pt-[157px]",
+    imageStyling: "max-w-[565px]",
     reverse: true,
   },
   {
     title: "Transaction History",
     text: "On this page, admins can see all the transaction history on the site.",
     image: sendable23,
+    arrow: sendableArrowTransactionHistory,
+    styling: "absolute left-[calc(100%+2px)] top-[151px] max-w-[275.5px]",
+    textStyling: "lg:pt-[86px]",
+    imageStyling: "max-w-[566px]",
     reverse: false,
   },
   {
     title: "Partnership and Revenue",
     text: "On this page, admins can see the total revenue, partners and active partners.",
     image: sendable24,
+    arrow: sendableArrowPartnership,
+    styling: "absolute right-[calc(100%)] top-[186px] max-w-[294px]",
+    textStyling: "lg:pt-[157px]",
+    imageStyling: "max-w-[566px]",
     reverse: true,
   },
   {
     title: "Landing page",
     text: "On this page, golfers can see what the platform is about and also find a golf pro.",
     videoSrc: "sendable-landing-page_zqluxx",
+    arrow: sendableArrowLandingPage,
+    styling: "absolute left-[calc(100%+2px)] top-[151px] max-w-[275.5px]",
+    textStyling: "lg:pt-[86px]",
+    imageStyling: "max-w-[566px]",
     reverse: false,
   },
 ];
@@ -433,6 +553,11 @@ export default function Sendable() {
 
                 <div className="text-[32px] text-[#2F3434] tracking-[-0.32px] font-bold">
                   <h3>Golfer Role</h3>
+                  <Image
+                    className="-mt-2 w-[227px] max-w-full"
+                    src={sendableLineUnderGolfProRole}
+                    alt=""
+                  />
                 </div>
               </article>
 
@@ -442,17 +567,33 @@ export default function Sendable() {
                     key={block.title + index}
                     className={clsx(
                       index === 0 ? "mt-8" : "mt-[124px]",
-                      "max-w-[1200px]",
-                      "flex flex-col lg:flex-row gap-6 items-center justify-between",
+                      "max-w-[1207px]",
+                      "flex flex-col lg:flex-row gap-6 items-start justify-between",
                       block.reverse && "lg:flex-row-reverse",
                     )}
                   >
-                    <Image
-                      className="max-w-[594px] w-full h-auto"
-                      src={block.image}
-                      alt={block.title}
-                    />
-                    <div className="max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]">
+                    <div
+                      className={clsx("w-full relative", block.imageStyling)}
+                    >
+                      <Image
+                        className="w-full h-auto"
+                        src={block.image}
+                        alt={block.title}
+                      />
+                      {block.arrow && (
+                        <Image
+                          className={clsx("hidden lg:block", block.styling)}
+                          src={block.arrow}
+                          alt=""
+                        />
+                      )}
+                    </div>
+                    <div
+                      className={clsx(
+                        "max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]",
+                        block.textStyling,
+                      )}
+                    >
                       <h6 className="font-semibold">{block.title}</h6>
                       <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                         {block.text}
@@ -473,17 +614,31 @@ export default function Sendable() {
                   key={block.title + index}
                   className={clsx(
                     index === 0 ? "mt-8" : "mt-[124px]",
-                    "max-w-[1200px]",
-                    "flex flex-col lg:flex-row gap-6 items-center justify-between",
+                    "max-w-[1207px]",
+                    "flex flex-col lg:flex-row gap-6 items-start justify-between",
                     block.reverse && "lg:flex-row-reverse",
                   )}
                 >
-                  <Image
-                    className="max-w-[594px] w-full h-auto"
-                    src={block.image}
-                    alt={block.title}
-                  />
-                  <div className="max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]">
+                  <div className={clsx("w-full relative", block.imageStyling)}>
+                    <Image
+                      className="w-full h-auto"
+                      src={block.image}
+                      alt={block.title}
+                    />
+                    {block.arrow && (
+                      <Image
+                        className={clsx("hidden lg:block", block.styling)}
+                        src={block.arrow}
+                        alt=""
+                      />
+                    )}
+                  </div>
+                  <div
+                    className={clsx(
+                      "max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]",
+                      block.textStyling,
+                    )}
+                  >
                     <h6 className="font-semibold">{block.title}</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       {block.text}
@@ -503,17 +658,31 @@ export default function Sendable() {
                   key={block.title + index}
                   className={clsx(
                     index === 0 ? "mt-8" : "mt-[124px]",
-                    "max-w-[1200px]",
-                    "flex flex-col lg:flex-row gap-6 items-center justify-between",
+                    "max-w-[1207px]",
+                    "flex flex-col lg:flex-row gap-6 items-start justify-between",
                     block.reverse && "lg:flex-row-reverse",
                   )}
                 >
-                  <Image
-                    className="max-w-[594px] w-full h-auto"
-                    src={block.image}
-                    alt={block.title}
-                  />
-                  <div className="max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]">
+                  <div className={clsx("w-full relative", block.imageStyling)}>
+                    <Image
+                      className="w-full h-auto"
+                      src={block.image}
+                      alt={block.title}
+                    />
+                    {block.arrow && (
+                      <Image
+                        className={clsx("hidden lg:block", block.styling)}
+                        src={block.arrow}
+                        alt=""
+                      />
+                    )}
+                  </div>
+                  <div
+                    className={clsx(
+                      "max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]",
+                      block.textStyling,
+                    )}
+                  >
                     <h6 className="font-semibold">{block.title}</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       {block.text}
@@ -526,6 +695,11 @@ export default function Sendable() {
                 <h2 className="text-[32px] text-[#2F3434] font-bold tracking-[-0.32px]">
                   Admin Role
                 </h2>
+                <Image
+                  className="-mt-2 w-[227px] max-w-full"
+                  src={sendableLineUnderGolfCourseRole}
+                  alt=""
+                />
               </div>
 
               {designBlocks.slice(18, 22).map((block, index) => (
@@ -533,17 +707,31 @@ export default function Sendable() {
                   key={block.title + index}
                   className={clsx(
                     index === 0 ? "mt-8" : "mt-[124px]",
-                    "max-w-[1200px]",
-                    "flex flex-col lg:flex-row gap-6 items-center justify-between",
+                    "max-w-[1207px]",
+                    "flex flex-col lg:flex-row gap-6 items-start justify-between",
                     block.reverse && "lg:flex-row-reverse",
                   )}
                 >
-                  <Image
-                    className="max-w-[594px] w-full h-auto"
-                    src={block.image}
-                    alt={block.title}
-                  />
-                  <div className="max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]">
+                  <div className={clsx("w-full relative", block.imageStyling)}>
+                    <Image
+                      className="w-full h-auto"
+                      src={block.image}
+                      alt={block.title}
+                    />
+                    {block.arrow && (
+                      <Image
+                        className={clsx("hidden lg:block", block.styling)}
+                        src={block.arrow}
+                        alt=""
+                      />
+                    )}
+                  </div>
+                  <div
+                    className={clsx(
+                      "max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]",
+                      block.textStyling,
+                    )}
+                  >
                     <h6 className="font-semibold">{block.title}</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       {block.text}
@@ -556,6 +744,11 @@ export default function Sendable() {
                 <h2 className="text-[32px] text-[#2F3434] font-bold tracking-[-0.32px]">
                   Landing page
                 </h2>
+                <Image
+                  className="-mt-2 w-[227px] max-w-full"
+                  src={sendableLineUnderLandingPage}
+                  alt=""
+                />
               </div>
 
               {designBlocks.slice(22).map((block, index) => (
@@ -563,23 +756,51 @@ export default function Sendable() {
                   key={block.title + index}
                   className={clsx(
                     index === 0 ? "mt-8" : "mt-[124px]",
-                    "max-w-[1200px]",
-                    "flex flex-col lg:flex-row gap-6 items-center justify-between",
+                    "max-w-[1207px]",
+                    "flex flex-col lg:flex-row gap-6 items-start justify-between",
                     block.reverse && "lg:flex-row-reverse",
                   )}
                 >
                   {block.videoSrc ? (
-                    <div className="max-w-[594px] w-full h-auto">
+                    <div
+                      className={clsx(
+                        "w-full h-auto relative",
+                        block.imageStyling,
+                      )}
+                    >
                       <CldVideoPlayer src={block.videoSrc} />
+                      {block.arrow && (
+                        <Image
+                          className={clsx("hidden lg:block", block.styling)}
+                          src={block.arrow}
+                          alt=""
+                        />
+                      )}
                     </div>
                   ) : (
-                    <Image
-                      className="max-w-[594px] w-full h-auto"
-                      src={block.image}
-                      alt={block.title}
-                    />
+                    <div
+                      className={clsx("w-full relative", block.imageStyling)}
+                    >
+                      <Image
+                        className="w-full h-auto"
+                        src={block.image}
+                        alt={block.title}
+                      />
+                      {block.arrow && (
+                        <Image
+                          className={clsx("hidden lg:block", block.styling)}
+                          src={block.arrow}
+                          alt=""
+                        />
+                      )}
+                    </div>
                   )}
-                  <div className="max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]">
+                  <div
+                    className={clsx(
+                      "max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]",
+                      block.textStyling,
+                    )}
+                  >
                     <h6 className="font-semibold">{block.title}</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       {block.text}
