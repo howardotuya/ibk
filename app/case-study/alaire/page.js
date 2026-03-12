@@ -15,6 +15,10 @@ import alaire3 from "@/public/images/case-study/alaire/3.png";
 import alaire5 from "@/public/images/case-study/alaire/5.png";
 import alaire6 from "@/public/images/case-study/alaire/6.png";
 import alaire7 from "@/public/images/case-study/alaire/7.png";
+import alaireArrowStyleQuiz from "@/public/images/case-study/alaire/arrows/style-quiz-page.svg";
+import alaireArrowMoodboard from "@/public/images/case-study/alaire/arrows/moodboard-page.svg";
+import alaireArrowInteractiveButtons from "@/public/images/case-study/alaire/arrows/interactive-buttons.svg";
+import alaireArrowAdminTools from "@/public/images/case-study/alaire/arrows/admin-tools.svg";
 import { CldVideoPlayer } from "next-cloudinary";
 
 // export const metadata = {
@@ -31,24 +35,44 @@ const designBlocks = [
     title: "Style Quiz page",
     text: "I implemented the Anonymous quiz initiation to lower sign-up friction",
     videoSrc: "alaire-style-quiz-page_abcceu",
+    arrow: alaireArrowStyleQuiz,
+    styling: "absolute left-[calc(100%)] top-[88px] max-w-[108.344px]",
+    textStyling: "lg:pt-[24px]",
+    imageStyling: "max-w-[705px]",
+    containerStyling: "max-w-[1209px]",
     reverse: false,
   },
   {
     title: "Moodboard page",
     text: "Two-column responsive moodboard (left: preview, right: scrollable items).",
     image: alaire5,
+    arrow: alaireArrowMoodboard,
+    styling: "absolute right-[calc(100%+8px)] top-[259.814px] max-w-[134px]",
+    textStyling: "lg:pt-[237px]",
+    imageStyling: "max-w-[705px]",
+    containerStyling: "max-w-[1202px]",
     reverse: true,
   },
   {
     title: "Interactive Buttons",
     text: "Interactive buttons (Love/Pass/Restyle) to simulate stylist collaboration.",
     image: alaire6,
+    arrow: alaireArrowInteractiveButtons,
+    styling: "absolute left-[calc(100%+1.656px)] top-[143.5px] max-w-[173.344px]",
+    textStyling: "lg:pt-[48px]",
+    imageStyling: "max-w-[698px]",
+    containerStyling: "max-w-[1234px]",
     reverse: false,
   },
   {
     title: "Admin tools",
     text: "Admin tools to track and manage requests efficiently.",
     image: alaire7,
+    arrow: alaireArrowAdminTools,
+    styling: "absolute right-[calc(100%)] top-[195px] max-w-[149px]",
+    textStyling: "lg:pt-[117px]",
+    imageStyling: "max-w-[672px]",
+    containerStyling: "max-w-[1200px]",
     reverse: true,
   },
 ];
@@ -342,23 +366,54 @@ export default function Alaire() {
                     key={block.title + index}
                     className={clsx(
                       index === 0 ? "mt-8" : "mt-[124px]",
-                      "max-w-[1200px]",
-                      "flex flex-col lg:flex-row gap-6 items-center justify-between",
+                      block.containerStyling || "max-w-[1200px]",
+                      "flex flex-col lg:flex-row gap-6 items-start justify-between",
                       block.reverse && "lg:flex-row-reverse",
                     )}
                   >
                     {block.videoSrc ? (
-                      <div className="max-w-[594px] w-full h-auto">
+                      <div
+                        className={clsx(
+                          "w-full h-auto relative",
+                          block.imageStyling || "max-w-[594px]",
+                        )}
+                      >
                         <CldVideoPlayer src={block.videoSrc} />
+                        {block.arrow && (
+                          <Image
+                            className={clsx("hidden lg:block", block.styling)}
+                            src={block.arrow}
+                            alt=""
+                          />
+                        )}
                       </div>
                     ) : (
-                      <Image
-                        className="max-w-[594px] w-full h-auto"
-                        src={block.image}
-                        alt={block.title}
-                      />
+                      <div
+                        className={clsx(
+                          "w-full relative",
+                          block.imageStyling || "max-w-[594px]",
+                        )}
+                      >
+                        <Image
+                          className="w-full h-auto"
+                          src={block.image}
+                          alt={block.title}
+                        />
+                        {block.arrow && (
+                          <Image
+                            className={clsx("hidden lg:block", block.styling)}
+                            src={block.arrow}
+                            alt=""
+                          />
+                        )}
+                      </div>
                     )}
-                    <div className="max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]">
+                    <div
+                      className={clsx(
+                        "max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]",
+                        block.textStyling,
+                      )}
+                    >
                       <h6 className="font-semibold">{block.title}</h6>
                       <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                         {block.text}
