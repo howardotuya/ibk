@@ -26,6 +26,22 @@ import baristabuddy14 from "@/public/images/case-study/baristabuddy/14.png";
 import baristabuddy15 from "@/public/images/case-study/baristabuddy/15.png";
 import baristabuddy16 from "@/public/images/case-study/baristabuddy/16.png";
 import baristabuddy17 from "@/public/images/case-study/baristabuddy/17.png";
+
+// Import arrows
+import baristabuddyArrowDashboard from "@/public/images/case-study/baristabuddy/arrows/admin-dashboard.svg";
+import baristabuddyArrowClients from "@/public/images/case-study/baristabuddy/arrows/admin-clients.svg";
+import baristabuddyArrowAssets from "@/public/images/case-study/baristabuddy/arrows/admin-assets.svg";
+import baristabuddyArrowWorkOrders from "@/public/images/case-study/baristabuddy/arrows/admin-work-orders.svg";
+import baristabuddyArrowTechnicians from "@/public/images/case-study/baristabuddy/arrows/admin-technicians.svg";
+import baristabuddyArrowInventory from "@/public/images/case-study/baristabuddy/arrows/admin-inventory.svg";
+import baristabuddyArrowServiceLogs from "@/public/images/case-study/baristabuddy/arrows/admin-service-logs.svg";
+import baristabuddyArrowSchedule from "@/public/images/case-study/baristabuddy/arrows/admin-schedule.svg";
+import baristabuddyArrowTechnicianDashboard from "@/public/images/case-study/baristabuddy/arrows/technician-dashboard.svg";
+import baristabuddyArrowTechnicianWorkOrder from "@/public/images/case-study/baristabuddy/arrows/technician-work-order.svg";
+import baristabuddyArrowTechnicianFieldService from "@/public/images/case-study/baristabuddy/arrows/technician-field-service.svg";
+import baristabuddyArrowTechnicianRouteManagement from "@/public/images/case-study/baristabuddy/arrows/technician-route-management.svg";
+import baristabuddyArrowTechnicianInventory from "@/public/images/case-study/baristabuddy/arrows/technician-inventory.svg";
+import baristabuddyArrowTechnicianProfile from "@/public/images/case-study/baristabuddy/arrows/technician-profile.svg";
 import { CldVideoPlayer } from "next-cloudinary";
 
 // export const metadata = {
@@ -42,85 +58,162 @@ const designBlocks = [
     title: "Dashboard/ Homepage",
     text: "The dashboard contains the total number of assets, Number of clients, Work orders in progress, Scheduled service, Calendar, Urgent work orders.",
     image: baristabuddy4,
+    arrow: baristabuddyArrowDashboard,
+    arrowStyling: "absolute left-[calc(100%)] top-[154px] max-w-[283px]",
+    imageStyling: "max-w-[567px]",
+    textStyling: "lg:pt-[20px]",
+    containerStyling: "max-w-[1216px]",
     reverse: false,
   },
   {
     title: "Clients",
     text: "On the client page, the admin can see all the registered client details on the platform and also register a new client.",
     image: baristabuddy5,
+    arrow: baristabuddyArrowClients,
+    arrowStyling: "absolute right-[calc(100%-6px)] top-[191px] max-w-[279px]",
+    imageStyling: "max-w-[567.784px]",
+    textStyling: "lg:pt-[151px]",
+    containerStyling: "max-w-[1202px]",
     reverse: true,
   },
   {
     title: "Assets",
     text: "On this page, the admin can see all the assets assigned to each clients, the status of the assets and also register new assets.",
     image: baristabuddy6,
+    arrow: baristabuddyArrowAssets,
+    arrowStyling: "absolute left-[calc(100%)] top-[150px] max-w-[293px]",
+    imageStyling: "max-w-[566px]",
+    textStyling: "lg:pt-[65px]",
+    containerStyling: "max-w-[1234px]",
     reverse: false,
   },
   {
     title: "Work orders",
     text: "On this page, the admin can document service activities, manage work orders and optimize routes.",
     image: baristabuddy7,
+    arrow: baristabuddyArrowWorkOrders,
+    arrowStyling:
+      "absolute right-[calc(100%+28px)] top-[191.658px] max-w-[251px]",
+    imageStyling: "max-w-[567px]",
+    textStyling: "lg:pt-[163px]",
+    containerStyling: "max-w-[1202px]",
     reverse: true,
   },
   {
     title: "Technicians",
     text: "On this page, the admin can manage technicians’ record, assignment and work schedule.",
     image: baristabuddy8,
+    arrow: baristabuddyArrowTechnicians,
+    arrowStyling:
+      "absolute left-[calc(100%+2.5px)] top-[138.146px] max-w-[275.5px]",
+    imageStyling: "max-w-[565.5px]",
+    textStyling: "lg:pt-[74px]",
+    containerStyling: "max-w-[1234px]",
     reverse: false,
   },
   {
     title: "Inventory",
     text: "On this page, the admin can track, and manage inventory items for each client.",
     image: baristabuddy9,
+    arrow: baristabuddyArrowInventory,
+    arrowStyling: "absolute right-[calc(100%+5px)] top-[200px] max-w-[251px]",
+    imageStyling: "max-w-[596px]",
+    textStyling: "lg:pt-[171px]",
+    containerStyling: "max-w-[1202px]",
     reverse: true,
   },
   {
     title: "Service Logs",
     text: "On this page, admins can create new service logs and manage all clients’ service logs.",
-
     image: baristabuddy10,
+    arrow: baristabuddyArrowServiceLogs,
+    arrowStyling: "absolute left-[calc(100%-12px)] top-[134px] max-w-[275.5px]",
+    imageStyling: "max-w-[566px]",
+    textStyling: "lg:pt-[70px]",
+    containerStyling: "max-w-[1234px]",
     reverse: false,
   },
   {
     title: "Schedule",
     text: "On this page, the admin can manage recurring maintenance schedules for all coffee machines and also create new schedule.",
     image: baristabuddy11,
+    arrow: baristabuddyArrowSchedule,
+    arrowStyling:
+      "absolute right-[calc(100%+5px)] top-[189.191px] max-w-[251px]",
+    imageStyling: "max-w-[567px]",
+    textStyling: "lg:pt-[160px]",
+    containerStyling: "max-w-[1202px]",
     reverse: true,
   },
   {
     title: "Dashboard",
     text: "On the dashboard, technicians can see assigned schedules, Route overview and work orders.",
     image: baristabuddy12,
+    arrow: baristabuddyArrowTechnicianDashboard,
+    arrowStyling:
+      "absolute left-[calc(100%+0.422px)] top-[143.424px] max-w-[275.5px]",
+    imageStyling: "max-w-[565.578px]",
+    textStyling: "lg:pt-[78px]",
+    containerStyling: "max-w-[1228px]",
     reverse: false,
   },
   {
     title: "Work Order",
     text: "On this page, technicians can see today’s task, scheduled tasks, low severity and high priority tasks.",
     image: baristabuddy13,
+    arrow: baristabuddyArrowTechnicianWorkOrder,
+    arrowStyling:
+      "absolute right-[calc(100%+5px)] top-[191.092px] max-w-[251px]",
+    imageStyling: "max-w-[567px]",
+    textStyling: "lg:pt-[162px]",
+    containerStyling: "max-w-[1202px]",
     reverse: true,
   },
   {
     title: "Field service",
     text: "On this page, technicians can log in their scheduled service and tasks.",
     image: baristabuddy14,
+    arrow: baristabuddyArrowTechnicianFieldService,
+    arrowStyling: "absolute left-[calc(100%)] top-[143.424px] max-w-[275.5px]",
+    imageStyling: "max-w-[566px]",
+    textStyling: "lg:pt-[78px]",
+    textContainerStyling: "max-w-[354px]",
+    containerStyling: "max-w-[1228px]",
     reverse: false,
   },
   {
     title: "Route Management",
     text: "On this page, technicians can access assigned routes and asset visits for efficient planning.",
     image: baristabuddy15,
+    arrow: baristabuddyArrowTechnicianRouteManagement,
+    arrowStyling: "absolute right-[calc(100%)] top-[186px] max-w-[293.999px]",
+    imageStyling: "max-w-[566px]",
+    textStyling: "lg:pt-[157px]",
+    containerStyling: "max-w-[1202px]",
     reverse: true,
   },
   {
     title: "Inventory",
     text: "On this page, technicians can record all the inventory items they used and also see the history.",
     image: baristabuddy16,
+    arrow: baristabuddyArrowTechnicianInventory,
+    arrowStyling:
+      "absolute left-[calc(100%-1.664px)] top-[143.424px] max-w-[275.5px]",
+    imageStyling: "max-w-[567.664px]",
+    textStyling: "lg:pt-[78px]",
+    textContainerStyling: "max-w-[354px]",
+    containerStyling: "max-w-[1228px]",
     reverse: false,
   },
   {
     title: "Profile",
     text: "On this page, technicians can view their profile and also make changes.",
     image: baristabuddy17,
+    arrow: baristabuddyArrowTechnicianProfile,
+    arrowStyling: "absolute right-[calc(100%)] top-[186px] max-w-[293.999px]",
+    imageStyling: "max-w-[566.064px]",
+    textStyling: "lg:pt-[157px]",
+    containerStyling: "max-w-[1202px]",
     reverse: true,
   },
 ];
@@ -466,17 +559,40 @@ export default function BaristaBuddy() {
                     key={block.title + index}
                     className={clsx(
                       index === 0 ? "mt-8" : "mt-[124px]",
-                      "max-w-[1200px]",
-                      "flex flex-col lg:flex-row gap-6 items-center justify-between",
+                      block.containerStyling || "max-w-[1200px]",
+                      "flex flex-col lg:flex-row gap-6 items-start justify-between",
                       block.reverse && "lg:flex-row-reverse",
                     )}
                   >
-                    <Image
-                      className="max-w-[594px] w-full h-auto"
-                      src={block.image}
-                      alt={block.title}
-                    />
-                    <div className="max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]">
+                    <div
+                      className={clsx(
+                        "w-full relative",
+                        block.imageStyling || "max-w-[594px]",
+                      )}
+                    >
+                      <Image
+                        className="w-full h-auto"
+                        src={block.image}
+                        alt={block.title}
+                      />
+                      {block.arrow && (
+                        <Image
+                          className={clsx(
+                            "hidden lg:block",
+                            block.arrowStyling,
+                          )}
+                          src={block.arrow}
+                          alt=""
+                        />
+                      )}
+                    </div>
+                    <div
+                      className={clsx(
+                        "max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]",
+                        block.textContainerStyling,
+                        block.textStyling,
+                      )}
+                    >
                       <h6 className="font-semibold">{block.title}</h6>
                       <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                         {block.text}
@@ -497,17 +613,37 @@ export default function BaristaBuddy() {
                   key={block.title + index}
                   className={clsx(
                     index === 0 ? "mt-8" : "mt-[124px]",
-                    "max-w-[1200px]",
-                    "flex flex-col lg:flex-row gap-6 items-center justify-between",
+                    block.containerStyling || "max-w-[1200px]",
+                    "flex flex-col lg:flex-row gap-6 items-start justify-between",
                     block.reverse && "lg:flex-row-reverse",
                   )}
                 >
-                  <Image
-                    className="max-w-[594px] w-full h-auto"
-                    src={block.image}
-                    alt={block.title}
-                  />
-                  <div className="max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]">
+                  <div
+                    className={clsx(
+                      "w-full relative",
+                      block.imageStyling || "max-w-[594px]",
+                    )}
+                  >
+                    <Image
+                      className="w-full h-auto"
+                      src={block.image}
+                      alt={block.title}
+                    />
+                    {block.arrow && (
+                      <Image
+                        className={clsx("hidden lg:block", block.arrowStyling)}
+                        src={block.arrow}
+                        alt=""
+                      />
+                    )}
+                  </div>
+                  <div
+                    className={clsx(
+                      "max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]",
+                      block.textContainerStyling,
+                      block.textStyling,
+                    )}
+                  >
                     <h6 className="font-semibold">{block.title}</h6>
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       {block.text}
