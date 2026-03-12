@@ -77,6 +77,11 @@ const designBlocks = [
   },
 ];
 
+const getArrowDirectionClass = (arrowStyling = "") =>
+  arrowStyling.includes("left-[")
+    ? "case-study-arrow-right"
+    : "case-study-arrow-left";
+
 export default function Alaire() {
   return (
     <>
@@ -381,7 +386,11 @@ export default function Alaire() {
                         <CldVideoPlayer src={block.videoSrc} />
                         {block.arrow && (
                           <Image
-                            className={clsx("hidden lg:block", block.styling)}
+                            className={clsx(
+                              "case-study-arrow",
+                              getArrowDirectionClass(block.styling),
+                              block.styling,
+                            )}
                             src={block.arrow}
                             alt=""
                           />
@@ -401,7 +410,11 @@ export default function Alaire() {
                         />
                         {block.arrow && (
                           <Image
-                            className={clsx("hidden lg:block", block.styling)}
+                            className={clsx(
+                              "case-study-arrow",
+                              getArrowDirectionClass(block.styling),
+                              block.styling,
+                            )}
                             src={block.arrow}
                             alt=""
                           />

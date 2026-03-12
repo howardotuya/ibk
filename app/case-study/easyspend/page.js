@@ -283,6 +283,11 @@ const billPaymentFlowBlocks = [
   },
 ];
 
+const getArrowDirectionClass = (arrowStyling = "") =>
+  arrowStyling.includes("left-[")
+    ? "case-study-arrow-right"
+    : "case-study-arrow-left";
+
 // METADATA
 export const metadata = {
   title: "EasySpend",
@@ -581,7 +586,11 @@ export default function Oppia() {
                         alt={block.title}
                       />
                       <Image
-                        className={clsx("hidden lg:block", block.arrowStyling)}
+                        className={clsx(
+                          "case-study-arrow",
+                          getArrowDirectionClass(block.arrowStyling),
+                          block.arrowStyling,
+                        )}
                         src={block.arrow}
                         alt=""
                       />
@@ -630,7 +639,11 @@ export default function Oppia() {
                         alt={block.title}
                       />
                       <Image
-                        className={clsx("hidden lg:block", block.arrowStyling)}
+                        className={clsx(
+                          "case-study-arrow",
+                          getArrowDirectionClass(block.arrowStyling),
+                          block.arrowStyling,
+                        )}
                         src={block.arrow}
                         alt=""
                       />
@@ -679,7 +692,11 @@ export default function Oppia() {
                         alt={block.title}
                       />
                       <Image
-                        className={clsx("hidden lg:block", block.arrowStyling)}
+                        className={clsx(
+                          "case-study-arrow",
+                          getArrowDirectionClass(block.arrowStyling),
+                          block.arrowStyling,
+                        )}
                         src={block.arrow}
                         alt=""
                       />
@@ -728,7 +745,11 @@ export default function Oppia() {
                         alt={block.title}
                       />
                       <Image
-                        className={clsx("hidden lg:block", block.arrowStyling)}
+                        className={clsx(
+                          "case-study-arrow",
+                          getArrowDirectionClass(block.arrowStyling),
+                          block.arrowStyling,
+                        )}
                         src={block.arrow}
                         alt=""
                       />

@@ -220,6 +220,11 @@ const designBlocks = [
   },
 ];
 
+const getArrowDirectionClass = (arrowStyling = "") =>
+  arrowStyling.includes("left-[")
+    ? "case-study-arrow-right"
+    : "case-study-arrow-left";
+
 const productMetrics = [
   {
     metric: "Average service scheduling time",
@@ -585,7 +590,8 @@ export default function BaristaBuddy() {
                       {block.arrow && (
                         <Image
                           className={clsx(
-                            "hidden lg:block",
+                            "case-study-arrow",
+                            getArrowDirectionClass(block.arrowStyling),
                             block.arrowStyling,
                           )}
                           src={block.arrow}
@@ -643,7 +649,11 @@ export default function BaristaBuddy() {
                     />
                     {block.arrow && (
                       <Image
-                        className={clsx("hidden lg:block", block.arrowStyling)}
+                        className={clsx(
+                          "case-study-arrow",
+                          getArrowDirectionClass(block.arrowStyling),
+                          block.arrowStyling,
+                        )}
                         src={block.arrow}
                         alt=""
                       />

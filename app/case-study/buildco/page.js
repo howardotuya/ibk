@@ -397,7 +397,7 @@ export default function Oppia() {
                   <div className="max-w-[704px] w-full relative">
                     <Image className="w-full h-auto" src={desktopHome} alt="" />
                     <Image
-                      className="absolute left-[calc(100%-4px)] top-[178px]"
+                      className="buildco-arrow buildco-arrow-right absolute left-[calc(100%-4px)] top-[178px]"
                       src={buildcoArrowHomepage}
                       alt=""
                     />
@@ -433,7 +433,7 @@ export default function Oppia() {
                   <div className="max-w-[704px] w-full relative">
                     <Image className="w-full h-auto" src={desktopShop} alt="" />
                     <Image
-                      className="absolute right-[100%] top-[108px]"
+                      className="buildco-arrow buildco-arrow-left absolute right-[100%] top-[108px]"
                       src={buildcoArrowShop}
                       alt=""
                     />
@@ -455,7 +455,7 @@ export default function Oppia() {
                       alt=""
                     />
                     <Image
-                      className="absolute left-[calc(100%-24px)] top-[212px]"
+                      className="buildco-arrow buildco-arrow-right absolute left-[calc(100%-24px)] top-[212px]"
                       src={buildcoArrowProduct}
                       alt=""
                     />
@@ -489,7 +489,7 @@ export default function Oppia() {
                   <div className="max-w-[704px] w-full relative">
                     <Image className="w-full h-auto" src={desktopCart} alt="" />
                     <Image
-                      className="absolute right-[calc(100%)] top-[148px]"
+                      className="buildco-arrow buildco-arrow-left absolute right-[calc(100%)] top-[148px]"
                       src={buildcoArrowCartAndCheckout}
                       alt=""
                     />
@@ -511,7 +511,7 @@ export default function Oppia() {
                       alt=""
                     />
                     <Image
-                      className="absolute left-[calc(100%-24px)] top-[212px]"
+                      className="buildco-arrow buildco-arrow-right absolute left-[calc(100%-24px)] top-[212px]"
                       src={buildcoArrowWishlist}
                       alt=""
                     />
@@ -550,7 +550,7 @@ export default function Oppia() {
                   <div className="max-w-[357px] w-full relative">
                     <Image className="w-full h-auto" src={mobileHome} alt="" />
                     <Image
-                      className="absolute min-w-[467px] left-[calc(100%)] top-[212px]"
+                      className="buildco-arrow buildco-arrow-right buildco-arrow-wide absolute min-w-[467px] left-[calc(100%)] top-[212px]"
                       src={buildcoArrowHomepage2}
                       alt=""
                     />
@@ -587,7 +587,7 @@ export default function Oppia() {
                   <div className="max-w-[367px] w-full relative">
                     <Image className="w-full h-auto" src={mobileShop} alt="" />
                     <Image
-                      className="absolute min-w-[470px] right-[calc(100%)] top-[170px]"
+                      className="buildco-arrow buildco-arrow-left buildco-arrow-wide absolute min-w-[470px] right-[calc(100%)] top-[170px]"
                       src={buildcoArrowShop2}
                       alt=""
                     />
@@ -609,7 +609,7 @@ export default function Oppia() {
                       alt=""
                     />
                     <Image
-                      className="absolute min-w-[467px] left-[calc(100%)] top-[207px]"
+                      className="buildco-arrow buildco-arrow-right buildco-arrow-wide absolute min-w-[467px] left-[calc(100%)] top-[207px]"
                       src={buildcoArrowProduct2}
                       alt=""
                     />
@@ -643,7 +643,7 @@ export default function Oppia() {
                   <div className="max-w-[357px] w-full relative">
                     <Image className="w-full h-auto" src={mobileCart} alt="" />
                     <Image
-                      className="absolute min-w-[422px] right-[calc(100%)] top-[170px]"
+                      className="buildco-arrow buildco-arrow-left buildco-arrow-wide absolute min-w-[422px] right-[calc(100%)] top-[170px]"
                       src={buildcoArrowCartAndCheckout2}
                       alt=""
                     />
@@ -665,7 +665,7 @@ export default function Oppia() {
                       alt=""
                     />
                     <Image
-                      className="absolute min-w-[467px] left-[calc(100%)] top-[207px]"
+                      className="buildco-arrow buildco-arrow-right buildco-arrow-wide absolute min-w-[467px] left-[calc(100%)] top-[207px]"
                       src={buildcoArrowConfirmation}
                       alt=""
                     />
@@ -708,7 +708,7 @@ export default function Oppia() {
                       alt=""
                     />
                     <Image
-                      className="absolute left-[calc(100%)] top-[179px]"
+                      className="buildco-arrow buildco-arrow-right absolute left-[calc(100%)] top-[179px]"
                       src={buildcoArrowLandingPage}
                       alt=""
                     />
@@ -747,7 +747,7 @@ export default function Oppia() {
                       alt=""
                     />
                     <Image
-                      className="absolute right-[calc(100%)] top-[175px]"
+                      className="buildco-arrow buildco-arrow-left absolute right-[calc(100%)] top-[175px]"
                       src={buildcoArrowDashboard}
                       alt=""
                     />
@@ -769,7 +769,7 @@ export default function Oppia() {
                       alt=""
                     />
                     <Image
-                      className="absolute left-[calc(100%)] top-[205px]"
+                      className="buildco-arrow buildco-arrow-right absolute left-[calc(100%)] top-[205px]"
                       src={buildcoArrowSiteManagement}
                       alt=""
                     />
@@ -807,7 +807,7 @@ export default function Oppia() {
                       alt=""
                     />
                     <Image
-                      className="absolute right-[calc(100%)] top-[119px]"
+                      className="buildco-arrow buildco-arrow-left absolute right-[calc(100%)] top-[119px]"
                       src={buildcoArrowProduct3}
                       alt=""
                     />
@@ -829,7 +829,7 @@ export default function Oppia() {
                       alt=""
                     />
                     <Image
-                      className="absolute left-[calc(100%)] top-[173px]"
+                      className="buildco-arrow buildco-arrow-right absolute left-[calc(100%)] top-[173px]"
                       src={buildcoArrowServices}
                       alt=""
                     />
@@ -868,7 +868,7 @@ export default function Oppia() {
                       alt=""
                     />
                     <Image
-                      className="absolute right-[calc(100%)] top-[169px]"
+                      className="buildco-arrow buildco-arrow-left absolute right-[calc(100%)] top-[169px]"
                       src={buildcoArrowProfile}
                       alt=""
                     />
@@ -890,7 +890,7 @@ export default function Oppia() {
                       alt=""
                     />
                     <Image
-                      className="absolute left-[calc(100%)] top-[180px]"
+                      className="buildco-arrow buildco-arrow-right absolute left-[calc(100%)] top-[180px]"
                       src={buildcoArrowOrders}
                       alt=""
                     />
@@ -929,7 +929,7 @@ export default function Oppia() {
                       alt=""
                     />
                     <Image
-                      className="absolute right-[calc(100%)] top-[180px]"
+                      className="buildco-arrow buildco-arrow-left absolute right-[calc(100%)] top-[180px]"
                       src={buildcoArrowCreditHistory}
                       alt=""
                     />
@@ -951,7 +951,7 @@ export default function Oppia() {
                       alt=""
                     />
                     <Image
-                      className="absolute left-[calc(100%)] top-[180px]"
+                      className="buildco-arrow buildco-arrow-right absolute left-[calc(100%)] top-[180px]"
                       src={buildcoArrowReport}
                       alt=""
                     />
@@ -1035,7 +1035,7 @@ export default function Oppia() {
                       alt=""
                     />
                     <Image
-                      className="absolute min-w-[467px] right-[calc(100%)] top-[154px]"
+                      className="buildco-arrow buildco-arrow-left buildco-arrow-wide absolute min-w-[467px] right-[calc(100%)] top-[154px]"
                       src={buildcoArrowProduct4}
                       alt=""
                     />
@@ -1057,7 +1057,7 @@ export default function Oppia() {
                       alt=""
                     />
                     <Image
-                      className="absolute min-w-[406px] left-[calc(100%)] top-[167px]"
+                      className="buildco-arrow buildco-arrow-right buildco-arrow-wide absolute min-w-[406px] left-[calc(100%)] top-[167px]"
                       src={buildcoArrowCreditHistory2}
                       alt=""
                     />
@@ -1098,7 +1098,7 @@ export default function Oppia() {
                       alt=""
                     />
                     <Image
-                      className="absolute min-w-[467px] right-[calc(100%)] top-[183px]"
+                      className="buildco-arrow buildco-arrow-left buildco-arrow-wide absolute min-w-[467px] right-[calc(100%)] top-[183px]"
                       src={buildcoArrowServices2}
                       alt=""
                     />
