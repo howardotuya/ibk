@@ -33,9 +33,255 @@ import easySpendVirtualCardFundVirtualCard from "@/public/images/case-study/easy
 import easySpendVirtualCardSendMoney from "@/public/images/case-study/easyspend/virtualCard/sendMoney.png";
 import easySpendVirtualCardVirtualCardDashboard from "@/public/images/case-study/easyspend/virtualCard/virtualCardDashboard.png";
 
+// ARROW IMPORTS
+import easySpendArrowAddMoneyCrypto from "@/public/images/case-study/easyspend/arrows/add-money-crypto.svg";
+import easySpendArrowAddMoneyNaira from "@/public/images/case-study/easyspend/arrows/add-money-naira.svg";
+import easySpendArrowAddMoneyUsd from "@/public/images/case-study/easyspend/arrows/add-money-usd.svg";
+import easySpendArrowBuyAirtime from "@/public/images/case-study/easyspend/arrows/buy-airtime.svg";
+import easySpendArrowCreateNewWallet from "@/public/images/case-study/easyspend/arrows/create-new-wallet.svg";
+import easySpendArrowCreateVirtualCard from "@/public/images/case-study/easyspend/arrows/create-virtual-card.svg";
+import easySpendArrowCryptoDashboard from "@/public/images/case-study/easyspend/arrows/crypto-dashboard.svg";
+import easySpendArrowFundVirtualCard from "@/public/images/case-study/easyspend/arrows/fund-virtual-card.svg";
+import easySpendArrowFundWallet from "@/public/images/case-study/easyspend/arrows/fund-wallet.svg";
+import easySpendArrowHomepage from "@/public/images/case-study/easyspend/arrows/homepage.svg";
+import easySpendArrowPayBills from "@/public/images/case-study/easyspend/arrows/pay-bills.svg";
+import easySpendArrowPayForCableSubscription from "@/public/images/case-study/easyspend/arrows/pay-for-cable-subscription.svg";
+import easySpendArrowPayForData from "@/public/images/case-study/easyspend/arrows/pay-for-data-international-and-local.svg";
+import easySpendArrowPayForElectricity from "@/public/images/case-study/easyspend/arrows/pay-for-electricity.svg";
+import easySpendArrowSendMoneyFromVirtualCard from "@/public/images/case-study/easyspend/arrows/send-money-from-virtual-card.svg";
+import easySpendArrowSwapToken from "@/public/images/case-study/easyspend/arrows/swap-token.svg";
+import easySpendArrowVirtualCardDashboard from "@/public/images/case-study/easyspend/arrows/virtual-card-dashboard.svg";
+import easySpendArrowWithdrawFromWallet from "@/public/images/case-study/easyspend/arrows/withdraw-from-wallet.svg";
+import easySpendArrowWithdrawMoneyNaira from "@/public/images/case-study/easyspend/arrows/withdraw-money-naira.svg";
+import easySpendArrowWithdrawMoneyUsd from "@/public/images/case-study/easyspend/arrows/withdraw-money-usd.svg";
+
 import Footer from "@/components/footer/footer";
 import SubFooter from "@/components/footer/subFooter";
 import clsx from "clsx";
+
+const primaryFlowBlocks = [
+  {
+    title: "Home Page",
+    text: "I implemented the home page which consists of user wallet balance in Naira, Dollars, Bitcoin. If the users are yet to create a wallet in a particular currency, they will see zero balance and click on the card to create a new account.",
+    image: easySpendFirstDesktopHome,
+    arrow: easySpendArrowHomepage,
+    arrowStyling: "absolute left-[calc(100%)] top-[192px] max-w-[259.5px]",
+    imageStyling: "max-w-[594.5px]",
+    textStyling: "lg:pt-[99px]",
+    containerStyling: "max-w-[1209px]",
+  },
+  {
+    title: "Add money (Naira Account)",
+    text: "Users can add money to their naira account via transfer, or card.",
+    image: easySpendFirstDesktopAddMoneyNgn,
+    arrow: easySpendArrowAddMoneyNaira,
+    arrowStyling: "absolute right-[calc(100%)] top-[83px] max-w-[245px]",
+    imageStyling: "max-w-[594.5px]",
+    textStyling: "lg:pt-[4px]",
+    containerStyling: "max-w-[1200px]",
+    reverse: true,
+  },
+  {
+    title: "Add money (USD Account)",
+    text: "Users can fund their USD wallet via crypto, bank transfer oor naira account conversion.",
+    image: easySpendFirstDesktopAddMoneyUsd,
+    arrow: easySpendArrowAddMoneyUsd,
+    arrowStyling: "absolute left-[calc(100%-6px)] top-[108px] max-w-[242.5px]",
+    imageStyling: "max-w-[594.5px]",
+    textStyling: "lg:pt-[30px]",
+    containerStyling: "max-w-[1192px]",
+  },
+  {
+    title: "Add money (Crypto Wallet)",
+    text: "Users can fund their wallet account by converting USD to crypto.",
+    image: easySpendFirstDesktopAddMoneyCrypto,
+    arrow: easySpendArrowAddMoneyCrypto,
+    arrowStyling: "absolute right-[calc(100%)] top-[91px] max-w-[245px]",
+    imageStyling: "max-w-[594.5px]",
+    textStyling: "lg:pt-[38px]",
+    containerStyling: "max-w-[1200px]",
+    reverse: true,
+  },
+  {
+    title: "Withdraw money (Naira Account)",
+    text: "Users can perform inter bank transfer or intra bank transfer and convert Naira to USD.",
+    image: easySpendFirstDesktopWithdrawMoneyNng,
+    arrow: easySpendArrowWithdrawMoneyNaira,
+    arrowStyling: "absolute left-[calc(100%-23px)] top-[148px] max-w-[259.5px]",
+    imageStyling: "max-w-[594.5px]",
+    textStyling: "lg:pt-[30px]",
+    containerStyling: "max-w-[1192px]",
+  },
+  {
+    title: "Withdraw money (USD Account)",
+    text: "Users can send money to their naira account and convert USD to BTC.",
+    image: easySpendFirstDesktopWithdrawMoneyUsd,
+    arrow: easySpendArrowWithdrawMoneyUsd,
+    arrowStyling: "absolute right-[calc(100%-6px)] top-[146px] max-w-[245px]",
+    imageStyling: "max-w-[594.5px]",
+    textStyling: "lg:pt-[38px]",
+    containerStyling: "max-w-[1200px]",
+    reverse: true,
+  },
+];
+
+const cryptoFlowBlocks = [
+  {
+    title: "Crypto Dashboard",
+    text: "I implemented the crypto dashboard where users can see their wallet balance, buy, send, swap and lock their wallet. They can also see their wallet transactions.",
+    image: easySpendCryptoCryptoDashboard,
+    arrow: easySpendArrowCryptoDashboard,
+    arrowStyling: "absolute left-[calc(100%+4px)] top-[192px] max-w-[259.5px]",
+    imageStyling: "max-w-[591px]",
+    textStyling: "lg:pt-[99px]",
+    containerStyling: "max-w-[1209px]",
+  },
+  {
+    title: "Fund wallet",
+    text: "Users can fund BTC wallet through USD conversion.",
+    image: easySpendCryptoFundWallet,
+    arrow: easySpendArrowFundWallet,
+    arrowStyling: "absolute right-[calc(100%+3px)] top-[146px] max-w-[288px]",
+    imageStyling: "max-w-[591px]",
+    textStyling: "lg:pt-[38px]",
+    containerStyling: "max-w-[1200px]",
+    reverse: true,
+  },
+  {
+    title: "Swap Tokens",
+    text: "Users can swap tokens, if they have more than one wallet account, eg: swap USDT with BTC.",
+    image: easySpendCryptoSwapToken,
+    arrow: easySpendArrowSwapToken,
+    arrowStyling: "absolute left-[calc(100%+4px)] top-[192px] max-w-[259.5px]",
+    imageStyling: "max-w-[591px]",
+    textStyling: "lg:pt-[99px]",
+    containerStyling: "max-w-[1209px]",
+  },
+  {
+    title: "Withdraw from wallet",
+    text: "Users can convert BTC or any of their token to USD.",
+    image: easySpendCryptoWithdrawFromWallet,
+    arrow: easySpendArrowWithdrawFromWallet,
+    arrowStyling: "absolute right-[calc(100%+3px)] top-[146px] max-w-[288px]",
+    imageStyling: "max-w-[591px]",
+    textStyling: "lg:pt-[38px]",
+    containerStyling: "max-w-[1200px]",
+    reverse: true,
+  },
+  {
+    title: "Create new wallet",
+    text: "To create new wallet, I implemented a modal where users can use their password to create wallet and they can select the wallet options they want to create.",
+    image: easySpendCryptoCreateNewWallet,
+    arrow: easySpendArrowCreateNewWallet,
+    arrowStyling: "absolute left-[calc(100%+4px)] top-[192px] max-w-[259.5px]",
+    imageStyling: "max-w-[591px]",
+    textStyling: "lg:pt-[99px]",
+    containerStyling: "max-w-[1209px]",
+  },
+];
+
+const virtualCardFlowBlocks = [
+  {
+    title: "Virtual Card Dashboard",
+    text: "On the virtual card page, users can see their available balance, Add money, send money, convert money and see their recent transactions.",
+    image: easySpendVirtualCardVirtualCardDashboard,
+    arrow: easySpendArrowVirtualCardDashboard,
+    arrowStyling: "absolute right-[calc(100%-6px)] top-[146px] max-w-[288px]",
+    imageStyling: "max-w-[606.5px]",
+    textStyling: "lg:pt-[38px]",
+    containerStyling: "max-w-[1200px]",
+    reverse: true,
+  },
+  {
+    title: "Fund virtual card",
+    text: "Users can fund their USD virtual card via bank transfer, crypto wallet and naira account.",
+    image: easySpendVirtualCardFundVirtualCard,
+    arrow: easySpendArrowFundVirtualCard,
+    arrowStyling: "absolute left-[calc(100%)] top-[168px] max-w-[259.5px]",
+    imageStyling: "max-w-[606.5px]",
+    textStyling: "lg:pt-[99px]",
+    containerStyling: "max-w-[1209px]",
+  },
+  {
+    title: "Create virtual card",
+    text: "Users can choose to create either Visa or Mastercard virtual card, they can also customize the card",
+    image: easySpendVirtualCardCreateVirtualCard,
+    arrow: easySpendArrowCreateVirtualCard,
+    arrowStyling: "absolute right-[calc(100%)] top-[133px] max-w-[239px]",
+    imageStyling: "max-w-[606.5px]",
+    textStyling: "lg:pt-[38px]",
+    containerStyling: "max-w-[1200px]",
+    reverse: true,
+  },
+  {
+    title: "Send money from virtual card",
+    text: "Users can send money to their naira account and also send money to their crypto wallet.",
+    image: easySpendVirtualCardSendMoney,
+    arrow: easySpendArrowSendMoneyFromVirtualCard,
+    arrowStyling: "absolute left-[calc(100%)] top-[168px] max-w-[243px]",
+    imageStyling: "max-w-[606.5px]",
+    textStyling: "lg:pt-[121px]",
+    containerStyling: "max-w-[1209px]",
+  },
+];
+
+const billPaymentFlowBlocks = [
+  {
+    title: "Pay Bills",
+    text: "Users can pay for Airtime, cable TV, Electricity, Data, Gift cards and also see their recent bill transactions.",
+    image: easySpendBillPaymentPayBills,
+    arrow: easySpendArrowPayBills,
+    arrowStyling: "absolute right-[calc(100%)] top-[133px] max-w-[239px]",
+    imageStyling: "max-w-[594.5px]",
+    textStyling: "lg:pt-[38px]",
+    containerStyling: "max-w-[1200px]",
+    reverse: true,
+  },
+  {
+    title: "Buy Airtime",
+    text: "Users can send money to their naira account and also send money to their crypto wallet.",
+    image: easySpendBillPaymentBuyAirtime,
+    arrow: easySpendArrowBuyAirtime,
+    arrowStyling: "absolute left-[calc(100%)] top-[168px] max-w-[243px]",
+    imageStyling: "max-w-[594.5px]",
+    textStyling: "lg:pt-[121px]",
+    containerStyling: "max-w-[1209px]",
+  },
+  {
+    title: "Pay for Electricity",
+    text: "Users can pay for Airtime, cable TV, Electricity, Data, Gift cards and also see their recent bill transactions.",
+    image: easySpendBillPaymentPayForElectricity,
+    arrow: easySpendArrowPayForElectricity,
+    arrowStyling: "absolute right-[calc(100%)] top-[133px] max-w-[239px]",
+    imageStyling: "max-w-[594.5px]",
+    textStyling: "lg:pt-[38px]",
+    containerStyling: "max-w-[1200px]",
+    reverse: true,
+  },
+  {
+    title: "Pay for Cable Subscription",
+    text: "Users can send money to their naira account and also send money to their crypto wallet.",
+    image: easySpendBillPaymentCableSubscription,
+    arrow: easySpendArrowPayForCableSubscription,
+    arrowStyling: "absolute left-[calc(100%)] top-[168px] max-w-[243px]",
+    imageStyling: "max-w-[594.5px]",
+    textStyling: "lg:pt-[121px]",
+    containerStyling: "max-w-[1209px]",
+  },
+  {
+    title: "Pay for Data (International & Local)",
+    text: "Users can pay for Airtime, cable TV, Electricity, Data, Gift cards and also see their recent bill transactions.",
+    image: easySpendBillPaymentPayForData,
+    arrow: easySpendArrowPayForData,
+    arrowStyling: "absolute right-[calc(100%)] top-[133px] max-w-[239px]",
+    imageStyling: "max-w-[594.5px]",
+    textStyling: "lg:pt-[38px]",
+    containerStyling: "max-w-[1200px]",
+    textContainerStyling: "max-w-[450px]",
+    bodyStyling: "max-w-[361px]",
+    reverse: true,
+  },
+];
 
 // METADATA
 export const metadata = {
@@ -316,147 +562,45 @@ export default function Oppia() {
               </article>
 
               <div className="w-full">
-                {/* DESKTOP HOME */}
-                <div
-                  className={clsx(
-                    "mt-8",
-                    "max-w-[1175px]",
-                    "flex gap-6 items-center justify-between",
-                  )}
-                >
-                  <Image
-                    className="max-w-[594px] w-full h-auto"
-                    src={easySpendFirstDesktopHome}
-                    alt=""
-                  />
-                  <div className="max-w-[361px] text-[24px] text-[#262C2C]">
-                    <h6 className="font-semibold">Home Page</h6>
-                    <p className="mt-4 leading-[140%] tracking-[-0.24px]">
-                      I implemented the home page which consists of user wallet
-                      balance in Naira, Dollars, Bitcoin. If the users are yet
-                      to create a wallet in a particular currency, they will see
-                      zero balance and click on the card to create a new
-                      account.
-                    </p>
+                {primaryFlowBlocks.map((block, index) => (
+                  <div
+                    key={block.title + index}
+                    className={clsx(
+                      index === 0 ? "mt-8" : "mt-[132px]",
+                      block.containerStyling || "max-w-[1200px]",
+                      "flex flex-col lg:flex-row gap-6 items-start justify-between",
+                      block.reverse && "lg:flex-row-reverse",
+                    )}
+                  >
+                    <div
+                      className={clsx("w-full relative", block.imageStyling)}
+                    >
+                      <Image
+                        className="w-full h-auto"
+                        src={block.image}
+                        alt={block.title}
+                      />
+                      <Image
+                        className={clsx("hidden lg:block", block.arrowStyling)}
+                        src={block.arrow}
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={clsx(
+                        "max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]",
+                        block.textStyling,
+                      )}
+                    >
+                      <h6 className="font-semibold">{block.title}</h6>
+                      <p className="mt-4 leading-[140%] tracking-[-0.24px]">
+                        {block.text}
+                      </p>
+                    </div>
                   </div>
-                </div>
+                ))}
 
-                {/* DESKTOP Add money (Naira Account) */}
-                <div
-                  className={clsx(
-                    "mt-[200px]",
-                    "max-w-[1200px]",
-                    "flex gap-6 items-center justify-between",
-                  )}
-                >
-                  <div className="max-w-[361px] text-[24px] text-[#262C2C]">
-                    <h6 className="font-semibold">Add money (Naira Account)</h6>
-                    <p className="mt-4 leading-[140%] tracking-[-0.24px]">
-                      Users can add money to their naira account via transfer,
-                      or card.
-                    </p>
-                  </div>
-                  <Image
-                    className="max-w-[594px] w-full h-auto"
-                    src={easySpendFirstDesktopAddMoneyNgn}
-                    alt=""
-                  />
-                </div>
-
-                {/* DESKTOP Add money (USD Account) */}
-                <div
-                  className={clsx(
-                    "mt-[200px]",
-                    "max-w-[1200px]",
-                    "flex gap-6 items-center justify-between",
-                  )}
-                >
-                  <Image
-                    className="max-w-[594px] w-full h-auto"
-                    src={easySpendFirstDesktopAddMoneyUsd}
-                    alt=""
-                  />{" "}
-                  <div className="max-w-[361px] text-[24px] text-[#262C2C]">
-                    <h6 className="font-semibold">Add money (USD Account)</h6>
-                    <p className="mt-4 leading-[140%] tracking-[-0.24px]">
-                      Users can fund their USD wallet via crypto, bank transfer
-                      oor naira account conversion.
-                    </p>
-                  </div>
-                </div>
-
-                {/* DESKTOP Add money (Crypto Wallet) */}
-                <div
-                  className={clsx(
-                    "mt-[200px]",
-                    "max-w-[1200px]",
-                    "flex gap-6 items-center justify-between",
-                  )}
-                >
-                  <div className="max-w-[361px] text-[24px] text-[#262C2C]">
-                    <h6 className="font-semibold">Add money (Crypto Wallet)</h6>
-                    <p className="mt-4 leading-[140%] tracking-[-0.24px]">
-                      Users can fund their wallet account by converting USD to
-                      crypto.
-                    </p>
-                  </div>
-                  <Image
-                    className="max-w-[594px] w-full h-auto"
-                    src={easySpendFirstDesktopAddMoneyCrypto}
-                    alt=""
-                  />
-                </div>
-
-                {/* DESKTOP Withdraw money (NGN Account) */}
-                <div
-                  className={clsx(
-                    "mt-[200px]",
-                    "max-w-[1200px]",
-                    "flex gap-6 items-center justify-between",
-                  )}
-                >
-                  <Image
-                    className="max-w-[594px] w-full h-auto"
-                    src={easySpendFirstDesktopWithdrawMoneyNng}
-                    alt=""
-                  />
-                  <div className="max-w-[361px] text-[24px] text-[#262C2C]">
-                    <h6 className="font-semibold">
-                      Withdraw money (Naira Account)
-                    </h6>
-                    <p className="mt-4 leading-[140%] tracking-[-0.24px]">
-                      Users can perform inter bank transfer or intra bank
-                      transfer and convert Naira to USD.
-                    </p>
-                  </div>
-                </div>
-
-                {/* DESKTOP Withdraw money (USD Account) */}
-                <div
-                  className={clsx(
-                    "mt-[200px]",
-                    "max-w-[1200px]",
-                    "flex gap-6 items-center justify-between",
-                  )}
-                >
-                  <div className="max-w-[361px] text-[24px] text-[#262C2C]">
-                    <h6 className="font-semibold">
-                      Withdraw money (USD Account)
-                    </h6>
-                    <p className="mt-4 leading-[140%] tracking-[-0.24px]">
-                      Users can send money to their naira account and convert
-                      USD to BTC.
-                    </p>
-                  </div>
-                  <Image
-                    className="max-w-[594px] w-full h-auto"
-                    src={easySpendFirstDesktopWithdrawMoneyUsd}
-                    alt=""
-                  />
-                </div>
-
-                {/* Crypto Dashboard and Features */}
-                <div className="mt-[176px] relative">
+                <div className="mt-[132px] relative">
                   <h2 className="text-[32px] text-[#2F3434] font-bold tracking-[-0.32px]">
                     Crypto Dashboard and Features
                   </h2>
@@ -467,118 +611,45 @@ export default function Oppia() {
                   />
                 </div>
 
-                {/* Crypto Dashboard */}
-                <div
-                  className={clsx(
-                    "mt-8",
-                    "max-w-[1200px]",
-                    "flex gap-6 items-center justify-between",
-                  )}
-                >
-                  <Image
-                    className="max-w-[591px] w-full h-auto"
-                    src={easySpendCryptoCryptoDashboard}
-                    alt=""
-                  />
-                  <div className="max-w-[361px] text-[24px] text-[#262C2C]">
-                    <h6 className="font-semibold">Crypto Dashboard</h6>
-                    <p className="mt-4 leading-[140%] tracking-[-0.24px]">
-                      I implemented the crypto dashboard where users can see
-                      their wallet balance, buy, send, swap and lock their
-                      wallet. They can also see their wallet transactions.
-                    </p>
+                {cryptoFlowBlocks.map((block, index) => (
+                  <div
+                    key={block.title + index}
+                    className={clsx(
+                      index === 0 ? "mt-8" : "mt-[132px]",
+                      block.containerStyling || "max-w-[1200px]",
+                      "flex flex-col lg:flex-row gap-6 items-start justify-between",
+                      block.reverse && "lg:flex-row-reverse",
+                    )}
+                  >
+                    <div
+                      className={clsx("w-full relative", block.imageStyling)}
+                    >
+                      <Image
+                        className="w-full h-auto"
+                        src={block.image}
+                        alt={block.title}
+                      />
+                      <Image
+                        className={clsx("hidden lg:block", block.arrowStyling)}
+                        src={block.arrow}
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={clsx(
+                        "max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]",
+                        block.textStyling,
+                      )}
+                    >
+                      <h6 className="font-semibold">{block.title}</h6>
+                      <p className="mt-4 leading-[140%] tracking-[-0.24px]">
+                        {block.text}
+                      </p>
+                    </div>
                   </div>
-                </div>
+                ))}
 
-                {/* Fund wallet */}
-                <div
-                  className={clsx(
-                    "mt-[124px]",
-                    "max-w-[1188px]",
-                    "flex gap-6 items-center justify-between",
-                  )}
-                >
-                  <div className="max-w-[361px] text-[24px] text-[#262C2C]">
-                    <h6 className="font-semibold">Fund wallet</h6>
-                    <p className="mt-4 leading-[140%] tracking-[-0.24px]">
-                      Users can fund BTC wallet through USD conversion.
-                    </p>
-                  </div>
-                  <Image
-                    className="max-w-[591px] w-full h-auto"
-                    src={easySpendCryptoFundWallet}
-                    alt=""
-                  />
-                </div>
-
-                {/* Swap Tokens */}
-                <div
-                  className={clsx(
-                    "mt-[124px]",
-                    "max-w-[1200px]",
-                    "flex gap-6 items-center justify-between",
-                  )}
-                >
-                  <Image
-                    className="max-w-[591px] w-full h-auto"
-                    src={easySpendCryptoSwapToken}
-                    alt=""
-                  />
-                  <div className="max-w-[361px] text-[24px] text-[#262C2C]">
-                    <h6 className="font-semibold">Swap Tokens</h6>
-                    <p className="mt-4 leading-[140%] tracking-[-0.24px]">
-                      Users can swap tokens, if they have more than one wallet
-                      account, eg: swap USDT with BTC.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Withdraw from wallet */}
-                <div
-                  className={clsx(
-                    "mt-[124px]",
-                    "max-w-[1188px]",
-                    "flex gap-6 items-center justify-between",
-                  )}
-                >
-                  <div className="max-w-[361px] text-[24px] text-[#262C2C]">
-                    <h6 className="font-semibold">Withdraw from wallet</h6>
-                    <p className="mt-4 leading-[140%] tracking-[-0.24px]">
-                      Users can convert BTC or any of their token to USD.
-                    </p>
-                  </div>
-                  <Image
-                    className="max-w-[591px] w-full h-auto"
-                    src={easySpendCryptoWithdrawFromWallet}
-                    alt=""
-                  />
-                </div>
-
-                {/* Create new wallet */}
-                <div
-                  className={clsx(
-                    "mt-[124px]",
-                    "max-w-[1200px]",
-                    "flex gap-6 items-center justify-between",
-                  )}
-                >
-                  <Image
-                    className="max-w-[591px] w-full h-auto"
-                    src={easySpendCryptoCreateNewWallet}
-                    alt=""
-                  />
-                  <div className="max-w-[361px] text-[24px] text-[#262C2C]">
-                    <h6 className="font-semibold">Create new wallet</h6>
-                    <p className="mt-4 leading-[140%] tracking-[-0.24px]">
-                      To create new wallet, I implemented a modal where users
-                      can use their password to create wallet and they can
-                      select the wallet options they want to create.
-                    </p>
-                  </div>
-                </div>
-
-                {/* USD Virtual Cards and Features */}
-                <div className="mt-[176px] relative">
+                <div className="mt-[132px] relative">
                   <h2 className="text-[32px] text-[#2F3434] font-bold tracking-[-0.32px]">
                     USD Virtual Cards and Features
                   </h2>
@@ -589,99 +660,45 @@ export default function Oppia() {
                   />
                 </div>
 
-                {/* Virtual Card Dashboard */}
-                <div
-                  className={clsx(
-                    "mt-[124px]",
-                    "max-w-[1200px]",
-                    "flex gap-6 items-center justify-between",
-                  )}
-                >
-                  <div className="max-w-[361px] text-[24px] text-[#262C2C]">
-                    <h6 className="font-semibold">Virtual Card Dashboard</h6>
-                    <p className="mt-4 leading-[140%] tracking-[-0.24px]">
-                      On the virtual card page, users can see their available
-                      balance, Add money, send money, convert money and see
-                      their recent transactions.
-                    </p>
+                {virtualCardFlowBlocks.map((block, index) => (
+                  <div
+                    key={block.title + index}
+                    className={clsx(
+                      index === 0 ? "mt-8" : "mt-[132px]",
+                      block.containerStyling || "max-w-[1200px]",
+                      "flex flex-col lg:flex-row gap-6 items-start justify-between",
+                      block.reverse && "lg:flex-row-reverse",
+                    )}
+                  >
+                    <div
+                      className={clsx("w-full relative", block.imageStyling)}
+                    >
+                      <Image
+                        className="w-full h-auto"
+                        src={block.image}
+                        alt={block.title}
+                      />
+                      <Image
+                        className={clsx("hidden lg:block", block.arrowStyling)}
+                        src={block.arrow}
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={clsx(
+                        "max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]",
+                        block.textStyling,
+                      )}
+                    >
+                      <h6 className="font-semibold">{block.title}</h6>
+                      <p className="mt-4 leading-[140%] tracking-[-0.24px]">
+                        {block.text}
+                      </p>
+                    </div>
                   </div>
-                  <Image
-                    className="max-w-[591px] w-full h-auto"
-                    src={easySpendVirtualCardVirtualCardDashboard}
-                    alt=""
-                  />
-                </div>
+                ))}
 
-                {/* Fund virtual card */}
-                <div
-                  className={clsx(
-                    "mt-[124px]",
-                    "max-w-[1200px]",
-                    "flex gap-6 items-center justify-between",
-                  )}
-                >
-                  <Image
-                    className="max-w-[591px] w-full h-auto"
-                    src={easySpendVirtualCardFundVirtualCard}
-                    alt=""
-                  />
-                  <div className="max-w-[361px] text-[24px] text-[#262C2C]">
-                    <h6 className="font-semibold">Fund virtual card</h6>
-                    <p className="mt-4 leading-[140%] tracking-[-0.24px]">
-                      Users can fund their USD virtual card via bank transfer,
-                      crypto wallet and naira account.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Create virtual card */}
-                <div
-                  className={clsx(
-                    "mt-[124px]",
-                    "max-w-[1188px]",
-                    "flex gap-6 items-center justify-between",
-                  )}
-                >
-                  <div className="max-w-[361px] text-[24px] text-[#262C2C]">
-                    <h6 className="font-semibold">Create virtual card</h6>
-                    <p className="mt-4 leading-[140%] tracking-[-0.24px]">
-                      Users can choose to create either Visa or Mastercard
-                      virtual card, they can also customize the card
-                    </p>
-                  </div>
-                  <Image
-                    className="max-w-[591px] w-full h-auto"
-                    src={easySpendVirtualCardCreateVirtualCard}
-                    alt=""
-                  />
-                </div>
-
-                {/* Send money from virtual card */}
-                <div
-                  className={clsx(
-                    "mt-[124px]",
-                    "max-w-[1200px]",
-                    "flex gap-6 items-center justify-between",
-                  )}
-                >
-                  <Image
-                    className="max-w-[591px] w-full h-auto"
-                    src={easySpendVirtualCardSendMoney}
-                    alt=""
-                  />
-                  <div className="max-w-[361px] text-[24px] text-[#262C2C]">
-                    <h6 className="font-semibold">
-                      Send money from virtual card
-                    </h6>
-                    <p className="mt-4 leading-[140%] tracking-[-0.24px]">
-                      Users can send money to their naira account and also send
-                      money to their crypto wallet.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Bill Payment */}
-                <div className="mt-[176px] relative">
+                <div className="mt-[132px] relative">
                   <h2 className="text-[32px] text-[#2F3434] font-bold tracking-[-0.32px]">
                     Bill Payment
                   </h2>
@@ -692,121 +709,51 @@ export default function Oppia() {
                   />
                 </div>
 
-                <div
-                  className={clsx(
-                    "mt-[32px]",
-                    "max-w-[1200px]",
-                    "flex gap-6 items-center justify-between",
-                  )}
-                >
-                  <div className="max-w-[361px] text-[24px] text-[#262C2C]">
-                    <h6 className="font-semibold">Pay Bills</h6>
-                    <p className="mt-4 leading-[140%] tracking-[-0.24px]">
-                      Users can pay for Airtime, cable TV, Electricity, Data,
-                      Gift cards and also see their recent bill transactions.
-                    </p>
+                {billPaymentFlowBlocks.map((block, index) => (
+                  <div
+                    key={block.title + index}
+                    className={clsx(
+                      index === 0 ? "mt-8" : "mt-[132px]",
+                      block.containerStyling || "max-w-[1200px]",
+                      "flex flex-col lg:flex-row gap-6 items-start justify-between",
+                      block.reverse && "lg:flex-row-reverse",
+                    )}
+                  >
+                    <div
+                      className={clsx("w-full relative", block.imageStyling)}
+                    >
+                      <Image
+                        className="w-full h-auto"
+                        src={block.image}
+                        alt={block.title}
+                      />
+                      <Image
+                        className={clsx("hidden lg:block", block.arrowStyling)}
+                        src={block.arrow}
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={clsx(
+                        "max-w-[361px] text-[18px] lg:text-[24px] text-[#262C2C]",
+                        block.textContainerStyling,
+                        block.textStyling,
+                      )}
+                    >
+                      <h6 className="font-semibold">{block.title}</h6>
+                      <p
+                        className={clsx(
+                          "mt-4 leading-[140%] tracking-[-0.24px]",
+                          block.bodyStyling,
+                        )}
+                      >
+                        {block.text}
+                      </p>
+                    </div>
                   </div>
-                  <Image
-                    className="max-w-[594px] w-full h-auto"
-                    src={easySpendBillPaymentPayBills}
-                    alt=""
-                  />
-                </div>
+                ))}
 
-                {/* Buy Airtime */}
-                <div
-                  className={clsx(
-                    "mt-[200px]",
-                    "max-w-[1200px]",
-                    "flex gap-6 items-center justify-between",
-                  )}
-                >
-                  <Image
-                    className="max-w-[594px] w-full h-auto"
-                    src={easySpendBillPaymentBuyAirtime}
-                    alt=""
-                  />{" "}
-                  <div className="max-w-[361px] text-[24px] text-[#262C2C]">
-                    <h6 className="font-semibold">Buy Airtime</h6>
-                    <p className="mt-4 leading-[140%] tracking-[-0.24px]">
-                      Users can send money to their naira account and also send
-                      money to their crypto wallet.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Pay for Electricity */}
-                <div
-                  className={clsx(
-                    "mt-[200px]",
-                    "max-w-[1200px]",
-                    "flex gap-6 items-center justify-between",
-                  )}
-                >
-                  <div className="max-w-[361px] text-[24px] text-[#262C2C]">
-                    <h6 className="font-semibold">Pay for Electricity</h6>
-                    <p className="mt-4 leading-[140%] tracking-[-0.24px]">
-                      Users can pay for Airtime, cable TV, Electricity, Data,
-                      Gift cards and also see their recent bill transactions.
-                    </p>
-                  </div>
-                  <Image
-                    className="max-w-[594px] w-full h-auto"
-                    src={easySpendBillPaymentPayForElectricity}
-                    alt=""
-                  />
-                </div>
-
-                {/* Pay for Cable Subscription */}
-                <div
-                  className={clsx(
-                    "mt-[200px]",
-                    "max-w-[1200px]",
-                    "flex gap-6 items-center justify-between",
-                  )}
-                >
-                  <Image
-                    className="max-w-[594px] w-full h-auto"
-                    src={easySpendBillPaymentCableSubscription}
-                    alt=""
-                  />
-                  <div className="max-w-[361px] text-[24px] text-[#262C2C]">
-                    <h6 className="font-semibold">
-                      Pay for Cable Subscription
-                    </h6>
-                    <p className="mt-4 leading-[140%] tracking-[-0.24px]">
-                      Users can send money to their naira account and also send
-                      money to their crypto wallet.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Pay for Data (International & Local) */}
-                <div
-                  className={clsx(
-                    "mt-[200px]",
-                    "max-w-[1200px]",
-                    "flex gap-6 items-center justify-between",
-                  )}
-                >
-                  <div className="max-w-[450px] text-[24px] text-[#262C2C]">
-                    <h6 className="font-semibold">
-                      Pay for Data (International & Local)
-                    </h6>
-                    <p className="max-w-[361px] mt-4 leading-[140%] tracking-[-0.24px]">
-                      Users can pay for Airtime, cable TV, Electricity, Data,
-                      Gift cards and also see their recent bill transactions.
-                    </p>
-                  </div>
-                  <Image
-                    className="max-w-[594px] w-full h-auto"
-                    src={easySpendBillPaymentPayForData}
-                    alt=""
-                  />
-                </div>
-
-                {/* Loyalty Loans (Mobile) */}
-                <div className="mt-[176px] relative">
+                <div className="mt-[132px] relative">
                   <h2 className="text-[32px] text-[#2F3434] font-bold tracking-[-0.32px]">
                     Loyalty Loans (Mobile)
                   </h2>
@@ -821,10 +768,10 @@ export default function Oppia() {
                   className={clsx(
                     "mt-[32px]",
                     "max-w-[1200px]",
-                    "flex gap-6 justify-between",
+                    "flex flex-col lg:flex-row gap-6 justify-between",
                   )}
                 >
-                  <div className="max-w-[712px] text-[24px] text-[#262C2C]">
+                  <div className="max-w-[712px] text-[18px] lg:text-[24px] text-[#262C2C]">
                     <p className="mt-4 leading-[140%] tracking-[-0.24px]">
                       We prioritized implementing the loyalty loan feature for
                       the mobile app because it is one of the major selling
