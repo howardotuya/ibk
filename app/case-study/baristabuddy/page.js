@@ -26,6 +26,8 @@ import baristabuddy14 from "@/public/images/case-study/baristabuddy/14.png";
 import baristabuddy15 from "@/public/images/case-study/baristabuddy/15.png";
 import baristabuddy16 from "@/public/images/case-study/baristabuddy/16.png";
 import baristabuddy17 from "@/public/images/case-study/baristabuddy/17.png";
+import baristabuddyLineUnderAdminRole from "@/public/images/case-study/baristabuddy/line-under-text/admin-role.svg";
+import baristabuddyLineUnderTechnicianRole from "@/public/images/case-study/baristabuddy/line-under-text/technician-role.svg";
 
 // Import arrows
 import baristabuddyArrowDashboard from "@/public/images/case-study/baristabuddy/arrows/admin-dashboard.svg";
@@ -550,6 +552,11 @@ export default function BaristaBuddy() {
 
                 <div className="text-[32px] text-[#2F3434] tracking-[-0.32px] font-bold">
                   <h3>Admin Role</h3>
+                  <Image
+                    className="-mt-1 w-[170px] max-w-full"
+                    src={baristabuddyLineUnderAdminRole}
+                    alt=""
+                  />
                 </div>
               </article>
 
@@ -606,6 +613,11 @@ export default function BaristaBuddy() {
                 <h2 className="text-[32px] text-[#2F3434] font-bold tracking-[-0.32px]">
                   Technician Role
                 </h2>
+                <Image
+                  className="-mt-1 w-[225px] max-w-full"
+                  src={baristabuddyLineUnderTechnicianRole}
+                  alt=""
+                />
               </div>
 
               {designBlocks.slice(8).map((block, index) => (
