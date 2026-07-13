@@ -74,8 +74,8 @@ export default function Navbar() {
             <Link
               className="flex flex-col gap-2"
               target="_blank"
-              download={"Ibukun_Abejide_Resume_2023.pdf"}
-              href={"/Ibukun-Abejide-Resume-2023.pdf"}
+              download={"Ibukun_Abejide_Resume.pdf"}
+              href={"/Ibukun-Abejide-Resume.pdf"}
             >
               {/* TEXT PLUS CHEVRON ICON */}
               <article className="flex items-end justify-between">
@@ -154,8 +154,8 @@ export default function Navbar() {
               <Link
                 className="p-2"
                 target="_blank"
-                download={"Ibukun_Abejide_Resume_2023.pdf"}
-                href={"/Ibukun-Abejide-Resume-2023.pdf"}
+                download={"Ibukun_Abejide_Resume.pdf"}
+                href={"/Ibukun-Abejide-Resume.pdf"}
               >
                 Resume
               </Link>
